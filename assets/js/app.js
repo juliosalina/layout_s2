@@ -152,32 +152,31 @@ function($) {
  function($) {
     "use strict";
 
-    var WebAdmin = function() {
+    var S2 = function() {
         this.VERSION = "1.0.0",
-        this.AUTHOR = "ThemesDesign",
-        this.SUPPORT = "#",
+        this.AUTHOR = "Júlio Salina - Dr. Consulta - S2",
         this.pageScrollElement = "html, body",
         this.$body = sistemaS2_VARS.BODY
     };
 
     //initializing tooltip
-    WebAdmin.prototype.initTooltipPlugin = function() {
+    S2.prototype.initTooltipPlugin = function() {
         $.fn.tooltip && $('[data-toggle="tooltip"]').tooltip()
     },
 
     //initializing popover
-    WebAdmin.prototype.initPopoverPlugin = function() {
+    S2.prototype.initPopoverPlugin = function() {
         $.fn.popover && $('[data-toggle="popover"]').popover()
     },
 
     //initializing nicescroll
-    WebAdmin.prototype.initNiceScrollPlugin = function() {
+    S2.prototype.initNiceScrollPlugin = function() {
         //You can change the color of scroll bar here
         $.fn.niceScroll &&  $(".nicescroll").niceScroll({ cursorcolor: '#9d9ea5', cursorborderradius: '0px'});
     },
 
      //on doc load
-    WebAdmin.prototype.onDocReady = function(e) {
+    S2.prototype.onDocReady = function(e) {
         FastClick.attach(document.body);
         Menufunction.push("initscrolls");
         Menufunction.push("changeptype");
@@ -192,7 +191,7 @@ function($) {
     },
 
     //init
-    WebAdmin.prototype.init = function() {
+    S2.prototype.init = function() {
         var $this = this;
         this.initTooltipPlugin();
         this.initPopoverPlugin();
@@ -206,14 +205,14 @@ function($) {
         $.FullScreen.init();
     },
 
-    $.WebAdmin = new WebAdmin, $.WebAdmin.Constructor = WebAdmin
+    $.S2 = new S2, $.S2.Constructor = S2
 
 }(window.jQuery),
 
 //initializing main application module
 function($) {
     "use strict";
-    $.WebAdmin.init();
+    $.S2.init();
 }(window.jQuery);
 
 
