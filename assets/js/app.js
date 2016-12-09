@@ -45,17 +45,17 @@ var sistemaS2_VARS = {
                 // hide any open menus and remove all other classes
                 $("ul", $(this).parents("ul:first")).slideUp(350);
                 $("a", $(this).parents("ul:first")).removeClass("subdrop");
-                $("#sidebar-menu .pull-right i").removeClass("mdi-minus").addClass("mdi-plus");
+                $("#sidebar-menu .pull-right i").removeClass("fa-minus").addClass("fa-plus");
 
                 // open our new menu and add the open class
                 $(this).next("ul").slideDown(350);
                 $(this).addClass("subdrop");
-                $(".pull-right i", $(this).parents(".has_sub:last")).removeClass("mdi-plus").addClass("mdi-minus");
-                $(".pull-right i", $(this).siblings("ul")).removeClass("mdi-minus").addClass("mdi-plus");
+                $(".pull-right i", $(this).parents(".has_sub:last")).removeClass("fa-plus").addClass("fa-minus");
+                $(".pull-right i", $(this).siblings("ul")).removeClass("fa-minus").addClass("fa-plus");
             } else if ($(this).hasClass("subdrop")) {
                 $(this).removeClass("subdrop");
                 $(this).next("ul").slideUp(350);
-                $(".pull-right i", $(this).parent()).removeClass("mdi-minus").addClass("mdi-plus");
+                $(".pull-right i", $(this).parent()).removeClass("fa-minus").addClass("fa-plus");
             }
         }
     },

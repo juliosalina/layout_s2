@@ -19,7 +19,7 @@ File: Responsive
   body {
     overflow-x: hidden;
   }
-  .search-bar {
+  .button-menu-mobile {
     display: none !important;
   }
 }
@@ -32,8 +32,9 @@ File: Responsive
   .content-page {
     margin-left: 0 !important;
   }
-  .enlarged .left.side-menu {
-    margin-left: -75px;
+
+  .button-menu-mobile {
+    display: none !important;
   }
 
   .mobile-sidebar {
@@ -45,11 +46,41 @@ File: Responsive
     right: -250px;
   }
 
+  .page-header-title {
+    margin: -20px -5px 23px 66px;
+    padding: 10px 15px 100px 19px;
+  }
+
   .wrapper-page {
     width: 90%;
   }
 
+  .navbar-form {
+    margin-left: -5px;
+    .form-control {
+      width: 70%;
+    }
+  }
+
+  #wrapper.enlarged {
+    .topbar .topbar-left {
+      width: 71px!important;
+    }
+  }
+
   .navbar-nav {
+    height: 70px;
+    .dropdown {
+      display: inline-block !important;
+    }
+
+    .hidden-xs {
+      display: inline-block !important;
+      #btn-fullscreen {
+        display: none !important;
+      }
+    }
+
     .open {
       .dropdown-menu {
         background-color: @white;
@@ -61,15 +92,14 @@ File: Responsive
     }
   }
 
-  .footer  {
-    left: 0 !important;
-  }
-
 }
 
 @media (max-width: 620px) {
   .topbar-left {
     width: 70px !important;
+  }
+  .button-menu-mobile {
+    display: none !important;
   }
   .logo {
     display: none !important;
@@ -83,6 +113,19 @@ File: Responsive
   }
 }
 
+@media (max-width: 560px) {
+  .profile-username {
+    display: none !important;
+  }
+  .button-menu-mobile {
+    display: none !important;
+  }
+
+  .profile {
+    padding-bottom: 17px!important;
+  }
+}
+
 @media (max-width: 480px) {
   .side-menu {
     z-index: 10 !important;
@@ -92,13 +135,25 @@ File: Responsive
     display: block;
   }
 
-  .search-bar {
+  .navbar-nav {
+    .dropdown:first-child {
+      display: none !important;
+    }
+  }
+  .button-menu-mobile {
     display: none !important;
   }
 }
 
 @media (max-width: 420px) {
   .hide-phone {
+    display: none !important;
+  }
+
+  .navbar-form {
+    width: 220px;
+  }
+  .button-menu-mobile {
     display: none !important;
   }
 }
