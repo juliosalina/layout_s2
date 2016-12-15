@@ -278,7 +278,7 @@ function initscrolls(){
     if(jQuery.browser.mobile !== true){
       //SLIM SCROLL
       $('.slimscroller').slimscroll({
-        height: 'auto',
+        height: '100%',
         size: "5px"
       });
 
@@ -304,3 +304,13 @@ function toggle_slimscroll(item){
 
 // for lazy function execution
 var Menufunction = [];
+
+//menu busca icone lupa
+$('#iconified').on('keyup', function() {
+    var input = $(this);
+    if(input.val().length === 0) {
+        input.addClass('empty');
+    } else {
+        input.removeClass('empty');
+    }
+});

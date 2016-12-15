@@ -5,13 +5,28 @@ File: Menu
 @import "variables.less";
 @import "elements.less";
 
+.form-control::-moz-placeholder{
+  color:#fff!important;
+}
+//campo busca
+input.empty {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size:14px;
+}
+
+
+//barra do topo
+
 .topbar {
   background: @white;
   left: 0;
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 999;
+  z-index: 9;
 
   .topbar-left {
     background-color: @white;
@@ -23,16 +38,18 @@ File: Menu
   }
 }
 
+//logos
 .logo, .logo-sm {
   color: @dark!important;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: .03em;
   line-height: 70px;
+    width: 90%;
 
   span {
     color: @primary;
-    font-family: 'Crete Round', serif;
+//    font-family: 'Crete Round', serif;
   }
 }
 
@@ -40,12 +57,14 @@ File: Menu
   display: none;
 
   span {
-    background-color: #eee;
     height: 44px;
     width: 44px;
     display: block;
     line-height: 44px;
     margin-top: 13px;
+  }
+  img{
+    width:100%;
   }
 }
 
@@ -150,6 +169,20 @@ File: Menu
   border: none;
   box-shadow: none;
   padding: 0px;
+  margin-top:12px;
+  margin-right:5px;
+    input.search-bar{
+      width:36px;
+      height:36px;
+      -webkit-transition: .5s; 
+      transition:.5s;
+      padding-left:11px;
+      &:focus{
+        width:160px;
+        -webkit-transition: .5s; 
+        transition:.5s;
+      }
+    }
 }
 
 .search-bar {
@@ -207,10 +240,9 @@ body.fixed-left {
   .side-menu.left {
     bottom: 50px;
     height: @height;
-    margin-bottom: -70px;
     margin-top: 0px;
-    padding-bottom: 70px;
     position: fixed;
+    top:0;
   }
 }
 
@@ -235,6 +267,7 @@ body.fixed-left {
   border-radius: 50%;
   margin-top: 14px;
   margin-left: 15px;
+  z-index:999999999!important;
   &:hover {
     color: @white;
   }
@@ -260,7 +293,7 @@ body.fixed-left {
   width: 36px;
   padding: 0 !important;
   border: 2px solid fade(@white,50%) !important;
-  line-height: 35px !important;
+  line-height: 34px !important;
   text-align: center;
   border-radius: 50%;
   margin: 17px 5px;
@@ -488,6 +521,7 @@ body.fixed-left {
   min-height: 80px;
   padding: 20px;
   position: relative;
+  margin-top:50px;
   img {
     position: relative;
     z-index: 9999;
