@@ -18,6 +18,7 @@ var sistemaS2_VARS = {
     Sidemenu.prototype.openLeftBar = function() {
         sistemaS2_VARS.WRAPPER.toggleClass("enlarged");
         sistemaS2_VARS.WRAPPER.addClass("forced");
+        console.log('clicou botao');
 
         if (sistemaS2_VARS.WRAPPER.hasClass("enlarged") && sistemaS2_VARS.BODY.hasClass("fixed-left")) {
             sistemaS2_VARS.BODY.removeClass("fixed-left").addClass("fixed-left-void");
