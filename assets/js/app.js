@@ -76,15 +76,15 @@ var sistemaS2_VARS = {
         // NAVIGATION HIGHLIGHT & OPEN PARENT
         $this.$firstMenuChild.parents("li:last").children("a:first").addClass("active").trigger("click");
 
-        // activating menu item based on url
-        // $this.$menuItem.each(function() {
-        //     if (this.href == window.location.href) {
-        //         $(this).addClass("active");
-        //         $(this).parent().addClass("active"); // add active to li of the current link
-        //         $(this).parent().parent().prev().addClass("active"); // add active class to an anchor
-        //         $(this).parent().parent().prev().trigger('click'); // click the item to make it drop
-        //     }
-        // });
+        //activating menu item based on url
+        $this.$menuItem.each(function() {
+            if (this.href == window.location.href) {
+                $(this).addClass("active");
+                $(this).parent().addClass("active"); // add active to li of the current link
+                $(this).parent().parent().prev().addClass("active"); // add active class to an anchor
+                $(this).parent().parent().prev().trigger('click'); // click the item to make it drop
+            }
+        });
     },
 
     //init Sidemenu
