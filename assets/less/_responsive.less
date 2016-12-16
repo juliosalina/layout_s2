@@ -62,7 +62,7 @@ File: Responsive
 
   .navbar-form {
     margin-left: -5px;
-        -webkit-transition: 1s;
+    -webkit-transition: 1s;
     transition: 1s;
     .form-control {
       // width: 70%;
@@ -112,12 +112,31 @@ File: Responsive
   .nav > li > a {
     padding:0;
   }
+    .page-header-title{
+    h4{
+      background:@dark;
+      left:0;
+      text-align:center;
+      top:63px;
+      width:100%;
+      font-size:12px!important;
+      margin:0;
+      padding-left:14px;
+        z-index: 3!important;
+        padding-bottom:5px;
+    }
+  }
+    .sidebar-inner{
+    .user-details{
+      display:none!important;
+    }
+  }
 }
 
 @media (max-width: 620px) {
   .topbar-left {
-    width: 70px !important;
-    margin-left:-70px;
+    width: 71px !important;
+    margin-left:-71px;
   
   }
   .logo {
@@ -131,7 +150,7 @@ File: Responsive
     padding: 10px 15px 88px 20px;
   }
   #wrapper.enlarged .left.side-menu {
-    margin-left:-70px;
+    margin-left:-71px;
       top:0!important;
   }
   .button-menu-mobile {
@@ -164,20 +183,7 @@ File: Responsive
   }
  }
 }
-  .page-header-title{
-    h4{
-      background:@dark;
-      left:0;
-      text-align:center;
-      top:63px;
-      width:100%;
-      font-size:12px!important;
-      margin:0;
-      padding-left:14px;
-        z-index: 9!important;
-        padding-bottom:5px;
-    }
-  }
+
 
 }
 
