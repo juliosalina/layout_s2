@@ -164,7 +164,20 @@ File: Responsive
   }
  }
 }
-
+  .page-header-title{
+    h4{
+      background:@dark;
+      left:0;
+      text-align:center;
+      top:63px;
+      width:100%;
+      font-size:12px!important;
+      margin:0;
+      padding-left:14px;
+        z-index: 9!important;
+        padding-bottom:5px;
+    }
+  }
 
 }
 
@@ -180,20 +193,27 @@ File: Responsive
 
   }
 
-  .page-header-title{
-    h4{
-      background:@dark;
-      left:0;
-      text-align:center;
-      top:63px;
-      width:100%;
-      font-size:12px!important;
-      margin:0;
-      padding-left:14px;
-        z-index: 9!important;
-        padding-bottom:5px;
+
+  #wrapper{
+  &.forced{
+    .navbar-nav{
+    //  background:red;
+      opacity:.1;
+    //  visibility:hidden;
+    -webkit-transition: .5s; 
+    transition: .5s;
+    }
+    &.enlarged{
+      .navbar-nav{
+  //      background:yellow;
+        opacity:1;
+    //    visibility:visible;
+        -webkit-transition: .5s; 
+         transition: .5s;
+      }
     }
   }
+}
 }
 
 
