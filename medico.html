@@ -286,7 +286,7 @@
 
                     <div class="page-content-wrapper ">
                         <div class="container">
-                            <img src="assets/images/layout2.png" style="width:100%" />
+                            <img id="imagemdinamica" src="assets/images/medico1.png" style="width:100%" />
                         </div><!-- container -->
                     </div> <!-- Page content Wrapper -->
 
@@ -320,4 +320,31 @@
         <script src="assets/js/app.js"></script>
 
     </body>
+    <script>
+var count = 1;
+    $("body").keydown(function(e) {
+        
+
+      if(e.keyCode == 37) { // left
+       // alert('left');
+        if(count === 1){
+            return false;
+
+        }else{
+            count = count-1;
+            $('#imagemdinamica').attr('src','assets/images/medico'+count+'.png');
+        };
+ 
+
+      }else if(e.keyCode == 39) { // right
+      // alert('right');
+      
+      if(count === 3){
+        return false;
+      }else{
+            count = count+1;
+          $('#imagemdinamica').attr('src','assets/images/medico'+count+'.png');
+      }};
+    });
+    </script>
 </html>
