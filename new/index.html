@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Titulo</title>
+
+    <!-- CSS usar somente rem-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+      /*global*/
+
+      body{
+        background-color:#F5F5F5;
+      }
+
+      /*drc brandbook colors
+
+      $drc-dark-blue : #1165a6;
+      $drc-medium-blue : #33a3dc;
+      $drc-light-blue : #8ad0c5;
+      $drc-lighter-blue: #e4f1fc;
+
+      $drc-dark-gray : #65656a;
+      $drc-medium-gray : #8b8b90;
+      $drc-light-gray: #c8c8ce;
+
+      $drc-yellow: #ffcc32;
+      $drc-orange: #f89e55;*/
+
+
+      /*incorporar no bootstrap*/
+
+      .btn-primary{
+        background-color:#FF9F4F;
+        border:0;
+        border-top: solid .2rem  #FE7D19;
+      }
+      .btn-primary:hover{
+        background-color:#FE7D19;
+        border-top: solid .2rem  #FE7D19;
+      }
+      .btn{
+        font-weight:bold;
+        border-radius:.2rem;
+      }
+      .btn i{
+        padding-right:.5rem;
+      }
+      .btn-secondary{
+        background-color:#212E3A;
+        border:0;
+        border-top: solid .2rem #333E49;
+        color:#FFF;
+      }
+      [class*="col-"] .light{
+        background-color:#FFF;
+        /*TODO CRIAR MIXIN PARA SOMBRAS*/
+        -webkit-box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
+        -moz-box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
+        box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
+      }
+      [class*="col-"] .muted{
+        background-color:#F5F5F5;
+        border:1px solid #EFEEEE;
+        padding:1rem .5rem;
+        font-size:.8em;
+      }
+      .card-primary{
+        background-color:#87C3E8;
+        border:0;
+        background-color:#87C3E8;
+        -webkit-box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
+        -moz-box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
+        box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
+      }
+      .card-primary .card-header{
+        background-color:#0092D0;
+        padding: 0.25rem 1rem;
+      }
+      .card-secondary .card-header{
+        background-color:#0092D0;
+        color:#fff;
+        padding: 0.25rem 1rem;
+      }
+
+      .list-group .list-group-item{
+        border:0;
+        padding: 0 1.25rem;
+        font-size:.9em;
+        background:transparent;
+      }
+      .list-group .list-group-item label{
+        font-weight:bold;
+        margin-bottom:0;
+        margin-right:0.25rem;
+      }
+
+      /*texto em desfoque*/
+
+      .blurry{
+        color: transparent;
+        text-shadow: 0 0 .8rem rgba(0,0,0,0.5);
+        pointer-events:none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+                                  
+      }
+    </style>
+  </head>
+
+  <body>
+
+ <div class="container-fluid">
+
+        <div class="row">
+          
+         <!--breadcrumb -->
+
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Library</a></li>
+              <li class="breadcrumb-item active">Data</li>
+            </ol>
+
+          <div class="col-md-4">
+
+        <!--input form type text -->
+
+                <input class="form-control" type="text" placeholder="Paciente Ex.: Nome / Senha">
+          </div>
+
+          <div class="col-md-4">
+
+          <!--button group -->
+
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-secondary">Todas hoje</button>
+                <button type="button" class="btn btn-secondary">Pendentes hoje</button>
+                <button type="button" class="btn btn-secondary">Pendentes anteriores</button>
+              </div>
+
+          </div>
+          <div class="col-md-4">
+
+              <!-- buttons-->
+
+              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i>Primary icon</button>
+              <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-plus"></i>Primary icon</button>
+              <button type="button" class="btn btn-secondary">Secondary</button>
+              <button type="button" class="btn btn-secondary"><i class="fa fa-print"></i>Secondary icon</button>
+              <button type="button" class="btn btn-secondary btn-lg"><i class="fa fa-print"></i>Secondary icon</button>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+
+           <!-- card azul-->
+
+             <div class="col-md-4">
+              <div class="card card-inverse card-primary">
+              <div class="card-header">Featured</div>
+                <div class="card-block">
+                  <h4 class="card-title">Card title</h4>
+                  <p class="card-text">Some quick <b>example</b> text to build on the card title and make up the bulk of the card's content.</p>
+                   
+                   <button type="button" class="btn btn-secondary ml-1 float-xs-right"><i class="fa fa-print"></i>Secondary icon</button> 
+                   <button type="button" class="btn btn-primary float-xs-right"><i class="fa fa-plus"></i>Primary icon</button>
+
+                </div>
+              </div>
+            </div>
+
+             <!-- card simples-->
+
+            <div class="col-md-3">
+              <div class="card card-block">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <button type="button" class="btn btn-primary mr-1"><i class="fa fa-plus"></i>Primary icon</button>
+                 <button type="button" class="btn btn-secondary"><i class="fa fa-print"></i>Secondary icon</button>
+              </div>
+            </div>
+            
+            <!-- card misto-->
+
+            <div class="col-md-4">
+
+              <div class="card card-secondary">
+              <div class="card-header">Featured</div>
+
+              <!--nested grid-->
+
+               <div class="card-block row">
+
+                <div class="col-md-3">
+                  <img src="http://placehold.it/140x140" alt="alt-img" class="rounded-circle">
+                </div> 
+
+                <div class="col-md-8">
+                  <ul class="list-group">
+                    <li class="list-group-item"><label>Label:</label>Cras justo odio lorem ipsum</li>
+                    <li class="list-group-item"><label>Label:</label>Dapibus ac facilisis in</li>
+                    <li class="list-group-item"><label>Label maior:</label>Morbi leo risus</li>
+                    <li class="list-group-item"><label>Label:</label>Porta ac consectetur lorem ipsumac</li>
+                    <li class="list-group-item"><label>Label:</label>Vestibulum at eros</li>
+                    <li class="list-group-item"><label>Label:</label>Porta ac consectetur lorem ipsum</li>
+                    <li class="list-group-item"><label>Label:</label>Vestibulum at eros</li>
+                  </ul>
+                </div>
+
+                <div class="col-md-1 text-xs-center">
+                  <i class="fa fa-eye fa-lg"></i>
+                  <i class="fa fa-trash fa-lg"></i>
+                  <i class="fa fa-refresh fa-lg"></i>
+                </div>
+
+                </div>
+              </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-3">
+
+          <!-- tabs -->
+
+            <div class="card">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs float-xs-left">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-block">
+                  <h4 class="card-title">Special title treatment</h4>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+          </div>
+
+          <div class="col-md-7">
+
+              <div class="card card-block">
+                <h4 class="card-title">Card title</h4>
+
+                <!-- table -->
+
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Username</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                      <td></td>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                  </tfoot>
+                </table>
+
+              </div>
+
+          </div>
+          <div class="col-md-2">
+
+          <!-- bloco valores -->
+
+            <div class="card card-block text-xs-center">
+                <h4 class="card-title">Total DRC</h4>
+                <h3 class="font-weight-bold">R$ 3.480,00</h3>
+                <p class="card-text">Estimativa valor hospital</p>
+                <h3 class="font-weight-bold blurry">R$ 3.480,00</h3>
+                <p class="card-text">Estimativa valor total</p>
+                <h3 class="font-weight-bold blurry">R$ 3.480,00</h3>
+                <a href="#" class="btn btn-secondary btn-block mt-3"><i class="fa fa-print"></i>Orçamento hospitalar</a>
+                <a href="#" class="btn btn-primary btn-block mb-2"><i class="fa fa-plus"></i>Selecionar hospital</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- blocos textuais com icones fundo cinza -->
+
+        <div class="row">
+            <div class="col-md-8">
+              <div class="card card-block">
+                <h4 class="card-title">Dados da Cirurgia</h4>
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="muted">
+                        <i class="fa fa-hospital-o fa-2x float-xs-left"></i>
+                        <ul class="list-group pl-1">
+                          <li class="list-group-item"><label>Label:</label>Cras justo odio</li>
+                          <li class="list-group-item"><label>Label:</label>Dapibus ac facilisis in</li>
+                          <li class="list-group-item"><label>Label maior:</label>Morbi leo risus</li>
+                        </ul> 
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                  <div class="muted">
+                      <i class="fa fa-user-md fa-2x float-xs-left"></i>
+                      <ul class="list-group pl-1">
+                        <li class="list-group-item"><label>Label:</label>Cras justo odio</li>
+                        <li class="list-group-item"><label>Label:</label>Dapibus ac facilisis in</li>
+                        <li class="list-group-item"><label>Label maior:</label>Morbi leo risus</li>
+                      </ul>
+                  </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="muted">
+                      <i class="fa fa-calendar fa-2x float-xs-left"></i>
+                      <ul class="list-group pl-1">
+                        <li class="list-group-item"><label>Label:</label>Cras justo odio</li>
+                        <li class="list-group-item"><label>Label:</label>Dapibus ac facilisis in</li>
+                        <li class="list-group-item"><label>Label maior:</label>Morbi leo risus</li>
+                      </ul>    
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="muted">
+                        <i class="fa fa-calendar-check-o fa-2x float-xs-left"></i>
+                        <ul class="list-group pl-1">
+                          <li class="list-group-item"><label>Label:</label>Cras justo odio</li>
+                          <li class="list-group-item"><label>Label:</label>Dapibus ac facilisis in</li>
+                          <li class="list-group-item"><label>Label maior:</label>Morbi leo risus</li>
+                        </ul>    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-block">
+                <h4 class="card-title">Ações</h4>
+                <div class="row">
+                  <div class="col-md-4 pr-0">
+                     <button type="button" class="btn btn-secondary btn-block">Secondary icon</button>
+                     <button type="button" class="btn btn-secondary btn-block">Secondary icon</button>
+                  </div>
+                  <div class="col-md-4">
+                     <button type="button" class="btn btn-secondary btn-block">Secondary icon</button>
+                     <button type="button" class="btn btn-secondary btn-block">Secondary icon</button>  
+                  </div>
+                   <div class="col-md-4 pl-0">
+                     <button type="button" class="btn btn-secondary btn-block">Secondary icon</button>
+                     <button type="button" class="btn btn-secondary btn-block">Secondary icon</button>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+        </div>
+
+   <!-- blocos textuais com icones fundo branco -->
+
+        <div class="row">
+            <div class="col-md-8">
+              <div class="card card-block">
+                <h4 class="card-title">Pré-Consulta</h4>
+                <div class="row">
+                  <div class="col-md-3">
+                     <i class="fa fa-heartbeat fa-2x"></i>
+                     <label>Sinais Vitais:</label>
+                     Nada Consta
+                  </div>
+                  <div class="col-md-3">
+                    <i class="fa fa-male fa-2x"></i>
+                    <label>Medidas:</label>
+                    Nada Consta
+                  </div>
+                  <div class="col-md-3">
+                    <i class="fa fa-heartbeat fa-2x"></i>
+                    <label>Alergias:</label>
+                    Nada Consta
+                  </div>
+                  <div class="col-md-3">
+                    <i class="fa fa-heartbeat  fa-2x"></i>
+                    <label>Medicamentos em uso:</label>
+                     Nada Consta
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+
+      <!-- container-->
+</div>
+
+
+      <!-- JS-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
