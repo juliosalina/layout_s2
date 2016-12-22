@@ -12,7 +12,14 @@
 
     <!-- CSS usar somente rem-->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
+
+    <!-- Original Bootstrap -->
+    <!-- O<link href="https://maxcdn.bootstrapcd
+    n.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" rel="stylesheet" >-->
+
+    <!-- Bootsrap With Flexbox Grid -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap-flex.min.css" rel="stylesheet" >
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
@@ -21,6 +28,13 @@
 
       body{
         background-color:#F5F5F5;
+      }
+      ul{
+        margin:0;
+        padding:0;
+      }
+      li{
+        list-style-type:none;
       }
 
       /*drc brandbook colors
@@ -69,12 +83,15 @@
         -moz-box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
         box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
       }
-      [class*="col-"] .muted{
+      [class*="col-"] .side-icon-gray{
         background-color:#F5F5F5;
         border:1px solid #EFEEEE;
         padding:1rem .5rem;
         font-size:.8em;
       }
+       [class*="col-"] .side-icon-gray i{
+       /* background-color:red;*/
+       }
       .card-primary{
         background-color:#87C3E8;
         border:0;
@@ -82,6 +99,7 @@
         -webkit-box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
         -moz-box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
         box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
+        color:#fff;
       }
       .card-primary .card-header{
         background-color:#0092D0;
@@ -105,6 +123,27 @@
         margin-right:0.25rem;
       }
 
+      .bold-block{
+        font-weight:bold;
+        display:block;
+        margin-bottom:0;
+      }
+      .light-text{
+        font-weight:normal;
+        font-size: 0.8rem;
+      }
+      .nav-tabs .nav-link.active{
+        border-top:.2rem solid #0092D0;
+      }
+      .nav-tabs .nav-link{
+        margin-right:.1rem;
+        border-right:.1rem solid #ccc;
+        border-left:.1rem solid #ccc;
+        border-top:.1rem solid #ccc;
+        color:#414141;
+      }
+
+
       /*texto em desfoque*/
 
       .blurry{
@@ -115,9 +154,60 @@
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
-        user-select: none;
-                                  
+        user-select: none;                     
       }
+
+      /*stepmenu*/
+      .step-menu{
+        width:12.5rem;
+        padding:0;
+        border-top:.1rem solid #ccc;
+      }
+      .step-menu .step-item{
+        border-left:.1rem solid #ccc;
+        border-right:.1rem solid #ccc;
+        list-style-type:none;
+        padding-top:1.5rem;
+        text-align:center;
+        position:relative;
+        font-size:.8rem;
+        background-color:#F0F0F0;
+      }
+      .step-menu .step-item.active{
+        font-weight:bold;
+      }
+      .step-menu .step-item.idle{
+        background-color:#DEDEDE;
+      }
+      .step-menu .step-item.idle::after{
+        border-top: 20px solid #DEDEDE;
+      }
+      .step-menu .step-item::after{
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 100%;
+          width: 0;
+          height: 0;
+          border-left: 100px solid transparent;
+          border-right: 100px solid transparent;
+          border-top: 20px solid #F0F0F0;
+          clear: both;
+          z-index:1;
+        }
+        .step-menu .step-item::before{
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 103%;
+          width: 0;
+          height: 0;
+          border-left: 100px solid transparent;
+          border-right: 100px solid transparent;
+          border-top: 20px solid #ccc;
+          clear: both;
+          z-index:1;
+        }
     </style>
   </head>
 
@@ -135,14 +225,14 @@
               <li class="breadcrumb-item active">Data</li>
             </ol>
 
-          <div class="col-md-4">
+          <div class="col-xs">
 
         <!--input form type text -->
 
                 <input class="form-control" type="text" placeholder="Paciente Ex.: Nome / Senha">
           </div>
 
-          <div class="col-md-4">
+          <div class="col-xs">
 
           <!--button group -->
 
@@ -153,7 +243,7 @@
               </div>
 
           </div>
-          <div class="col-md-4">
+          <div class="col-xs">
 
               <!-- buttons-->
 
@@ -168,67 +258,93 @@
 
         </div>
 
+        <br><br><br><br><br><br><br><br><br><br>
+        
+
+        <!-- 
+          GRIDS
+
+          col-xl    extra large
+          col-lg    large
+          col-md    medium
+          col-sm    small
+          col-xs    extra small
+        -->
+
+
         <div class="row">
 
            <!-- card azul-->
 
-             <div class="col-md-4">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4">
               <div class="card card-inverse card-primary">
               <div class="card-header">Featured</div>
                 <div class="card-block">
                   <h4 class="card-title">Card title</h4>
                   <p class="card-text">Some quick <b>example</b> text to build on the card title and make up the bulk of the card's content.</p>
-                   
-                   <button type="button" class="btn btn-secondary ml-1 float-xs-right"><i class="fa fa-print"></i>Secondary icon</button> 
-                   <button type="button" class="btn btn-primary float-xs-right"><i class="fa fa-plus"></i>Primary icon</button>
-
+                  <div class="row">
+                    <div class="col-xs light-text">
+                    <ul>
+                      <li><b>Valor Pago:</b> R$ 0,00</li>
+                      <li><b>Valor Restante:</b> R$ 3.636,00</li>
+                      <li><b>Pagamento Liberado:</b> Não</li>
+                    </ul>
+                    
+                    </div>
+                    <div class="col-xs flex-xs-bottom pr-0">
+                      <button type="button" class="btn btn-primary btn-block"><i class="fa fa-usd"></i>Cobrança</button> 
+                    </div>
+                    <div class="col-xs flex-xs-bottom">
+                     <button type="button" class="btn btn-secondary btn-block"><i class="fa fa-print"></i>Recibo</button> 
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
              <!-- card simples-->
 
-            <div class="col-md-3">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4">
               <div class="card card-block">
                 <h4 class="card-title">Card title</h4>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                 <button type="button" class="btn btn-primary mr-1"><i class="fa fa-plus"></i>Primary icon</button>
+                 <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i>Primary icon</button>
                  <button type="button" class="btn btn-secondary"><i class="fa fa-print"></i>Secondary icon</button>
               </div>
             </div>
             
             <!-- card misto-->
 
-            <div class="col-md-4">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-7 col-xl-4">
 
               <div class="card card-secondary">
               <div class="card-header">Featured</div>
 
               <!--nested grid-->
 
-               <div class="card-block row">
+               <div class="row card-block">
 
-                <div class="col-md-3">
-                  <img src="http://placehold.it/140x140" alt="alt-img" class="rounded-circle">
-                </div> 
+                  <div class="col-xs-3 pr-0">
+                    <img src="http://placehold.it/140x140" alt="alt-img" class="rounded-circle" width="100%">
+                  </div> 
 
-                <div class="col-md-8">
-                  <ul class="list-group">
-                    <li class="list-group-item"><label>Label:</label>Cras justo odio lorem ipsum</li>
-                    <li class="list-group-item"><label>Label:</label>Dapibus ac facilisis in</li>
-                    <li class="list-group-item"><label>Label maior:</label>Morbi leo risus</li>
-                    <li class="list-group-item"><label>Label:</label>Porta ac consectetur lorem ipsumac</li>
-                    <li class="list-group-item"><label>Label:</label>Vestibulum at eros</li>
-                    <li class="list-group-item"><label>Label:</label>Porta ac consectetur lorem ipsum</li>
-                    <li class="list-group-item"><label>Label:</label>Vestibulum at eros</li>
-                  </ul>
-                </div>
+                  <div class="col-xs-7 col-md-8 pr-0">
+                    <ul class="list-group">
+                      <li class="list-group-item"><label>Label:</label>Cras justo odio lorem ipsum</li>
+                      <li class="list-group-item"><label>Label:</label>Dapibus ac facilisis in</li>
+                      <li class="list-group-item"><label>Label maior:</label>Morbi leo risus</li>
+                      <li class="list-group-item"><label>Label:</label>Porta ac consectetur lorem ipsumac</li>
+                      <li class="list-group-item"><label>Label:</label>Vestibulum at eros</li>
+                      <li class="list-group-item"><label>Label:</label>Porta ac consectetur lorem ipsum</li>
+                      <li class="list-group-item"><label>Label:</label>Vestibulum at eros</li>
+                    </ul>
+                  </div>
 
-                <div class="col-md-1 text-xs-center">
-                  <i class="fa fa-eye fa-lg"></i>
-                  <i class="fa fa-trash fa-lg"></i>
-                  <i class="fa fa-refresh fa-lg"></i>
-                </div>
+                  <div class="col-xs-1 col-md-1 text-xs-center flex-xs-top">
+                    <i class="fa fa-eye fa-lg"></i>
+                    <i class="fa fa-trash fa-lg"></i>
+                    <i class="fa fa-refresh fa-lg"></i>
+                  </div>
 
                 </div>
               </div>
@@ -237,13 +353,12 @@
 
         </div>
 
+        <!-- grid -->
 
         <div class="row">
-          <div class="col-md-3">
-
-          <!-- tabs -->
-
-            <div class="card">
+        
+          <div class="col-xs">
+              <div class="card">
                 <div class="card-header">
                   <ul class="nav nav-tabs card-header-tabs float-xs-left">
                     <li class="nav-item">
@@ -263,11 +378,9 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-
           </div>
 
-          <div class="col-md-7">
-
+          <div class="col-xs-12 col-lg-7">
               <div class="card card-block">
                 <h4 class="card-title">Card title</h4>
 
@@ -311,34 +424,29 @@
                 </table>
 
               </div>
+           </div>
 
-          </div>
-          <div class="col-md-2">
-
-          <!-- bloco valores -->
-
-            <div class="card card-block text-xs-center">
-                <h4 class="card-title">Total DRC</h4>
-                <h3 class="font-weight-bold">R$ 3.480,00</h3>
-                <p class="card-text">Estimativa valor hospital</p>
-                <h3 class="font-weight-bold blurry">R$ 3.480,00</h3>
-                <p class="card-text">Estimativa valor total</p>
-                <h3 class="font-weight-bold blurry">R$ 3.480,00</h3>
-                <a href="#" class="btn btn-secondary btn-block mt-3"><i class="fa fa-print"></i>Orçamento hospitalar</a>
-                <a href="#" class="btn btn-primary btn-block mb-2"><i class="fa fa-plus"></i>Selecionar hospital</a>
-              </div>
+          <div class="col-xs-12 col-lg-4 col-xl-3"> <!-- bloco valores -->
+              <div class="card card-block text-xs-center">
+                  <h4 class="card-title">Total DRC</h4>
+                  <h3 class="font-weight-bold">R$ 3.480,00</h3>
+                  <p class="card-text">Estimativa valor hospital</p>
+                  <h3 class="font-weight-bold blurry">R$ 3.480,00</h3>
+                  <p class="card-text">Estimativa valor total</p>
+                  <h3 class="font-weight-bold blurry">R$ 3.480,00</h3>
+                  <a href="#" class="btn btn-secondary btn-block mt-3"><i class="fa fa-print"></i>Orçamento hospitalar</a>
+                  <a href="#" class="btn btn-primary btn-block mb-2"><i class="fa fa-plus"></i>Selecionar hospital</a>
+                </div>
             </div>
-          </div>
 
-          <!-- blocos textuais com icones fundo cinza -->
 
-        <div class="row">
-            <div class="col-md-8">
-              <div class="card card-block">
+
+        <div class="col-xs-12 col-lg-8">
+               <div class="card card-block">
                 <h4 class="card-title">Dados da Cirurgia</h4>
                 <div class="row">
-                  <div class="col-md-3">
-                    <div class="muted">
+                    <div class="col-xs-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="side-icon-gray">
                         <i class="fa fa-hospital-o fa-2x float-xs-left"></i>
                         <ul class="list-group pl-1">
                           <li class="list-group-item"><label>Label:</label>Cras justo odio</li>
@@ -347,8 +455,8 @@
                         </ul> 
                     </div>
                   </div>
-                  <div class="col-md-3">
-                  <div class="muted">
+                   <div class="col-xs-12 col-md-6 col-lg-6 col-xl-3">
+                  <div class="side-icon-gray">
                       <i class="fa fa-user-md fa-2x float-xs-left"></i>
                       <ul class="list-group pl-1">
                         <li class="list-group-item"><label>Label:</label>Cras justo odio</li>
@@ -357,8 +465,8 @@
                       </ul>
                   </div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="muted">
+                   <div class="col-xs-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="side-icon-gray">
                       <i class="fa fa-calendar fa-2x float-xs-left"></i>
                       <ul class="list-group pl-1">
                         <li class="list-group-item"><label>Label:</label>Cras justo odio</li>
@@ -367,8 +475,8 @@
                       </ul>    
                     </div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="muted">
+                   <div class="col-xs-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="side-icon-gray">
                         <i class="fa fa-calendar-check-o fa-2x float-xs-left"></i>
                         <ul class="list-group pl-1">
                           <li class="list-group-item"><label>Label:</label>Cras justo odio</li>
@@ -379,63 +487,87 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
+          </div>
+          
+        <!-- blocos textuais com icones fundo cinza -->
+
+          <div class="col-xs-12 col-xl-4">
               <div class="card card-block">
                 <h4 class="card-title">Ações</h4>
                 <div class="row">
-                  <div class="col-md-4 pr-0">
-                     <button type="button" class="btn btn-secondary btn-block">Secondary icon</button>
-                     <button type="button" class="btn btn-secondary btn-block">Secondary icon</button>
-                  </div>
-                  <div class="col-md-4">
-                     <button type="button" class="btn btn-secondary btn-block">Secondary icon</button>
-                     <button type="button" class="btn btn-secondary btn-block">Secondary icon</button>  
-                  </div>
-                   <div class="col-md-4 pl-0">
-                     <button type="button" class="btn btn-secondary btn-block">Secondary icon</button>
-                     <button type="button" class="btn btn-secondary btn-block">Secondary icon</button>
-                  </div>
+                    <div class="col-xs-12 col-md-4 col-xl-4">
+                      <button type="button" class="btn btn-secondary btn-block light-text">Liberar Cirurgia</button>
+                   </div>
+                    <div class="col-xs-12 col-md-4 col-xl-4">
+                      <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
+                   </div>
+                   <div class="col-xs-12 col-md-4 col-xl-4">
+                       <button type="button" class="btn btn-secondary btn-block light-text">Consulta Cardiologista</button>
+                   </div>
+                </div>    
+                <div class="row mt-1">
+                    <div class="col-xs-12 col-md-4 col-xl-4">
+                        <button type="button" class="btn btn-secondary btn-block light-text">Finalizar Cirurgia</button>
+                   </div>
+                     <div class="col-xs-12 col-md-4 col-xl-4">
+                       <button type="button" class="btn btn-secondary btn-block light-text">Agendar Cirurgia</button>
+                   </div>
+                   <div class="col-xs-12 col-md-4 col-xl-4">
+                      <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cardiologista</button>
+                   </div>
                 </div>
-
-
-
               </div>
-            </div>
+          </div>
+
+            <!--row-->
         </div>
+
+
+      
 
    <!-- blocos textuais com icones fundo branco -->
 
+
+
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-xs-12 col-lg-6">
               <div class="card card-block">
                 <h4 class="card-title">Pré-Consulta</h4>
-                <div class="row">
-                  <div class="col-md-3">
-                     <i class="fa fa-heartbeat fa-2x"></i>
-                     <label>Sinais Vitais:</label>
-                     Nada Consta
-                  </div>
-                  <div class="col-md-3">
-                    <i class="fa fa-male fa-2x"></i>
-                    <label>Medidas:</label>
-                    Nada Consta
-                  </div>
-                  <div class="col-md-3">
-                    <i class="fa fa-heartbeat fa-2x"></i>
-                    <label>Alergias:</label>
-                    Nada Consta
-                  </div>
-                  <div class="col-md-3">
-                    <i class="fa fa-heartbeat  fa-2x"></i>
-                    <label>Medicamentos em uso:</label>
-                     Nada Consta
-                  </div>
-                </div>
+                  <ul class="row fa-ul pl-1">
+                    <li class="col-xs-12 col-lg-3 pl-0">
+                       <i class="fa-li fa fa-heartbeat fa-2x"></i><label class="bold-block">Sinais Vitais:</label>Nada Consta
+                    </li>
+                    <li class="col-xs-12 col-lg-3 pl-0">
+                        <i class="fa-li fa fa-male fa-2x"></i><label class="bold-block">Medidas:</label>Nada Consta
+                    </li>
+                    <li class="col-xs-12 col-lg-3 pl-0">
+                        <i class="fa-li fa fa-heartbeat fa-2x"></i><label class="bold-block">Alergias:</label>Nada Consta
+                    </li>
+                    <li class="col-xs-12 col-lg-3 pl-0">
+                       <i class="fa-li fa fa-male fa-2x"></i><label class="bold-block">Medicamentos em uso:</label>Nada Consta
+                    </li>
+                  </ul>
               </div>
             </div>
+
         </div>
 
+       <!-- step memnu -->   
+
+        <ul class="step-menu">
+          <li class="step-item">Pré-Consulta</li>
+          <li class="step-item">Anamnese</li>
+          <li class="step-item">Ex. Físico</li>
+          <li class="step-item">Res. Exames</li>
+          <li class="step-item active">Diagnóstico</li>
+          <li class="step-item idle">Conduta</li>
+          <li class="step-item idle">Procedimentos</li>
+          <li class="step-item idle">Sol. Exames</li>
+          <li class="step-item idle">Prescrição</li>
+          <li class="step-item idle">Atestado</li>
+          <li class="step-item idle">Orientações</li>
+          <li class="step-item idle">Encaminhamento</li>
+        </ul>
 
 
       <!-- container-->
