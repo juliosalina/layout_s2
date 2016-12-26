@@ -19,8 +19,8 @@
 
     <!-- Bootsrap With Flexbox Grid -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap-flex.min.css" rel="stylesheet" >
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="flexslider.css">
 
     <style>
 
@@ -90,7 +90,7 @@
         font-size:.8em;
       }
        [class*="col-"] .side-icon-gray i{
-       /* background-color:red;*/
+       margin-top:.7rem;
        }
       .card-primary{
         background-color:#87C3E8;
@@ -143,7 +143,6 @@
         color:#414141;
       }
 
-
       /*texto em desfoque*/
 
       .blurry{
@@ -158,12 +157,12 @@
       }
 
       /*stepmenu*/
-      .step-menu{
+      .step-menu-v{
         width:12.5rem;
         padding:0;
         border-top:.1rem solid #ccc;
       }
-      .step-menu .step-item{
+      .step-menu-v .step-item{
         border-left:.1rem solid #ccc;
         border-right:.1rem solid #ccc;
         list-style-type:none;
@@ -173,16 +172,16 @@
         font-size:.8rem;
         background-color:#F0F0F0;
       }
-      .step-menu .step-item.active{
+      .step-menu-v .step-item.active{
         font-weight:bold;
       }
-      .step-menu .step-item.idle{
+      .step-menu-v .step-item.idle{
         background-color:#DEDEDE;
       }
-      .step-menu .step-item.idle::after{
+      .step-menu-v .step-item.idle::after{
         border-top: 20px solid #DEDEDE;
       }
-      .step-menu .step-item::after{
+      .step-menu-v .step-item::after{
           content: '';
           position: absolute;
           left: 0;
@@ -195,7 +194,7 @@
           clear: both;
           z-index:1;
         }
-        .step-menu .step-item::before{
+        .step-menu-v .step-item::before{
           content: '';
           position: absolute;
           left: 0;
@@ -208,6 +207,48 @@
           clear: both;
           z-index:1;
         }
+        .side-menu i{
+          color:#0092d0;
+        }
+
+        .history-menu{
+          background-color:#3985BD;
+          height:4rem;
+          color:#fff;
+        }
+        .history-menu p{
+          margin-bottom:0;
+          font-size:.9rem;
+          line-height:1rem;
+        }
+        .history-menu .slides li{
+          padding-left:.4rem;
+          height:4rem;
+          border-right:.1rem solid #87C3E8;
+          cursor:pointer;
+
+        }
+        .history-menu .flex-direction-nav li a{
+          background-color:#87C3E8;
+          top:0;
+          height:4rem;
+          width:3rem;
+          margin:0;
+          color:#fff;
+          text-align: center;
+          padding-top:.1rem;
+        }
+        .history-menu .flex-direction-nav .flex-nav-next a{
+          -webkit-box-shadow: -41px 5px 27px -9px rgba(14,80,115,0.71);
+          -moz-box-shadow: -41px 5px 27px -9px rgba(14,80,115,0.71);
+          box-shadow: -41px 5px 27px -9px rgba(14,80,115,0.71);
+        }
+        .history-menu .flex-direction-nav .flex-nav-prev a{
+          -webkit-box-shadow: 43px 5px 27px -9px rgba(14,80,115,0.71);
+          -moz-box-shadow: 43px 5px 27px -9px rgba(14,80,115,0.71);
+          box-shadow: 43px 5px 27px -9px rgba(14,80,115,0.71);
+        }
+
     </style>
   </head>
 
@@ -554,7 +595,7 @@
 
        <!-- step memnu -->   
 
-        <ul class="step-menu">
+        <ul class="step-menu-v">
           <li class="step-item">Pré-Consulta</li>
           <li class="step-item">Anamnese</li>
           <li class="step-item">Ex. Físico</li>
@@ -569,6 +610,130 @@
           <li class="step-item idle">Encaminhamento</li>
         </ul>
 
+        <!-- side menu--><br><br><br>
+
+        <div class="card col-md-3 text-xs-center side-menu">
+          <div class="card-header row">
+            <div class="col-md-2 flex-xs-middle"><i class="fa fa-3x fa-play-circle"></i></div>
+            <div class="col-md-2 flex-xs-middle"><i class="fa fa-3x fa-pause-circle"></i></div>     
+            <div class="col-md-2 flex-xs-middle"><i class="fa fa-3x fa-ban"></i></div>
+            <div class="col-md-6 flex-xs-middle"><h3>11: 11: 11</h3></div>
+          </div>
+          <img src="http://placehold.it/140x140" alt="alt-img" class="rounded-circle mb-1 mt-3">
+          <div class="card-block">
+            <h5 class="card-title">Nome Sobrenome</h5>
+            <p class="card-text"><span>28</span> Anos - Masculino</p>
+
+          </div>
+          <div class="card-block row">
+            <div class="col-md-6"><button type="button" class="btn btn-danger btn-block">Preop Cirurgico</button></div>
+            <div class="col-md-6"><button type="button" class="btn btn-success btn-block">Programa de Saúde</button></div>
+          </div>
+           <ul class="list-group text-xs-left ">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+
+        <br><br><br><br>
+        <!-- slider historico -->
+        <div class="flexslider history-menu col-md-10">
+          <ul class="slides">
+            <li>
+                <b>10 / 11 / 2015</b>
+                <p>Nathalia Naibi Mosqueira</p>
+                <p>Cardiologia</p>
+            </li>
+            <li>
+                <b>12/12/2015</b>
+                <p>alo alo alo alo</p>
+                <p>alo alo alo alo</p>
+            </li>
+            <li>
+                <b>Texto 3</b>
+                <p>alo alo alo alo</p>
+                <p>alo alo alo alo</p>
+            </li>
+            <li>
+                <b>Texto 3</b>
+                <p>alo alo alo alo</p>
+                <p>alo alo alo alo</p>
+            </li>
+            <li>
+                <b>Texto 3</b>
+                <p>alo alo alo alo</p>
+                <p>alo alo alo alo</p>
+            </li>
+            <li>
+                <b>10 / 11 / 2015</b>
+                <p>Nathalia Naibi Mosqueira</p>
+                <p>Cardiologia</p>
+            </li>
+            <li>
+                <b>Texto 3</b>
+                <p>alo alo alo alo</p>
+                <p>alo alo alo alo</p>
+            </li>
+            <li>
+                <b>Texto 3</b>
+                <p>alo alo alo alo</p>
+                <p>alo alo alo alo</p>
+            </li>
+            <li>
+                <b>Texto 3</b>
+                <p>alo alo alo alo</p>
+                <p>alo alo alo alo</p>
+            </li>
+            <li>
+                <b>10 / 11 / 2015</b>
+                <p>Nathalia Naibi Mosqueira</p>
+                <p>Cardiologia</p>
+            </li>
+            <li>
+                <b>Texto 3</b>
+                <p>alo alo alo alo</p>
+                <p>alo alo alo alo</p>
+            </li>
+            <li>
+                <b>Texto 3</b>
+                <p>alo alo alo alo</p>
+                <p>alo alo alo alo</p>
+            </li>
+            <li>
+                <b>Texto 3</b>
+                <p>alo alo alo alo</p>
+                <p>alo alo alo alo</p>
+            </li>
+            <li>
+                <b>10 / 11 / 2015</b>
+                <p>Nathalia Naibi Mosqueira</p>
+                <p>Cardiologia</p>
+            </li>
+            <li>
+                <b>Texto 3</b>
+                <p>alo alo alo alo</p>
+                <p>alo alo alo alo</p>
+            </li>
+            <li>
+                <b>Texto 3</b>
+                <p>alo alo alo alo</p>
+                <p>alo alo alo alo</p>
+            </li>
+            <li>
+                <b>Texto 3</b>
+                <p>alo alo alo alo</p>
+                <p>alo alo alo alo</p>
+            </li>
+            <li>
+                <b>10 / 11 / 2015</b>
+                <p>Nathalia Naibi Mosqueira</p>
+                <p>Cardiologia</p>
+            </li>
+          </ul>
+        </div>
+      
+      <br><br><br><br>
 
       <!-- container-->
 </div>
@@ -577,7 +742,27 @@
       <!-- JS-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+    <!-- sem motivo ainda para estes dois-->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>-->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider.min.js"></script>
+    
+
+    <script>
+      $(window).on('load', function() {
+        $('.flexslider').flexslider({
+          animation: "slide",
+          animationLoop: false,
+          controlNav: false,
+          pauseOnHover: true,
+          itemWidth: 210,
+          itemMargin: 5,
+          touch: true,
+          prevText: "",
+          nextText: ""
+        });
+      });
+    </script>
 
   </body>
 </html>
