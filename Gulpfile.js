@@ -3,7 +3,7 @@ var gulp = require('gulp');
 var gutil = require('gulp-util');
 // Include Our Plugins
 var jshint = require('gulp-jshint');
-var less = require('gulp-less');
+var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
@@ -23,35 +23,22 @@ gulp.task('message', function() {
  * removes css- and js-dist folder.
  */
 gulp.task('clean', function() {
-    rimraf.sync('assets/css'); 
+    rimraf.sync('new/assets/css');
 });
 
 // Compile Our Less
-gulp.task('less1', function() {
-  return gulp.src(['assets/less/style.less'])
+gulp.task('sass', function() {
+  return gulp.src(['new/assets/sass/style.scss'])
     .pipe(plugins.concat('style.css'))
-    .pipe(less().on('error', gutil.log))
+    .pipe(sass().on('error', sass.logError))
     .pipe(cleanCSS())
-    .pipe(gulp.dest('assets/css'));
-});
-
-gulp.task('less2', function() {
-  return gulp.src(['assets/less/icons.less'])
-    .pipe(plugins.concat('icons.css'))
-    .pipe(less().on('error', gutil.log))
-    .pipe(cleanCSS())
-    .pipe(gulp.dest('assets/css'));
-});
-
-gulp.task('less3', function() {
-  return gulp.src(['assets/less/bootstrap.min.css'])
-    .pipe(gulp.dest('assets/css'));
+    .pipe(gulp.dest('new/assets/css'));
 });
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch(['assets/less/*.less'], ['less1', 'less2', 'less3']);
+    gulp.watch(['new/assets/sass/*.scss'], ['sass']);
 });
 
 // Default Task
-gulp.task('default', ['message', 'clean', 'less1', 'less2', 'less3', 'watch']);
+gulp.task('default', ['message', 'clean', 'sass', 'watch']);
