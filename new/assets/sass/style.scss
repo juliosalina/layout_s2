@@ -1,0 +1,13 @@
+@import 'header';
+@import 'menu';
+@import 'content';
+
+body {
+	text-align: left;
+}
+
+#wrapper {
+	height: 100%;
+    overflow: hidden;
+    width: 100%;
+}

@@ -3,19 +3,100 @@
     <head>
         <meta charset="utf-8" />
         <title>Dr. Consulta - S2</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta content="Admin Dashboard" name="description" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <link rel="shortcut icon" href="assets/images/favicon.ico">
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+        <!-- CSS usar somente rem-->
+        <!-- Original Bootstrap -->
+        <!-- O<link href="https://maxcdn.bootstrapcd
+            n.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" rel="stylesheet" >-->
+        <!-- Bootsrap With Flexbox Grid -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap-flex.min.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     </head>
-    <body class="fixed-left">
+    <body class="menu-open">
 
         <!-- Begin page -->
         <div id="wrapper">
 
+            <div class="header">
+                <div class="content-left">
+                    <div class="title-page">Dashboard</div>
+                </div>
+                <div class="content-right">
+                    <div class="search"></div>
+                    <div class="notifi"></div>
+                    <div class="fullscreen"></div>
+                    <div class="perfil">
+                        <div class="photo"></div>
+                        <div class="info">
+                            <div class="name"></div>
+                            <div class="perfil-name"></div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Notifications -->
+                    <ul class="modal-notifi">
+                        <li class="notifi-title">Notificações <span class="badge badge-xs badge-success">3</span></li>
+                        <li class="list-group">
+                           <!-- list item-->
+                           <a href="javascript:void(0);" class="list-group-item">
+                              <div class="media">
+                                 <div class="media-heading">Dummy text of the printing</div>
+                                 <p class="m-0">
+                                   <small>Dummy text of the printing and typesetting industry.</small>
+                                 </p>
+                              </div>
+                           </a>
+                           <!-- list item-->
+                            <a href="javascript:void(0);" class="list-group-item">
+                              <div class="media">
+                                 <div class="media-body clearfix">
+                                    <div class="media-heading">Dummy text of the printing</div>
+                                    <p class="m-0">
+                                       <small>Dummy text of the printing and typesetting industry.</small>
+                                    </p>
+                                 </div>
+                              </div>
+                            </a>
+                            <!-- list item-->
+                            <a href="javascript:void(0);" class="list-group-item">
+                              <div class="media">
+                                 <div class="media-body clearfix">
+                                    <div class="media-heading">Dummy text of the printing</div>
+                                    <p class="m-0">
+                                       <small>Dummy text of the printing and typesetting industry.</small>
+                                    </p>
+                                 </div>
+                              </div>
+                            </a>
+                           <!-- last list item -->
+                            <a href="javascript:void(0);" class="list-group-item">
+                              <small class="text-primary">Ver todas as notificações</small>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Modal Perfil -->
+                    <ul class="modal-perfil">
+                        <li><a href="javascript:void(0)"> Configurações</a></li>
+                        <li class="divider"></li>
+                        <li><a href="javascript:void(0)"> Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="menu"></div>
+
+            <div class="container-fluid"></div>
+
+        </div>
+
+
+
+        <div id="wrapperrrr">
             <!-- Top Bar Start -->
             <div class="topbar">
                 <!-- LOGO -->
