@@ -74,21 +74,22 @@
         right:1rem;
         top:2.5rem;
       }
-
-      //listas
-
-
-      .list-group .list-group-item{
-        border:0;
-        padding: 0 1.25rem;
-        font-size:.9em;
-        background:transparent;
-          label{
-          font-weight:bold;
-          margin-bottom:0;
-          margin-right:0.25rem;
+      .card{
+         //listas
+        .list-group .list-group-item{
+          border:0;
+          padding: 0 1.25rem;
+          font-size:.8em;
+          background:transparent;
+            label{
+            font-weight:bold;
+            margin-bottom:0;
+            margin-right:0.25rem;
+          }
         }
       }
+
+ 
 
       //tabs
 
@@ -122,10 +123,18 @@
       .pl-05-md{
         padding-left:.5rem
       }
-      //sides
+      //left e right
+      .plr-05-md{
+        padding-right:.5rem;
+        padding-left:.5rem
+      }
+      //sides 0
       .ps-0{
         padding-left:0;
         padding-right:0;
+      }
+      .mb-05{
+        margin-bottom:.5em;
       }
 
 
