@@ -1,0 +1,101 @@
+      .btn{
+        font-weight:bold;
+        border-radius:. 2rem;
+         i{
+          padding-right:.5rem;
+        }
+      }
+
+      .btn-primary{
+        background-color:#FF9F4F;
+        border:0;
+        border-top: solid .2rem  #FE7D19;
+        &:hover{
+        background-color:#FE7D19;
+        border-top: solid .2rem  #FE7D19;
+       }
+      }
+
+      .btn-secondary{
+        background-color:#212E3A;
+        border:0;
+        border-top: solid .2rem #333E49;
+        color:#FFF;
+      }
+
+      [class*="col-"] .light{
+        background-color:#FFF;
+        /*TODO CRIAR MIXIN PARA SOMBRAS*/
+        -webkit-box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
+        -moz-box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
+        box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
+      }
+
+      [class*="col-"] .side-icon-gray{
+        background-color:#F5F5F5;
+        border:1px solid #EFEEEE;
+        padding:1rem .5rem;
+        font-size:.8em;
+          i{
+             margin-top:.7rem;
+           }
+        }
+      }
+
+
+      .card-primary{
+        background-color:#87C3E8;
+        border:0;
+        background-color:#87C3E8;
+        -webkit-box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
+        -moz-box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
+        box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
+        color:#fff;
+        .card-header{
+          background-color:#0092D0;
+          color:#fff;
+          padding: 0.25rem 1rem;
+         }
+      }
+
+      .list-group .list-group-item{
+        border:0;
+        padding: 0 1.25rem;
+        font-size:.9em;
+        background:transparent;
+          label{
+          font-weight:bold;
+          margin-bottom:0;
+          margin-right:0.25rem;
+        }
+      }
+
+      .bold-block{
+        font-weight:bold;
+        display:block;
+        margin-bottom:0;
+      }
+      .light-text{
+        font-weight:normal;
+        font-size: 0.8rem;
+      }
+ 
+      .nav-tabs .nav-link{
+        margin-right:.1rem;
+        border-right:.1rem solid #ccc;
+        border-left:.1rem solid #ccc;
+        border-top:.1rem solid #ccc;
+        color:#414141;
+        &.active{
+          border-top:.2rem solid #0092D0;
+        }
+      }
+      .list-group .list-group-item {
+        padding:0;
+      }
+
+      .card-block .block-item{
+        position:absolute;
+        right:1rem;
+        top:2.5rem;
+      }

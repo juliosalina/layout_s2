@@ -10,121 +10,10 @@
 
     <title>Titulo</title>
 
-    <!-- CSS usar somente rem-->
-
-
-    <!-- Original Bootstrap -->
-    <!-- O<link href="https://maxcdn.bootstrapcd
-    n.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" rel="stylesheet" >-->
-
-    <!-- Bootsrap With Flexbox Grid -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap-flex.min.css" rel="stylesheet" >
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="flexslider.css">
     <link rel="stylesheet" href="style.css">
-    <style>
-
-
-      /*incorporar no bootstrap*/
-
-      .btn-primary{
-        background-color:#FF9F4F;
-        border:0;
-        border-top: solid .2rem  #FE7D19;
-      }
-      .btn-primary:hover{
-        background-color:#FE7D19;
-        border-top: solid .2rem  #FE7D19;
-      }
-      .btn{
-        font-weight:bold;
-        border-radius:.2rem;
-      }
-      .btn i{
-        padding-right:.5rem;
-      }
-      .btn-secondary{
-        background-color:#212E3A;
-        border:0;
-        border-top: solid .2rem #333E49;
-        color:#FFF;
-      }
-      [class*="col-"] .light{
-        background-color:#FFF;
-        /*TODO CRIAR MIXIN PARA SOMBRAS*/
-        -webkit-box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
-        -moz-box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
-        box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
-      }
-      [class*="col-"] .side-icon-gray{
-        background-color:#F5F5F5;
-        border:1px solid #EFEEEE;
-        padding:1rem .5rem;
-        font-size:.8em;
-      }
-       [class*="col-"] .side-icon-gray i{
-       margin-top:.7rem;
-       }
-      .card-primary{
-        background-color:#87C3E8;
-        border:0;
-        background-color:#87C3E8;
-        -webkit-box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
-        -moz-box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
-        box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
-        color:#fff;
-      }
-      .card-primary .card-header{
-        background-color:#0092D0;
-        padding: 0.25rem 1rem;
-      }
-      .card-secondary .card-header{
-        background-color:#0092D0;
-        color:#fff;
-        padding: 0.25rem 1rem;
-      }
-
-      .list-group .list-group-item{
-        border:0;
-        padding: 0 1.25rem;
-        font-size:.9em;
-        background:transparent;
-      }
-      .list-group .list-group-item label{
-        font-weight:bold;
-        margin-bottom:0;
-        margin-right:0.25rem;
-      }
-
-      .bold-block{
-        font-weight:bold;
-        display:block;
-        margin-bottom:0;
-      }
-      .light-text{
-        font-weight:normal;
-        font-size: 0.8rem;
-      }
-      .nav-tabs .nav-link.active{
-        border-top:.2rem solid #0092D0;
-      }
-      .nav-tabs .nav-link{
-        margin-right:.1rem;
-        border-right:.1rem solid #ccc;
-        border-left:.1rem solid #ccc;
-        border-top:.1rem solid #ccc;
-        color:#414141;
-      }
-      .list-group .list-group-item {
-        padding:0;
-      }
-
-      .card-block .block-item{
-        position:absolute;
-        right:1rem;
-        top:2.5rem;
-      }
-    </style>
   </head>
 
   <body>
@@ -223,9 +112,15 @@
             <div class="col-md-4">
               <div class="card card-block">
                 <h4 class="card-title">Card title</h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                 <button type="button" class="btn btn-primary btn-block"><i class="fa fa-plus"></i>Primary icon</button>
-                 <button type="button" class="btn btn-secondary btn-block"><i class="fa fa-print"></i>Secondary icon</button>
+                <div class="row">
+                <div class="col-md-12 mb-1">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
+                  <div class="col-xs-12 col-md-6">
+                    <button type="button" class="btn btn-primary btn-block"><i class="fa fa-usd"></i>Cobrança</button> 
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                   <button type="button" class="btn btn-secondary btn-block"><i class="fa fa-print"></i>Recibo</button> 
+                  </div>
+                </div>
               </div>
             </div>
             
@@ -244,7 +139,7 @@
                       <i class="fa fa-eye fa-lg"></i>
                   </div>
                 
-                  <div class="col-xs-3 pr-0">
+                  <div class="col-xs-3">
                     <img src="http://placehold.it/140x140" alt="alt-img" class="rounded-circle" width="100%">
                   </div> 
 
@@ -306,41 +201,36 @@
 
                 <!-- table -->
 
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>First Name</th>
-                      <th>Last Name</th>
-                      <th>Username</th>
+                <table class="table col-md-12">
+                  <thead class="col-md-12">
+                    <tr class="col-md-12">
+                      <th class="col-md-1">#</th>
+                      <th class="col-md-7">First Name</th>
+                      <th class="col-md-2">Last Name</th>
+                      <th class="col-md-2">Username</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
+                  <tbody class="col-md-12">
+                    <tr class="col-md-12">
+                      <th class="col-md-1">1</th>
+                      <td class="col-md-7">Mark</td>
+                      <td class="col-md-2">Otto</td>
+                      <td class="col-md-2">@mdo</td>
                     </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
+                    <tr class="col-md-12">
+                      <th class="col-md-1">2</th>
+                      <td class="col-md-7">Mark</td>
+                      <td class="col-md-2">Otto</td>
+                      <td class="col-md-2">@mdo</td>
                     </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
+                    <tr class="col-md-12">
+                      <th class="col-md-1">3</th>
+                      <td class="col-md-7">Mark</td>
+                      <td class="col-md-2">Otto</td>
+                      <td class="col-md-2">@mdo</td>
                     </tr>
                   </tbody>
-                  <tfoot>
-                      <td></td>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                  </tfoot>
+ 
                 </table>
 
               </div>
