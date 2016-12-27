@@ -12,18 +12,17 @@ var plugins = require('gulp-load-plugins')();
 var cleanCSS = require('gulp-clean-css');
 var rimraf = require('rimraf');
 
-
-gulp.task('message', function() {
-    console.log('------------------------------------------------------------------------');
-    console.log('Dr. Consulta - Sistema S2 - Novo Layout - [--Starting Automator tasks--]');
-    console.log('------------------------------------------------------------------------');
-});
-
 /**
  * removes css- and js-dist folder.
  */
 gulp.task('clean', function() {
     rimraf.sync('new/assets/css');
+});
+
+gulp.task('message', function() {
+    console.log('------------------------------------------------------------------------');
+    console.log('Dr. Consulta - Sistema S2 - Novo Layout - [--Starting Automator tasks--]');
+    console.log('------------------------------------------------------------------------');
 });
 
 // Compile Our Less
@@ -35,10 +34,17 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('new/assets/css'));
 });
 
+gulp.task('sass-icons', function() {
+  return gulp.src(['new/assets/sass/icons.scss'])
+    .pipe(plugins.concat('icons.css'))
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('new/assets/css'));
+});
+
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch(['new/assets/sass/*.scss'], ['sass']);
 });
 
 // Default Task
-gulp.task('default', ['message', 'clean', 'sass', 'watch']);
+gulp.task('default', ['message', 'clean', 'sass', 'sass-icons', 'watch']);
