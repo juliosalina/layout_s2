@@ -1,27 +1,31 @@
+      
+      //buttons
+
       .btn{
         font-weight:bold;
         border-radius: .2rem;
          i{
           padding-right:.5rem;
         }
-      }
-
-      .btn-primary{
+        &.btn-primary{
         background-color:#FF9F4F;
         border:0;
         border-top: solid .2rem  #FE7D19;
-        &:hover{
-        background-color:#FE7D19;
-        border-top: solid .2rem  #FE7D19;
        }
+       &.btn-secondary{
+          background-color:#212E3A;
+          border:0;
+          border-top: solid .2rem #333E49;
+          color:#FFF;
+        }
+         &:hover{
+          //TODO MIXIN PARA SHADOWS
+          opacity:0.7
+         }
       }
 
-      .btn-secondary{
-        background-color:#212E3A;
-        border:0;
-        border-top: solid .2rem #333E49;
-        color:#FFF;
-      }
+
+      //classes para grid
 
       [class*="col-"] .light{
         background-color:#FFF;
@@ -41,8 +45,9 @@
            }
       }
 
+      //cards/blocos
 
-      .card{
+      .card-primary{
         background-color:#87C3E8;
         border:0;
         background-color:#87C3E8;
@@ -56,6 +61,22 @@
           padding: 0.25rem 1rem;
          }
       }
+      .card-secondary{
+          .card-header{
+          background-color:#0092D0;
+          color:#fff;
+          padding: 0.25rem 1rem;
+         }
+      }
+
+      .card-block .block-item{
+        position:absolute;
+        right:1rem;
+        top:2.5rem;
+      }
+
+      //listas
+
 
       .list-group .list-group-item{
         border:0;
@@ -69,16 +90,8 @@
         }
       }
 
-      .bold-block{
-        font-weight:bold;
-        display:block;
-        margin-bottom:0;
-      }
-      .light-text{
-        font-weight:normal;
-        font-size: 0.8rem;
-      }
- 
+      //tabs
+
       .nav-tabs .nav-link{
         margin-right:.1rem;
         border-right:.1rem solid #ccc;
@@ -89,12 +102,38 @@
           border-top:.2rem solid #0092D0;
         }
       }
-      .list-group .list-group-item {
-        padding:0;
+
+      //avulsas helpers
+
+      .bold-block{
+        font-weight:bold;
+        display:block;
+        margin-bottom:0;
+      }
+      .light-text{
+        font-weight:normal;
+        font-size: 0.8rem;
+      }
+      //right
+      .pr-05-md{
+        padding-right:.5rem;
+      }
+      //left
+      .pl-05-md{
+        padding-left:.5rem
+      }
+      //sides
+      .ps-0{
+        padding-left:0;
+        padding-right:0;
       }
 
-      .card-block .block-item{
-        position:absolute;
-        right:1rem;
-        top:2.5rem;
+
+    @media (max-width: 540px) {
+      .pl-05-md{
+        padding-left:1rem
       }
+      .pr-05-md{
+        padding-right:1rem
+      }
+    }
