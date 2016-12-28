@@ -49,6 +49,16 @@ a {
   }
 }
 
+.img-circle {
+  border-radius: 50%;
+}
+
+.dropdown-toggle {
+  &::after {
+    display: none !important;
+  }
+}
+
 /*desfoque*/
 
 .blurry{
