@@ -1,5 +1,80 @@
 #wrapper {
 	.menu {
-		font-size: 14px;
+		width: 15rem;
+		background-color: $white-color;
+		height: 100%;
+		display: block;
+		position: absolute;
+		box-shadow: 0 1px 3px rgba(0,0,0,.15);
+
+		&.toggle-close {
+			width: 4.438rem;
+			-webkit-transition: .5s; 
+			transition:.5s;
+		}
+
+		&.toggle-open {
+			width: 15rem;
+			-webkit-transition: .5s; 
+			transition:.5s;
+		}
+
+		.title-page {
+			font-size: 1.3rem;
+			color: $white-color;
+			font-weight: 700;
+			-webkit-font-smoothing: antialiased;
+			position: absolute;
+			top: 1.0rem;
+    		left: 19rem;
+
+    		&.toggle-close {
+				left: 8.7rem;
+				-webkit-transition: .5s; 
+				transition:.5s;
+			}
+
+			&.toggle-open {
+				left: 19rem;
+				-webkit-transition: .5s;
+				transition:.5s;
+			}
+		}
+
+		.menu-button {
+		    background: #5091cd;
+		    border: none;
+		    color: rgba(255,255,255,.8);
+		    font-size: 1.375rem;
+		    height: 2.625rem;
+		    width: 2.625rem;
+		    border-radius: 50%;
+		    top: 0.6875rem;
+    		left: 15.69rem;
+		    z-index: 999;
+		    position: absolute;
+
+		   	&.toggle-close {
+				left: 5.4rem;
+				-webkit-transition: .5s; 
+				transition:.5s;
+			}
+
+			&.toggle-open {
+				left: 15.69rem;
+				-webkit-transition: .5s; 
+				transition:.5s;
+			}
+
+		    &:hover {
+		    	color: $white-color;
+		    }
+
+		    i {
+		    	left: 0.6875rem;
+    			position: relative;
+    			top: 0.3125rem;
+		    }
+		}
 	}
 }
