@@ -36,10 +36,14 @@ a {
   }
 }
 
-#wrapper {
-  height: 100%;
-  overflow: hidden;
-  width: 100%;
+.img-circle {
+  border-radius: 50%;
+}
+
+.dropdown-toggle {
+  &::after {
+    display: none !important;
+  }
 }
 
 /*desfoque*/
