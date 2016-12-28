@@ -88,7 +88,7 @@
         .list-group .list-group-item{
           border:0;
           padding: 0 1.25rem;
-          font-size:.8em;
+          font-size:.7rem;
           background:transparent;
             label{
             font-weight:bold;
@@ -104,10 +104,12 @@
 
       .nav-tabs .nav-link{
         margin-right:.1rem;
-        border-right:.1rem solid #ccc;
-        border-left:.1rem solid #ccc;
-        border-top:.1rem solid #ccc;
+        border-right:.1rem solid #FCFBFB;
+        border-left:.1rem solid #FCFBFB;
+        border-top:.1rem solid #FCFBFB;
         color:#414141;
+        font-weight:bold;
+        background-color:#FCFBFB;
         &.active{
           border-top:.2rem solid #0092D0;
         }
@@ -164,6 +166,9 @@
       }
       .brd-r{
         border-right:1px solid $gray;
+      }
+      .brd-0{
+        border:0;
       }
 
     @media (max-width: 540px) {
