@@ -9,6 +9,7 @@
 body {
 	font-family: 'PT Sans Caption',sans-serif;
   font-size: 14px;
+  background-color:#F5F5F5;
 }
 
 #wrapper {
@@ -24,9 +25,6 @@ body {
 
 /*global*/
 
-body{
-  background-color:#F5F5F5;
-}
 ul{
   margin:0;
   padding:0;
@@ -78,11 +76,11 @@ user-select: none;
 width:12.5rem;
 padding:0;
 border-top:.1rem solid #ccc;
-  .step-item{
+ .step-item{
   border-left:.1rem solid #ccc;
   border-right:.1rem solid #ccc;
   list-style-type:none;
-  padding-top:1.5rem;
+  padding-top:2rem;
   text-align:center;
   position:relative;
   font-size:.8rem;
