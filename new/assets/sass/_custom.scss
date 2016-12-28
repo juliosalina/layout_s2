@@ -53,6 +53,22 @@
              margin-top:.7rem;
            }
       }
+      //sem padding para col filhos de row
+      .row{
+        &.no-pad{
+          [class*="col-"]{
+             padding:0;
+          }
+        }
+        // &.no-h-pad{
+        //    [class*="col-"]{
+        //     padding-left:0;
+        //     padding-right:0;
+        //    }
+        // }
+      }
+
+
 
       //cards/blocos
 
@@ -60,9 +76,6 @@
         background-color:#87C3E8;
         border:0;
         background-color:#87C3E8;
-        -webkit-box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
-        -moz-box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
-        box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
         color:#fff;
         .card-header{
           background-color:#0092D0;
@@ -84,6 +97,9 @@
         top:2.5rem;
       }
       .card{
+        border:0;
+        @include shadow(2px 2px 3px 0px $gray);
+        
          //listas
         .list-group .list-group-item{
           border:0;
