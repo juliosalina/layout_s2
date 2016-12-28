@@ -6,7 +6,6 @@
 @import 'content';
 @import 'custom';
 
-
 body {
 	font-family: 'PT Sans Caption',sans-serif;
   font-size: 14px;
@@ -18,36 +17,10 @@ body {
   width: 100%;
 }
 
-//variables
-
-
-  /*drc brandbook colors
-
-  $drc-dark-blue : #1165a6;
-  $drc-medium-blue : #33a3dc;
-  $drc-light-blue : #8ad0c5;
-  $drc-lighter-blue: #e4f1fc;
-
-  $drc-dark-gray : #65656a;
-  $drc-medium-gray : #8b8b90;
-  $drc-light-gray: #c8c8ce;
-
-  $drc-yellow: #ffcc32;
-  $drc-orange: #f89e55;*/
-
-  $blue:#59A1DB;
-
-  $gray:#EFEEEE;
-
-  
-
-
-  //cores class
+//cores class
 .drc-azul-1{
   background-color:$drc-azul;
 }
-
-
 
 /*global*/
 
@@ -60,6 +33,20 @@ ul{
 }
 li{
   list-style-type:none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+* {
+  outline: 0;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 /*desfoque*/
