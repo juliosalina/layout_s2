@@ -28,11 +28,18 @@
          }
       }
 
-
       //classes para grid
 
-      .row .row{
-        margin:0;
+      //sem padding para col filhos de row
+      .row{
+        &.no-pad{
+          [class*="col-"]{
+             padding:0;
+          }
+        }
+        .row{
+           margin:0;
+        }
       }
 
       [class*="col-"] .light{
@@ -53,21 +60,6 @@
              margin-top:.7rem;
            }
       }
-      //sem padding para col filhos de row
-      .row{
-        &.no-pad{
-          [class*="col-"]{
-             padding:0;
-          }
-        }
-        // &.no-h-pad{
-        //    [class*="col-"]{
-        //     padding-left:0;
-        //     padding-right:0;
-        //    }
-        // }
-      }
-
 
 
       //cards/blocos
@@ -99,7 +91,6 @@
       .card{
         border:0;
         @include shadow(2px 2px 3px 0px $gray);
-        
          //listas
         .list-group .list-group-item{
           border:0;
@@ -112,14 +103,17 @@
             margin-right:0.25rem;
           }
         }
+        &.no-shadow{
+           @include shadow(none);
+        }
       }
 
- 
 
       //tabs
 
       .nav-tabs .nav-link{
         margin-right:.1rem;
+        margin-left:0;
         border-right:.1rem solid #FCFBFB;
         border-left:.1rem solid #FCFBFB;
         border-top:.1rem solid #FCFBFB;
@@ -130,10 +124,16 @@
           border-top:.2rem solid #0092D0;
         }
       }
+      .card-header-tabs{
+        margin-left:-1.25rem;
+      }
 
       //avulsas helpers
 
-
+      //flex
+      .flex-items-xs-middle{
+        display:flex;
+      }
       //fontes
 
       .bold-block{
