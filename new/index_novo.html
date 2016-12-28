@@ -24,81 +24,47 @@
     <!-- Begin page -->
     <div id="wrapper">
         <div class="header row flex-items-xs-middle">
-            <div class="content-left col-xs-6">
+            <div class="content-left col-xs-4">
                 <div class="title-page">Dashboard</div>
             </div>
-            <div class="content-right col-xs-6">
+            <div class="content-right col-xs-8">
                 <div class="row flex-items-xs-middle">
-                    <div class="search col-xs-2">
-                        <form class="navbar-form pull-left" role="search">
-                            <div class="form-group"> 
-                               <input type="text" class="form-control search-bar empty" id="iconified" placeholder="&#xF002;"/>
-                            </div>
-                            <button type="submit" class="btn btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
-                        </form>
-                    </div>
-                    <div class="notifi dropdown col-xs-2">
-                        <a href="#" data-target="#" class="dropdown-toggle waves-effect waves-light notification-icon-box" data-toggle="dropdown" aria-expanded="true">
-                            <i class="fa fa-bell"></i> <span class="badge badge-xs badge-danger"></span>
-                        </a>
-                        <!-- Modal Notifications -->
-                        <ul class="modal-notifi dropdown-menu dropdown-menu-lg">
-                            <li class="notifi-title">Notificações <span class="badge badge-xs badge-success">3</span></li>
-                            <li class="list-group">
-                                <!-- list item-->
-                                <a href="javascript:void(0);" class="list-group-item">
-                                    <div class="media">
-                                        <div class="media-heading">Dummy text of the printing</div>
-                                        <p class="m-0">
-                                            <small>Dummy text of the printing and typesetting industry.</small>
-                                        </p>
-                                    </div>
-                                </a>
-                                <!-- list item-->
-                                <a href="javascript:void(0);" class="list-group-item">
-                                    <div class="media">
-                                        <div class="media-body clearfix">
-                                            <div class="media-heading">Dummy text of the printing</div>
-                                            <p class="m-0">
-                                                <small>Dummy text of the printing and typesetting industry.</small>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- list item-->
-                                <a href="javascript:void(0);" class="list-group-item">
-                                    <div class="media">
-                                        <div class="media-body clearfix">
-                                            <div class="media-heading">Dummy text of the printing</div>
-                                            <p class="m-0">
-                                                <small>Dummy text of the printing and typesetting industry.</small>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- last list item -->
-                                <a href="javascript:void(0);" class="list-group-item">
-                                    <small class="text-primary">Ver todas as notificações</small>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="fullscreen col-xs-2"></div>
-                    <div class="perfil col-xs-6">
-                        <div class="photo"></div>
-                        <div class="info">
-                            <div class="name"></div>
-                            <div class="perfil-name"></div>
+                    <div class="col-xs-12 text-xs-right">
+                        <div class="search">
+                            <form class="navbar-form pull" role="search">
+                                <div class="form-group"> 
+                                   <input type="text" class="form-control search-bar empty" id="iconified" placeholder="&#xF002;"/>
+                                </div>
+                                <button type="submit" class="btn btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                        <div class="notifi">
+                            <a href="#" data-target="#" class="dropdown-toggle waves-effect waves-light notification-icon-box" data-toggle="dropdown" aria-expanded="true">
+                                <i class="fa fa-bell"></i> <span class="badge badge-xs badge-danger"></span>
+                            </a>
+                        </div>
+                        <div class="fullscreen">
+                            <a href="#" id="btn-fullscreen" class="waves-effect waves-light notification-icon-box">
+                                <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="perfil dropdown">
+                            <a href="" class="dropdown-toggle profile waves-effect waves-light" data-toggle="dropdown" aria-expanded="true">
+                                <img src="assets/images/users/foto_perfil.jpg" alt="user-img" class="img-circle">
+                                <span class="profile-username">
+                                    Eduardo Cavalcante <br/>
+                                    <small>Administrador</small>
+                                </span>
+                            </a>
+                            <!-- Modal Perfil -->
+                            <ul class="modal-perfil dropdown-menu">
+                                <li><a href="javascript:void(0)"> Configurações</a></li>
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0)"> Sair</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <!-- Modal Perfil -->
-                <ul class="modal-perfil" style="display: none;">
-                    <li><a href="javascript:void(0)"> Configurações</a></li>
-                    <li class="divider"></li>
-                    <li><a href="javascript:void(0)"> Sair</a></li>
-                </ul>
-
             </div>
         </div>
         <div class="menu"></div>
