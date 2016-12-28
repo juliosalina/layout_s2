@@ -28,11 +28,18 @@
          }
       }
 
-
       //classes para grid
 
-      .row .row{
-        margin:0;
+      //sem padding para col filhos de row
+      .row{
+        &.no-pad{
+          [class*="col-"]{
+             padding:0;
+          }
+        }
+        .row{
+           margin:0;
+        }
       }
 
       [class*="col-"] .light{
@@ -54,15 +61,13 @@
            }
       }
 
+
       //cards/blocos
 
       .card-primary{
         background-color:#87C3E8;
         border:0;
         background-color:#87C3E8;
-        -webkit-box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
-        -moz-box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
-        box-shadow: 0px 2px 3px 0px rgba(110,110,110,1);
         color:#fff;
         .card-header{
           background-color:#0092D0;
@@ -84,6 +89,8 @@
         top:2.5rem;
       }
       .card{
+        border:0;
+        @include shadow(2px 2px 3px 0px $gray);
          //listas
         .list-group .list-group-item{
           border:0;
@@ -96,14 +103,17 @@
             margin-right:0.25rem;
           }
         }
+        &.no-shadow{
+           @include shadow(none);
+        }
       }
 
- 
 
       //tabs
 
       .nav-tabs .nav-link{
         margin-right:.1rem;
+        margin-left:0;
         border-right:.1rem solid #FCFBFB;
         border-left:.1rem solid #FCFBFB;
         border-top:.1rem solid #FCFBFB;
@@ -114,10 +124,16 @@
           border-top:.2rem solid #0092D0;
         }
       }
+      .card-header-tabs{
+        margin-left:-1.25rem;
+      }
 
       //avulsas helpers
 
-
+      //flex
+      .flex-items-xs-middle{
+        display:flex;
+      }
       //fontes
 
       .bold-block{

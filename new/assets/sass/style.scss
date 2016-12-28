@@ -12,20 +12,9 @@ body {
   background-color:#F5F5F5;
 }
 
-#wrapper {
-	height: 100%;
-  overflow: hidden;
-  width: 100%;
-}
-
-//cores class
-.drc-azul-1{
-  background-color:$drc-azul;
-}
-
 /*global*/
 
-ul{
+ul,label{
   margin:0;
   padding:0;
 }
