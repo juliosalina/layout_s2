@@ -1,5 +1,22 @@
 #wrapper {
 	.container-fluid {
-		font-size: 12px;
+		width: 100%;
+		position: relative;
+		display: block;
+		z-index: 10;
+		margin: 0;
+		padding: 0;
+		.content {
+			width: 100%;
+			position: relative;
+			padding-left: 56px;
+			display: block;
+			padding-top: 64px;
+
+			.content-header {
+				background-color: $blue-header;
+				height: 120px;
+			}
+		}
 	}
 }
