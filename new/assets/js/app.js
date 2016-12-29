@@ -1,6 +1,28 @@
+/**
+ * General Config`s System S2
+ * 
+ * Dependencies:
+ *   - jQuery 1.3.2 (or newer)
+ *
+ * Company: Dr. Consulta
+ */
+
+var $menu = $('.itens-menu'),
+    $search = $('#iconified'),
+    $menuButton = $('.menu-button'),
+    $body = $('body'),
+    $menuFundo = $('.menu-fundo'),
+    $titlePage = $('.title-page'),
+    $logo = $('.logo a img'),
+    $menuItem = $('#sidebar-menu a'),
+    $userDetails = $('.user-details');
+
+/*********************************************************
+Initialize document and add scroll to side menu
+*********************************************************/
 $(document).ready(function() {
     //slimscroll menu lateral
-    $('.itens-menu').slimScroll({
+    $menu.slimScroll({
         height: 'auto',
         position: 'right',
         size: "7px",
@@ -9,46 +31,75 @@ $(document).ready(function() {
     });
 });
 
+var addOrRemoveClass = function(element, className, type) {
+    var action = (type === 'add') ? element.addClass(className) : element.removeClass(className);
+};
+
 //menu busca icone lupa
-$('#iconified').on('keyup', function() {
-    var input = $(this);
-    if (input.val().length === 0) {
-        input.addClass('empty');
+$search.on('keyup', function() {
+    var $input = $(this);
+    if ($input.val().length === 0) {
+        addOrRemoveClass($input, 'empty', 'add');
     } else {
-        input.removeClass('empty');
+        addOrRemoveClass($input, 'empty', 'remove');
     }
 });
 
 //click menu close/open
-$('.menu-button').on('click', function() {
-    if ($('body').hasClass('menu-open')) {
-        $('body').removeClass('menu-open');
-        $('body').addClass('menu-close');
-        $('.menu-fundo').removeClass('toggle-open');
-        $('.menu-fundo').addClass('toggle-close');
-        $('.menu-button').removeClass('toggle-open');
-        $('.menu-button').addClass('toggle-close');
-        $('.title-page').removeClass('toggle-open');
-        $('.title-page').addClass('toggle-close');
+$menuButton.on('click', function() {
+    if ($body.hasClass('menu-open')) {
 
-        $('.logo a img').attr('src', 'assets/images/logom.jpg');
+        var menuElements = $('#sidebar-menu li.has_sub').find('a');
 
-        $('.itens-menu').slimScroll({destroy: true});
+        for(var i=0; i<menuElements.length; i++) {
+            if($(menuElements[i]).hasClass('subdrop')) {
+                $(menuElements[i]).removeClass('subdrop');
+                $(menuElements[i]).next("ul").slideUp(100);
+                $('.pull-right i', $(menuElements[i]).parent()).removeClass("fa-minus").addClass("fa-plus");
+            }
+        }
+
+        $userDetails.fadeOut(100);
+        $menu.fadeOut(100);
+        $logo.fadeOut(100, function() {
+            $logo.attr('src', 'assets/images/logom.jpg');
+            addOrRemoveClass($body, 'menu-open', 'remove');
+            addOrRemoveClass($body, 'menu-close', 'add');
+            addOrRemoveClass($menuFundo, 'toggle-open', 'remove');
+            addOrRemoveClass($menuFundo, 'toggle-close', 'add');
+            addOrRemoveClass($menuButton, 'toggle-open', 'remove');
+            addOrRemoveClass($menuButton, 'toggle-close', 'add');
+            addOrRemoveClass($titlePage, 'toggle-open', 'remove');
+            addOrRemoveClass($titlePage, 'toggle-close', 'add');
+
+            $logo.fadeIn(600);
+            $menu.fadeIn(600);
+            $menu.slimScroll({destroy: true});
+
+            $('.itens-menu .slimScrollBar').remove();
+            $('.itens-menu .slimScrollRail').remove();
+        });
 
     } else {
-        $('body').removeClass('menu-close');
-        $('body').addClass('menu-open');
-        $('.menu-fundo').removeClass('toggle-close');
-        $('.menu-fundo').addClass('toggle-open');
-        $('.menu-button').removeClass('toggle-close');
-        $('.menu-button').addClass('toggle-open');
-        $('.title-page').removeClass('toggle-close');
-        $('.title-page').addClass('toggle-open');
 
-        $('.logo a img').attr('src', 'assets/images/logo.jpg');
+        $menu.fadeOut(100);
+        $logo.fadeOut(100, function() {
+            $logo.attr('src', 'assets/images/logo.jpg');
+            addOrRemoveClass($body, 'menu-close', 'remove');
+            addOrRemoveClass($body, 'menu-open', 'add');
+            addOrRemoveClass($menuFundo, 'toggle-close', 'remove');
+            addOrRemoveClass($menuFundo, 'toggle-open', 'add');
+            addOrRemoveClass($menuButton, 'toggle-close', 'remove');
+            addOrRemoveClass($menuButton, 'toggle-open', 'add');
+            addOrRemoveClass($titlePage, 'toggle-close', 'remove');
+            addOrRemoveClass($titlePage, 'toggle-open', 'add');
 
-        //slimscroll menu lateral
-        $('.itens-menu').slimScroll({
+            $userDetails.fadeIn(600);
+            $menu.fadeIn(600);
+            $logo.fadeIn(600);
+        });
+        
+        $menu.slimScroll({
             height: 'auto',
             position: 'right',
             size: "7px",
@@ -61,30 +112,29 @@ $('.menu-button').on('click', function() {
 //click menu submenu
 var menuItemClick = function(e) {
 
-    if(!$('body').hasClass('menu-close')) {
+    if(!$body.hasClass('menu-close')) {
         var $this = e;
-        if($(this).parent().hasClass("has_sub")) {
+        if($(this).parent().hasClass('has_sub')) {
             e.preventDefault();
         }
-        if (!$(this).hasClass("subdrop")) {
+        if (!$(this).hasClass('subdrop')) {
             // hide any open menus and remove all other classes
-            $("ul", $(this).parents("ul:first")).slideUp(350);
-            $("a", $(this).parents("ul:first")).removeClass("subdrop");
-            $("#sidebar-menu .pull-right i").removeClass("fa-minus").addClass("fa-plus");
+            $('ul', $(this).parents('ul:first')).slideUp(350);
+            $('a', $(this).parents('ul:first')).removeClass('subdrop');
+            $('#sidebar-menu .pull-right i').removeClass('fa-minus').addClass('fa-plus');
 
             // open our new menu and add the open class
-            $(this).next("ul").slideDown(350);
-            $(this).addClass("subdrop");
-            $(".pull-right i", $(this).parents(".has_sub:last")).removeClass("fa-plus").addClass("fa-minus");
-            $(".pull-right i", $(this).siblings("ul")).removeClass("fa-minus").addClass("fa-plus");
-        } else if ($(this).hasClass("subdrop")) {
-            $(this).removeClass("subdrop");
-            $(this).next("ul").slideUp(350);
-            $(".pull-right i", $(this).parent()).removeClass("fa-minus").addClass("fa-plus");
+            $(this).next('ul').slideDown(350);
+            $(this).addClass('subdrop');
+            $('.pull-right i', $(this).parents('.has_sub:last')).removeClass('fa-plus').addClass('fa-minus');
+            $('.pull-right i', $(this).siblings('ul')).removeClass('fa-minus').addClass('fa-plus');
+        } else if ($(this).hasClass('subdrop')) {
+            $(this).removeClass('subdrop');
+            $(this).next('ul').slideUp(350);
+            $('.pull-right i', $(this).parent()).removeClass('fa-minus').addClass('fa-plus');
         }
     }
 
 };
 
-$menuItem = $("#sidebar-menu a");
 $menuItem.on('click', menuItemClick);

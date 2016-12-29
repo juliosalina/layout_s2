@@ -9,13 +9,13 @@
         box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
         &.toggle-close {
             width: 4.438rem;
-            -webkit-transition: .5s;
-            transition: .5s;
+            -webkit-transition: .3s;
+            transition: .3s;
         }
         &.toggle-open {
             width: 15rem;
-            -webkit-transition: .5s;
-            transition: .5s;
+            -webkit-transition: .3s;
+            transition: .3s;
         }
     }
     .menu {
@@ -33,13 +33,13 @@
             left: 19rem;
             &.toggle-close {
                 left: 8.7rem;
-                -webkit-transition: .5s;
-                transition: .5s;
+                -webkit-transition: .3s;
+                transition: .3s;
             }
             &.toggle-open {
                 left: 19rem;
-                -webkit-transition: .5s;
-                transition: .5s;
+                -webkit-transition: .3s;
+                transition: .3s;
             }
         }
         .menu-button {
@@ -56,13 +56,13 @@
             position: absolute;
             &.toggle-close {
                 left: 5.4rem;
-                -webkit-transition: .5s;
-                transition: .5s;
+                -webkit-transition: .3s;
+                transition: .3s;
             }
             &.toggle-open {
                 left: 15.69rem;
-                -webkit-transition: .5s;
-                transition: .5s;
+                -webkit-transition: .3s;
+                transition: .3s;
             }
             &:hover {
                 color: $white-color;
