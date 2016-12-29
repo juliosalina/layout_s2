@@ -84,25 +84,56 @@
         <!-- 
           GRIDS
 
-          col-xl    extra large
-          col-lg    large
-          col-md    medium
-          col-sm    small
-          col-xs    extra small
+          .col-xl    extra large
+          .col-lg    large
+          .col-md    medium
+          .col-sm    small
+          .col-xs    extra small
+
+          Extra small (xs) – below 576px
+          Small (sm) – between 576px and 768px
+          Medium (md) – between 768px and 992px
+          Large (lg) – between 992px and 1200px
+          Extra Large (xl) – over 1200px
+
         -->
 
+        <!-- 
+
+        FLEX
+
+        .flex-items-xs-left
+        .flex-items-xs-center
+        .flex-items-xs-right
+        .flex-items-xs-around
+        .flex-items-xs-between
+        
+        .flex-items-xs-middle
+        .flex-items-xs-bottom
+        .flex-items-xs-top
+
+        .flex-xs-middle
+        .flex-xs-bottom
+        .flex-xs-top
+
+
+        .flex-xs-first – Displayed first.
+        .flex-xs-last – Displayed last.
+        .flex-xs-unordered – Displayed between first and last.
+
+        -->
 
         <div class="row">
 
 
             <div class="row col-md-12 pt-1 pb-1 mb-1">
-                <div class="col-md-1 pl-0 pr-05-md flex-items-xs-middle">
+                <div class="col-md-1 pl-0-md pr-05-md flex-items-xs-middle">
                   <label>Comentário</label>
                 </div>
                 <div class="col-md-4 plr-05-md">
                     <input class="form-control" type="text" placeholder="Paciente Ex.: Nome / Senha">
                 </div>
-                <div class="col-md-1 pl-0 pr-0 flex-items-xs-middle">
+                <div class="col-md-1 pl-0-md pr-0-md flex-items-xs-middle">
                   <label>Próx. Contato</label>
                 </div>
                 <div class="col-md-4 plr-05-md">
@@ -114,7 +145,7 @@
             </div>
 
             <div class="row col-md-12 pt-1 pb-1 mb-1">
-                <div class="col-md-2 pl-0 pr-05-md">
+                <div class="col-md-2 pl-0-md pr-05-md">
                     <button type="button" class="btn btn-nav btn-block"><i class="fa fa-arrow-left"></i>Nav icon</button>
                 </div>
                 <div class="col-md-4 plr-05-md">
@@ -134,7 +165,7 @@
             <!-- div filtro azul -->
 
             <div class="row col-md-12 pt-1 pb-1 mb-1 drc-azul-1">
-                <div class="col-md-2 pl-0 pr-05-md">
+                <div class="col-md-2 pl-0-md pr-05-md">
                     <button type="button" class="btn btn-nav btn-block"><i class="fa fa-arrow-left"></i>Nav icon</button>
                 </div>
                 <div class="col-md-4 plr-05-md">
@@ -175,10 +206,10 @@
                                 </ul>
                             </div>
                         <div class="row">
-                            <div class="col-xs-12 col-md-6 pl-0 pr-05-md">
+                            <div class="col-xs-12 col-md-6 pl-0-md pr-05-md">
                                 <button type="button" class="btn btn-primary btn-block"><i class="fa fa-usd"></i>Cobrança</button>
                             </div>
-                            <div class="col-xs-12 col-md-6 pr-0 pl-05-md">
+                            <div class="col-xs-12 col-md-6 pr-0-md pl-05-md">
                                 <button type="button" class="btn btn-secondary btn-block"><i class="fa fa-print"></i>Recibo</button>
                             </div>
                         </div>
@@ -188,15 +219,15 @@
 
             <!-- card simples-->
 
-            <div class="col-md-4 pr-0 pl-0">
+            <div class="col-md-4 pr-0-md pl-0">
                 <div class="card card-block">
                     <h4 class="card-title">Card title</h4>
                     <div class="mb-1">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
                     <div class="row">
-                        <div class="col-xs-12 col-md-6 pl-0 pr-05-md">
+                        <div class="col-xs-12 col-md-6 pl-0-md pr-05-md">
                             <button type="button" class="btn btn-primary btn-block"><i class="fa fa-usd"></i>Cobrança</button>
                         </div>
-                        <div class="col-xs-12 col-md-6 pr-0 pl-05-md">
+                        <div class="col-xs-12 col-md-6 pr-0-md pl-05-md">
                             <button type="button" class="btn btn-secondary btn-block"><i class="fa fa-print"></i>Recibo</button>
                         </div>
                     </div>
@@ -218,7 +249,7 @@
                             <i class="fa fa-eye fa-lg"></i>
                         </div>
 
-                        <div class="col-xs-3 pr-0 pl-0 flex-items-xs-middle">
+                        <div class="col-xs-3 pr-0-md pl-0-md flex-items-xs-middle">
                             <img src="http://placehold.it/140x140" alt="alt-img" class="rounded-circle" width="100%">
                         </div>
 
@@ -390,7 +421,7 @@
                         <h4 class="card-title">Dados da Cirurgia 1</h4>
                         <div class="row">
 
-                            <div class="col-md-2 pl-0 pr-05-md">
+                            <div class="col-md-2 pl-0-md pr-05-md">
                                 <div class="side-icon-gray">
                                     <i class="fa fa-hospital-o fa-2x float-xs-left"></i>
                                     <ul class="list-group pl-1">
@@ -436,24 +467,24 @@
 
                             <!-- botoes -->
 
-                            <div class="row col-md-4 pr-0 pl-05-md brd-l">
+                            <div class="row col-md-4 pr-0-md pl-05-md brd-l">
 
                               <div class="col-md-6 plr-05-md mb-05">
                                   <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
                               </div>
-                              <div class="col-md-6 plr-05-md mb-05">
+                              <div class="col-md-6 pl-05-md pr-0-md mb-05">
                                   <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
                               </div>
                               <div class="col-md-6 plr-05-md mb-05">
                                   <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
                               </div>
-                              <div class="col-md-6 plr-05-md mb-05">
+                              <div class="col-md-6 pl-05-md pr-0-md mb-05">
                                   <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
                               </div>
                               <div class="col-md-6 plr-05-md mb-05">
                                   <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
                               </div>
-                              <div class="col-md-6 plr-05-md mb-05">
+                              <div class="col-md-6 pl-05-md pr-0-md mb-05">
                                   <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
                               </div>
                             </div>
@@ -468,10 +499,10 @@
 
             <div class="col-md-12">
                 <div class="card card-block">
-                    <h4 class="card-title">Dados da Cirurgia</h4>
+                    <h4 class="card-title">Dados da Cirurgia2</h4>
                     <div class="row">
 
-                        <div class="col-md-3 pl-0 pr-05-md">
+                        <div class="col-md-3 pl-0-md pr-05-md">
                             <div class="side-icon-gray">
                                 <i class="fa fa-hospital-o fa-2x float-xs-left"></i>
                                 <ul class="list-group pl-1">
@@ -482,7 +513,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 pl-0 pr-05-md">
+                        <div class="col-md-3 pl-0-md pr-05-md">
                             <div class="side-icon-gray">
                                 <i class="fa fa-user-md fa-2x float-xs-left"></i>
                                 <ul class="list-group pl-1">
@@ -504,7 +535,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 pr-0 pl-05-md">
+                        <div class="col-md-3 pr-0-md pl-05-md">
                             <div class="side-icon-gray">
                                 <i class="fa fa-calendar-check-o fa-2x float-xs-left"></i>
                                 <ul class="list-group pl-1">
@@ -692,24 +723,24 @@
                 <div class="card card-block">
                     <h4 class="card-title">Ações</h4>
                     <div class="row">
-                        <div class="col-md-4 pl-0 pr-05-md">
+                        <div class="col-md-4 pl-0-md pr-05-md">
                             <button type="button" class="btn btn-secondary btn-block light-text">Liberar Cirurgia</button>
                         </div>
                         <div class="col-md-4 plr-05-md">
                             <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
                         </div>
-                        <div class="col-md-4 pr-0 pl-05-md">
+                        <div class="col-md-4 pr-0-md pl-05-md">
                             <button type="button" class="btn btn-secondary btn-block light-text">Consulta Cardiologista</button>
                         </div>
                     </div>
                     <div class="row mt-1">
-                        <div class="col-md-4 pl-0 pr-05-md">
+                        <div class="col-md-4 pl-0-md pr-05-md">
                             <button type="button" class="btn btn-secondary btn-block light-text">Finalizar Cirurgia</button>
                         </div>
                         <div class="col-md-4 plr-05-md">
                             <button type="button" class="btn btn-secondary btn-block light-text">Agendar Cirurgia</button>
                         </div>
-                        <div class="col-md-4 pr-0 pl-05-md">
+                        <div class="col-md-4 pr-0-md pl-05-md">
                             <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cardiologista</button>
                         </div>
                     </div>
@@ -750,22 +781,22 @@
                 <div class="card card-block">
                     <h4 class="card-title">Ações</h4>
                     <div class="row">
-                        <div class="col-md-6 pl-0 pr-05-md mb-05">
+                        <div class="col-md-6 pl-0-md pr-05-md mb-05">
                             <button type="button" class="btn btn-secondary btn-block light-text">Liberar Cirurgia</button>
                         </div>
-                        <div class="col-md-6 pr-0 pl-05-md mb-05">
+                        <div class="col-md-6 pr-0-md pl-05-md mb-05">
                             <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
                         </div>
-                        <div class="col-md-6 pl-0 pr-05-md mb-05">
+                        <div class="col-md-6 pl-0-md pr-05-md mb-05">
                             <button type="button" class="btn btn-secondary btn-block light-text">Consulta Cardiologista</button>
                         </div>
-                        <div class="col-md-6 pr-0 pl-05-md mb-05">
+                        <div class="col-md-6 pr-0-md pl-05-md mb-05">
                             <button type="button" class="btn btn-secondary btn-block light-text">Finalizar Cirurgia</button>
                         </div>
-                        <div class="col-md-6 pl-0 pr-05-md mb-05">
+                        <div class="col-md-6 pl-0-md pr-05-md mb-05">
                             <button type="button" class="btn btn-secondary btn-block light-text">Agendar Cirurgia</button>
                         </div>
-                        <div class="col-md-6 pr-0 pl-05-md">
+                        <div class="col-md-6 pr-0-md pl-05-md">
                             <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cardiologista</button>
                         </div>
                     </div>
@@ -778,22 +809,22 @@
                 <div class="card card-block">
                     <h4 class="card-title">Ações</h4>
                     <div class="row">
-                        <div class="col-md-6 pl-0 pr-05-md mb-05">
+                        <div class="col-md-6 pl-0-md pr-05-md mb-05">
                             <button type="button" class="btn btn-secondary btn-block light-text">Liberar Cirurgia</button>
                         </div>
-                        <div class="col-md-6 pr-0 pl-05-md mb-05">
+                        <div class="col-md-6 pr-0-md pl-05-md mb-05">
                             <button type="button" class="btn btn-primary btn-block light-text">Retorno Cirurgião</button>
                         </div>
-                        <div class="col-md-6 pl-0 pr-05-md mb-05">
+                        <div class="col-md-6 pl-0-md pr-05-md mb-05">
                             <button type="button" class="btn btn-secondary btn-block light-text">Consulta Cardiologista</button>
                         </div>
-                        <div class="col-md-6 pr-0 pl-05-md mb-05">
+                        <div class="col-md-6 pr-0-md pl-05-md mb-05">
                             <button type="button" class="btn btn-secondary btn-block light-text">Finalizar Cirurgia</button>
                         </div>
-                        <div class="col-md-6 pl-0 pr-05-md mb-05">
+                        <div class="col-md-6 pl-0-md pr-05-md mb-05">
                             <button type="button" class="btn btn-secondary btn-block light-text">Agendar Cirurgia</button>
                         </div>
-                        <div class="col-md-6 pr-0 pl-05-md">
+                        <div class="col-md-6 pr-0-md pl-05-md">
                             <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cardiologista</button>
                         </div>
                     </div>
