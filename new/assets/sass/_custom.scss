@@ -40,6 +40,11 @@
         .row{
            margin:0;
         }
+        [class*="col-"]{
+          &.no-pad{
+            padding:0;
+          }
+        }
       }
 
       [class*="col-"] .light{
