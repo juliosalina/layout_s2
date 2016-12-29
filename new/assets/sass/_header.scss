@@ -1,9 +1,10 @@
 #wrapper {
     .header {
         height: 4rem;
-        background-color: #222e3a;
+        background-color: $blue-header;
         width: 100%;
-        position: absolute;
+        position: fixed;
+        z-index: 15;
         padding: 0 0.625rem 0 0.625rem;
         [class*="col-"] {
             padding: 0;

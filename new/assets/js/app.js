@@ -76,8 +76,9 @@ $menuButton.on('click', function() {
             $menu.fadeIn(600);
             $menu.slimScroll({destroy: true});
 
-            $('.slimScrollBar').remove();
-            $('.slimScrollRail').remove();
+            $('.menu .slimScrollBar').remove();
+            $('.menu .slimScrollRail').remove();
+
         });
 
     } else {

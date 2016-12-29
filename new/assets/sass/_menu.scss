@@ -6,6 +6,7 @@
         display: block;
         position: fixed;
         top: 0;
+        z-index: 20;
         box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
         &.toggle-close {
             width: 4.438rem;
@@ -21,8 +22,9 @@
     .menu {
         width: 15rem;
         height: 100%;
+        z-index: 30;
         background-color: transparent;
-        position: absolute;
+        position: fixed;
         .title-page {
             font-size: 1.3rem;
             color: $white-color;
@@ -200,6 +202,7 @@ body.menu-close {
                 li {
                     position: relative;
                     white-space: nowrap;
+                    width: 71px;
                     ul {
                         display: none;
                         li {
@@ -208,6 +211,7 @@ body.menu-close {
                         }
                     }
                     &:hover {
+                        width: 71px;
                         a {
                             position: relative;
                             width: 260px;
@@ -239,6 +243,7 @@ body.menu-close {
                         }
                     }
                     a {
+                        width: 71px;
                         i {
                             margin-right: 20px !important;
                             margin-left: 0 !important;
