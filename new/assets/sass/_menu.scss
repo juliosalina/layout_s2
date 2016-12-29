@@ -202,7 +202,7 @@ body.menu-close {
                 li {
                     position: relative;
                     white-space: nowrap;
-                    width: 71px;
+                    width: 4.43rem;
                     ul {
                         display: none;
                         li {
@@ -211,10 +211,10 @@ body.menu-close {
                         }
                     }
                     &:hover {
-                        width: 71px;
+                        width: 4.43rem;
                         a {
                             position: relative;
-                            width: 260px;
+                            width: 16.25rem;
                             z-index: 999999;
                             background-color: #f2f2f2;
                             span {
@@ -223,18 +223,18 @@ body.menu-close {
                         }
                         ul {
                             display: block !important;
-                            left: 70px;
+                            left: 4.37rem;
                             position: absolute;
-                            width: 190px;
+                            width: 11.88rem;
                             z-index: 9999;
                             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
                             a {
                                 background: #fff;
                                 border: none;
                                 box-shadow: none;
-                                padding-left: 15px;
+                                padding-left: 0.93rem;
                                 position: relative;
-                                width: 190px;
+                                width: 11.88rem;
                                 z-index: 6;
                                 &:hover {
                                     color: #222e3a;
@@ -243,15 +243,15 @@ body.menu-close {
                         }
                     }
                     a {
-                        width: 71px;
+                        width: 4.43rem;
                         i {
-                            margin-right: 20px !important;
+                            margin-right: 1.25rem !important;
                             margin-left: 0 !important;
-                            font-size: 22px;
+                            font-size: 1.37rem;
                         }
                         span {
                             display: none;
-                            padding-left: 10px;
+                            padding-left: 0.62rem;
                             &.pull-right {
                                 display: none !important;
                             }
