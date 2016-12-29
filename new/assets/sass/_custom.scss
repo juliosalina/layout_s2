@@ -1,4 +1,17 @@
       
+      
+
+      h7{
+        &.underline{
+          border-bottom:.2rem solid $gray;
+          padding-left:.5rem;
+          padding-right:.5rem;
+          &.blue{
+            border-color:$blue;
+          }
+        }
+      }
+
       //buttons
 
       .btn{
@@ -64,7 +77,7 @@
           i{
              margin-top:.7rem;
            }
-      }
+        }
 
 
       //cards/blocos
