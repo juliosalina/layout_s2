@@ -130,7 +130,7 @@
 
       //avulsas helpers
 
-      //flex
+      //flex alinhar itens verticalmente no centro
       .flex-items-xs-middle{
         display:flex;
       }
@@ -172,24 +172,41 @@
 
       //bordas
       .brd-t{
-        border-top:1px solid $gray;
+        border-top:.1rem solid $gray;
       }
       .brd-b{
-        border-bottom:1px solid $gray;
+        border-bottom:.1rem solid $gray;
       }
       .brd-l{
-        border-left:1px solid $gray;
+        border-left:.1rem solid $gray;
       }
       .brd-r{
-        border-right:1px solid $gray;
+        border-right:.1rem solid $gray;
       }
       .brd-0{
         border:0;
       }
 
+      //paddings
+
+      .pl-0-md{
+        padding-left:0;
+      }
+      .pr-0-md{
+        padding-right:0;
+      }
+
+
     @media (max-width: 540px) {
+      .pl-0-md{
+        padding-left:1rem;
+      }
+      .pr-0-md{
+        padding-right:1rem;
+      }
+
       .pl-05-md{
-        padding-left:1rem
+        padding-left:1rem;
       }
       .pr-05-md{
         padding-right:1rem
