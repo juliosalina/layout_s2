@@ -96,10 +96,7 @@
           Large (lg) – between 992px and 1200px
           Extra Large (xl) – over 1200px
 
-        -->
-
-        <!-- 
-
+ 
         FLEX
 
         .flex-items-xs-left
@@ -120,6 +117,33 @@
         .flex-xs-first – Displayed first.
         .flex-xs-last – Displayed last.
         .flex-xs-unordered – Displayed between first and last.
+
+
+        TEXTO
+
+        .text-xs-left         Left aligned text on all viewport sizes.
+        .text-xs-center       Center aligned text on all viewport sizes.
+        .text-xs-right        Right aligned text on all viewport sizes.
+
+        .text-sm-left         Left aligned text on viewports sized SM (small) or wider.
+        .text-md-left         Left aligned text on viewports sized MD (medium) or wider.
+        .text-xl-left         Left aligned text on viewports sized XL (extra-large) or wider.
+
+        .text-lowercase       Lowercased text.
+        .text-uppercase       Uppercased text.
+        .text-capitalize      CapiTaliZed text.
+
+        .font-weight-bold     Bold text.
+        .font-weight-normal   Normal weight text.
+        .font-italic          Italic text.
+
+        .text-justify         justificado
+        .text-nowrap          sem wrap
+
+        ESPAÇAMENTO
+
+        .no-pad        sem padding , aplicando na row todos os filhos col não terão padding
+                        aplicando em col somente este ficara sem padding
 
         -->
 
@@ -883,13 +907,13 @@
 
         <!-- side menu--><br><br><br>
 
-        <div class="card col-md-4 text-xs-center side-menu">
-            <div class="card-header row">
+        <div class="card text-xs-center side-menu">
+            <div class="card-header row no-pad">
                 <div class="col-md-2 flex-xs-middle"><i class="fa fa-3x fa-play-circle"></i></div>
                 <div class="col-md-2 flex-xs-middle"><i class="fa fa-3x fa-pause-circle"></i></div>
                 <div class="col-md-2 flex-xs-middle"><i class="fa fa-3x fa-ban"></i></div>
-                <div class="col-md-6 flex-xs-middle">
-                    <h3>11: 11: 11</h3>
+                <div class="col-md-6 flex-xs-middle text-xs-right">
+                    <h3 class="font-weight-bold">11: 11: 11</h3>
                 </div>
             </div>
             <img src="http://placehold.it/140x140" alt="alt-img" class="rounded-circle mb-1 mt-3">
@@ -899,14 +923,23 @@
 
             </div>
             <div class="card-block row">
-                <div class="col-md-6"><button type="button" class="btn btn-danger btn-block">Preop Cirurgico</button></div>
-                <div class="col-md-6"><button type="button" class="btn btn-success btn-block">Programa de Saúde</button></div>
+                <div class="col-md-6 plr-05-md"><button type="button" class="btn btn-danger btn-block">Preop Cirurgico</button></div>
+                <div class="col-md-6 plr-05-md"><button type="button" class="btn btn-success btn-block">Programa de Saúde</button></div>
             </div>
-            <ul class="list-group text-xs-left ">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
+
+            <label class="bold-block text-xs-left pl-1">Sinais Vitais</label>
+            <p class="text-xs-left pl-1 mb-0">Nada consta</p>
+            <label class="bold-block text-xs-left pl-1">Alergias</label>
+            <p class="text-xs-left pl-1 mb-0">Nada consta</p>
+            <label class="bold-block text-xs-left pl-1">Medicamentos em uso</label>
+            <p class="text-xs-left pl-1 mb-0">Nada consta</p>
+            <h6 class="mt-1">Últimos diagnósticos</h6>
+
+            <ul class="text-xs-left ">
+                <li class="brd-b pl-1">Cras justo odio</li>
+                <li class="brd-b pl-1">Cras justo odio</li>
             </ul>
+
         </div>
 
         <br><br><br><br>
