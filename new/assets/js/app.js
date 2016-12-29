@@ -79,6 +79,9 @@ $menuButton.on('click', function() {
             $('.menu .slimScrollBar').remove();
             $('.menu .slimScrollRail').remove();
 
+            $menuButton.attr('title','Extender o menu');
+            $menuButton.attr('data-original-title','Extender o menu');
+
         });
 
     } else {
@@ -107,6 +110,9 @@ $menuButton.on('click', function() {
             color: '#bbb',
             wheelStep: 5
         });
+
+        $menuButton.attr('title','Diminuir o menu');
+        $menuButton.attr('data-original-title','Diminuir o menu');
     }
 });
 
@@ -139,3 +145,45 @@ var menuItemClick = function(e) {
 };
 
 $menuItem.on('click', menuItemClick);
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
+
+//turn on full screen
+var launchFullscreen = function(element) {
+        if (element.requestFullscreen) {
+            element.requestFullscreen();
+        } else if (element.mozRequestFullScreen) {
+            element.mozRequestFullScreen();
+        } else if (element.webkitRequestFullscreen) {
+            element.webkitRequestFullscreen();
+        } else if (element.msRequestFullscreen) {
+            element.msRequestFullscreen();
+        }
+    },
+    exitFullscreen = function() {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        }
+    },
+    //toggle screen
+    toggle_fullscreen = function() {
+        var $this = this;
+        var fullscreenEnabled = document.fullscreenEnabled || document.mozFullScreenEnabled || document.webkitFullscreenEnabled;
+        if (fullscreenEnabled) {
+            if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
+                $this.launchFullscreen(document.documentElement);
+            } else {
+                $this.exitFullscreen();
+            }
+        }
+    };
+
+$("#btn-fullscreen").on('click', function() {
+    toggle_fullscreen();
+});
