@@ -25,6 +25,16 @@
         z-index: 30;
         background-color: transparent;
         position: fixed;
+        &.toggle-close {
+            width: 15rem;
+            -webkit-transition: .3s;
+            transition: .3s;
+        }
+        &.toggle-open {
+            width: 15rem;
+            -webkit-transition: .3s;
+            transition: .3s;
+        }
         .title-page {
             font-size: 1.3rem;
             color: $white-color;
@@ -76,7 +86,7 @@
             }
         }
         .logo {
-            background-color: #transparent;
+            background-color: transparent;
             height: 4.3rem;
             position: relative;
             z-index: 1;

@@ -9,13 +9,16 @@
 
 var $menu = $('.itens-menu'),
     $search = $('#iconified'),
+    $menuBlock = $('.menu'),
     $menuButton = $('.menu-button'),
     $body = $('body'),
     $menuFundo = $('.menu-fundo'),
     $titlePage = $('.title-page'),
     $logo = $('.logo a img'),
+    $logoDiv = $('.logo'),
     $menuItem = $('#sidebar-menu a'),
-    $userDetails = $('.user-details');
+    $userDetails = $('.user-details'),
+    $overlay = $('.overlay');
 
 /*********************************************************
 Initialize document and add scroll to side menu
@@ -71,6 +74,12 @@ $menuButton.on('click', function() {
             addOrRemoveClass($menuButton, 'toggle-close', 'add');
             addOrRemoveClass($titlePage, 'toggle-open', 'remove');
             addOrRemoveClass($titlePage, 'toggle-close', 'add');
+            addOrRemoveClass($menuBlock, 'toggle-open', 'remove');
+            addOrRemoveClass($menuBlock, 'toggle-close', 'add');
+            addOrRemoveClass($logoDiv, 'toggle-open', 'remove');
+            addOrRemoveClass($logoDiv, 'toggle-close', 'add');
+            addOrRemoveClass($overlay, 'toggle-open', 'remove');
+            addOrRemoveClass($overlay, 'toggle-close', 'add');
 
             $logo.fadeIn(600);
             $menu.fadeIn(600);
@@ -97,6 +106,12 @@ $menuButton.on('click', function() {
             addOrRemoveClass($menuButton, 'toggle-open', 'add');
             addOrRemoveClass($titlePage, 'toggle-close', 'remove');
             addOrRemoveClass($titlePage, 'toggle-open', 'add');
+            addOrRemoveClass($menuBlock, 'toggle-close', 'remove');
+            addOrRemoveClass($menuBlock, 'toggle-open', 'add');
+            addOrRemoveClass($logoDiv, 'toggle-close', 'remove');
+            addOrRemoveClass($logoDiv, 'toggle-open', 'add');
+            addOrRemoveClass($overlay, 'toggle-close', 'remove');
+            addOrRemoveClass($overlay, 'toggle-open', 'add');
 
             $userDetails.fadeIn(600);
             $menu.fadeIn(600);
