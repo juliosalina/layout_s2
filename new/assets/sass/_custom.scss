@@ -153,6 +153,17 @@
           }
         }
       }
+      h5{
+        &.left-line{
+          border-left:.3rem solid $gray;
+          background-color:$white-color;
+          padding:1rem .5rem 1rem .5rem;
+          @include border-radius(.2rem) 
+            &.blue{
+            border-color:$blue;
+          }
+        }
+      }
 
 
       //espaçamentos
