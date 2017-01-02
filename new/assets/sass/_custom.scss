@@ -9,6 +9,37 @@ h7 {
     }
 }
 
+//checkbox custom
+
+.custom-checkbox .custom-control-indicator{
+  border-radius:50%;
+  background-color:#fff;
+
+  &::after{
+    font-family:$icon-font;
+    content:"\f10c";
+    color:#000;
+    font-size: 1.2rem;
+    margin-top: -0.5rem;
+    position: absolute;
+     outline:none;
+  }
+}
+.custom-control-input:checked ~ .custom-control-indicator{
+  background-color:#fff;
+    &::after{
+    font-family:$icon-font;
+    content:"\f05d";
+    font-size: 1.2rem;
+    margin-top: -0.5rem;
+    position: absolute;
+    outline:none;
+  }
+}
+.custom-control-input:focus ~ .custom-control-indicator{
+  @include shadow (none);
+}
+
 .title-page-mobile {
     display: none;
     font-size: 1.3rem;

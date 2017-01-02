@@ -44,6 +44,10 @@ $black: #000000;
 	color:$white-color;
 }
 
+//fontes
+$icon-font:'FontAwesome';
+
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;

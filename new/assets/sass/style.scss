@@ -60,6 +60,114 @@ pointer-events:none;
 user-select: none;
 }
 
+/*stepmenu vertical*/
+
+.step-menu-v{
+width:12.5rem;
+padding:0;
+border-top:.1rem solid #ccc;
+ .step-item{
+  border-left:.1rem solid #ccc;
+  border-right:.1rem solid #ccc;
+  list-style-type:none;
+  padding-top:2rem;
+  text-align:center;
+  position:relative;
+  font-size:.8rem;
+  background-color:#F0F0F0;
+  &.active{
+     font-weight:bold;
+  }
+  &.idle{
+     background-color:#DEDEDE;
+     &::after{
+      border-top: 20px solid #DEDEDE;
+     }
+  }
+   &::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 20px solid #F0F0F0;
+    clear: both;
+    z-index:1;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 103%;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 20px solid #ccc;
+    clear: both;
+    z-index:1;
+    }
+  }
+}
+
+/*step menu horizontal*/
+/*stepmenu */
+
+.step-menu-h{
+width:29.5rem;
+padding:0;
+border-top:.1rem solid #ccc;
+ .step-item{
+  border-left:.1rem solid #ccc;
+  border-right:.1rem solid #ccc;
+  list-style-type:none;
+  padding-top:1rem;
+  text-align:center;
+  position:relative;
+  float:left;
+  height:6rem;
+  font-size:.8rem;
+  background-color:#F0F0F0;
+  &.active{
+     font-weight:bold;
+  }
+  &.idle{
+     background-color:#DEDEDE;
+     &::after{
+      border-top: 20px solid #DEDEDE;
+     }
+  }
+   &::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    top:0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 0 50px 50px;
+    border-color: transparent transparent transparent #F0F0F0;
+    clear: both;
+    z-index:2;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    top:0;
+    height: 0;
+    margin-left:.1rem;
+    border-style: solid;
+    border-width: 50px 0 50px 50px;
+    border-color: transparent transparent transparent #ccc;
+    clear: both;
+    z-index:1;
+    }
+  }
+}
+
 /*stepmenu */
 
 .step-menu-v{
@@ -112,6 +220,8 @@ border-top:.1rem solid #ccc;
     }
   }
 }
+
+
 
 .side-menu{
     width:23rem;
