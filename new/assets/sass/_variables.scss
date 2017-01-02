@@ -3,7 +3,7 @@ $blue-header: #222e3a;
 
 //variables
 
-  /*drc brandbook colors
+  //drc brandbook colors
 
   $drc-dark-blue : #1165a6;
   $drc-medium-blue : #33a3dc;
@@ -15,15 +15,24 @@ $blue-header: #222e3a;
   $drc-light-gray: #c8c8ce;
 
   $drc-yellow: #ffcc32;
-  $drc-orange: #f89e55;*/
+  $drc-orange: #f89e55;
+
+  //colors 
 
   $blue:#59A1DB;
   $gray:#F1F1F1;
+  $gray-light: #f5f5f5;
 
   
   //cores class
-.drc-azul-1{
+.blue-bkg{
   background-color:$blue;
+}
+.gray-bkg{
+  background-color:$gray;
+}
+.gray-light-bkg{
+  background-color:$gray-light;
 }
 
 @mixin border-radius($radius) {
