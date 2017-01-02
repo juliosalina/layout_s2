@@ -48,6 +48,10 @@ $search.on('keyup', function() {
     }
 });
 
+$overlay.on('click', function() {
+    $menuButton.click();
+});
+
 //click menu close/open
 $menuButton.on('click', function() {
     if ($body.hasClass('menu-open')) {
