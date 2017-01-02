@@ -1,138 +1,212 @@
-      
-      
-
-      //buttons
-
-      .btn{
-        font-weight:bold;
-        border-radius: .2rem;
-         i{
-          padding: 0 .3rem;
+h7 {
+    &.underline {
+        border-bottom: .2rem solid $gray;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        &.blue {
+            border-color: $blue;
         }
-        &.btn-primary{
-        background-color:#FF9F4F;
-        border:0;
-        border-top: solid .2rem  #FE7D19;
-       }
-       &.btn-secondary{
-          background-color:#212E3A;
-          border:0;
-          border-top: solid .2rem #333E49;
-          color:#FFF;
+    }
+}
+
+.title-page-mobile {
+    display: none;
+    font-size: 1.3rem;
+    color: $white-color;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    z-index: 12;
+    width: 100%;
+    text-align: center;
+    .text {
+        width: auto;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+.overlay {
+    display: none;
+    opacity: 0;
+    background-color: $black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+//buttons
+.btn {
+    font-weight: bold;
+    border-radius: .2rem;
+    i {
+        padding: 0 .3rem;
+    }
+    &.btn-primary {
+        background-color: #FF9F4F;
+        border: 0;
+        border-top: solid .2rem #FE7D19;
+    }
+    &.btn-secondary {
+        background-color: #212E3A;
+        border: 0;
+        border-top: solid .2rem #333E49;
+        color: #FFF;
+    }
+    &:hover {
+        //TODO MIXIN PARA SHADOWS
+        opacity: 0.7
+    }
+    &.btn-nav {
+        background-color: #0092D0;
+        color: #fff;
+    }
+}
+
+//classes para grid
+//sem padding para col filhos de row
+.row {
+    &.no-pad {
+        [class*="col-"] {
+            padding: 0;
         }
-         &:hover{
-          //TODO MIXIN PARA SHADOWS
-          opacity:0.7
-         }
-         &.btn-nav{
-          background-color:#0092D0;
-          color:#fff;
-         }
-      }
-
-      //classes para grid
-
-      //sem padding para col filhos de row
-      .row{
-        &.no-pad{
-          [class*="col-"]{
-             padding:0;
-          }
+    }
+    .row {
+        margin: 0;
+    }
+    [class*="col-"] {
+        &.no-pad {
+            padding: 0;
         }
-        .row{
-           margin:0;
+    }
+}
+
+//cards/blocos
+.card-primary {
+    background-color: #87C3E8;
+    border: 0;
+    background-color: #87C3E8;
+    color: #fff;
+    .card-header {
+        background-color: #0092D0;
+        color: #fff;
+        padding: 0.25rem 1rem;
+    }
+}
+
+.card-secondary {
+    .card-header {
+        background-color: #0092D0;
+        color: #fff;
+        padding: 0.25rem 1rem;
+    }
+}
+
+.card-block .block-item {
+    position: absolute;
+    right: 1rem;
+    top: 2.5rem;
+}
+
+.card {
+    border: 0;
+    @include shadow(2px 2px 3px 0px $gray);
+    //listas
+    .list-group .list-group-item {
+        border: 0;
+        padding: 0 1.25rem;
+        font-size: .7rem;
+        background: transparent;
+        label {
+            font-weight: bold;
+            margin-bottom: 0;
+            margin-right: 0.25rem;
         }
-        [class*="col-"]{
-          &.no-pad{
-            padding:0;
-          }
+    }
+    &.no-shadow {
+        @include shadow(none);
+    }
+}
+
+//tabs
+.nav-tabs .nav-link {
+    margin-right: .1rem;
+    margin-left: 0;
+    border-right: .1rem solid #FCFBFB;
+    border-left: .1rem solid #FCFBFB;
+    border-top: .1rem solid #FCFBFB;
+    color: #414141;
+    font-weight: bold;
+    background-color: #FCFBFB;
+    &.active {
+        border-top: .2rem solid #0092D0;
+        border-left: 0.1rem solid $gray;
+        border-right: 0.1rem solid $gray;
+    }
+}
+
+.card-header-tabs {
+    margin-left: -1.25rem;
+}
+
+//avulsas helpers
+//FLEX
+//alinhar unico iten verticalmente no centro
+.flex-items-xs-middle {
+    display: flex;
+}
+
+//para itens ocuparem a altura total do parent
+.flex-items-xs-stretch {
+    display: flex;
+    -moz-box-align: stretch;
+    align-items: stretch;
+}
+
+//FONTES
+.bold-block {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0;
+}
+
+.light-text {
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+h7 {
+    &.underline {
+        border-bottom: .2rem solid $gray;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        &.blue {
+            border-color: $blue;
         }
-      }
+    }
+}
 
-      //cards/blocos
+//espaçamentos
+//right
+.pr-05-md {
+    padding-right: .5rem;
+}
 
-      .card-primary{
-        background-color:#87C3E8;
-        border:0;
-        background-color:#87C3E8;
-        color:#fff;
-        .card-header{
-          background-color:#0092D0;
-          color:#fff;
-          padding: 0.25rem 1rem;
-         }
-      }
-      .card-secondary{
-          .card-header{
-          background-color:#0092D0;
-          color:#fff;
-          padding: 0.25rem 1rem;
-         }
-      }
+//left
+.pl-05-md {
+    padding-left: .5rem
+}
 
-      .card-block .block-item{
-        position:absolute;
-        right:1rem;
-        top:2.5rem;
-      }
-      .card{
-        border:0;
-        @include shadow(2px 2px 3px 0px $gray);
-         //listas
-        .list-group .list-group-item{
-          border:0;
-          padding: 0 1.25rem;
-          font-size:.7rem;
-          background:transparent;
-            label{
-            font-weight:bold;
-            margin-bottom:0;
-            margin-right:0.25rem;
-          }
-        }
-        &.no-shadow{
-           @include shadow(none);
-        }
-      }
+//left e right
+.plr-05-md {
+    padding-right: .5rem;
+    padding-left: .5rem
+}
 
-
-      //tabs
-
-      .nav-tabs .nav-link{
-        margin-right:.1rem;
-        margin-left:0;
-        border-right:.1rem solid #FCFBFB;
-        border-left:.1rem solid #FCFBFB;
-        border-top:.1rem solid #FCFBFB;
-        color:#414141;
-        font-weight:bold;
-        background-color:#FCFBFB;
-        &.active{
-          border-top:.2rem solid #0092D0;
-          border-left:0.1rem solid $gray;
-          border-right: 0.1rem solid $gray;
-        }
-      }
-      .card-header-tabs{
-        margin-left:-1.25rem;
-      }
-
-      //avulsas helpers
-
-      //FLEX
-
-      //alinhar unico iten verticalmente no centro
-      .flex-items-xs-middle{
-        display:flex;
-      }
-      //para itens ocuparem a altura total do parent
-      .flex-items-xs-stretch{
-        display:flex;
-       -moz-box-align:stretch;
-        align-items: stretch;
-      }
-
-      //FONTES
+//todos lados
+.p-05 {
+    padding: .5rem;
+}
 
       .bold-block{
         font-weight:bold;
@@ -165,94 +239,75 @@
         }
       }
 
+.mb-05 {
+    margin-bottom: .5em;
+}
 
-      //espaçamentos
+//bordas
+.brd {
+    border: .1rem solid $gray;
+}
 
-      //right
-      .pr-05-md{
-        padding-right:.5rem;
-      }
-      //left
-      .pl-05-md{
-        padding-left:.5rem
-      }
-      //left e right
-      .plr-05-md{
-        padding-right:.5rem;
-        padding-left:.5rem
-      }
-      //todos lados
-      .p-05{
-        padding:.5rem;
-      }
-      //sides 0
-      .p-0{
-        padding-left:0;
-        padding-right:0;
-      }
-      .mb-05{
-        margin-bottom:.5em;
-      }
+.brd-t {
+    border-top: .1rem solid $gray;
+}
 
-      //bordas
-      .brd{
-        border:.1rem solid $gray;
-      }
-      .brd-t{
-        border-top:.1rem solid $gray;
-      }
-      .brd-b{
-        border-bottom:.1rem solid $gray;
-      }
-      .brd-l{
-        border-left:.1rem solid $gray;
-      }
-      .brd-r{
-        border-right:.1rem solid $gray;
-      }
-      .brd-0{
-        border:0;
-      }
-      .brd-b-0{
-        border-bottom:0;
-      }
-      .brd-t-0{
-        border-top:0;
-      }
-      .brd-l-0{
-        border-left:0;
-      }
-      .brd-r-0{
-        border-right:0;
-      }
+.brd-b {
+    border-bottom: .1rem solid $gray;
+}
 
-      //paddings
+.brd-l {
+    border-left: .1rem solid $gray;
+}
 
-      .pl-0-md{
-        padding-left:0;
-      }
-      .pr-0-md{
-        padding-right:0;
-      }
+.brd-r {
+    border-right: .1rem solid $gray;
+}
 
+.brd-0 {
+    border: 0;
+}
 
-    @media (max-width: 540px) {
-      .pl-0-md{
-        padding-left:1rem;
-      }
-      .pr-0-md{
-        padding-right:1rem;
-      }
+.brd-b-0 {
+    border-bottom: 0;
+}
 
-      .pl-05-md{
-        padding-left:1rem;
-      }
-      .pr-05-md{
-        padding-right:1rem
-      }
-       .plr-05-md{
-        padding-left:1rem;
-        padding-right:1rem;
-       }
+.brd-t-0 {
+    border-top: 0;
+}
+
+.brd-l-0 {
+    border-left: 0;
+}
+
+.brd-r-0 {
+    border-right: 0;
+}
+
+//paddings
+.pl-0-md {
+    padding-left: 0;
+}
+
+.pr-0-md {
+    padding-right: 0;
+}
+
+@media (max-width: 540px) {
+    .pl-0-md {
+        padding-left: 1rem;
     }
-
+    .pr-0-md {
+        padding-right: 1rem;
+    }
+    .pl-05-md {
+        padding-left: 1rem;
+    }
+    .pr-05-md {
+        padding-right: 1rem
+    }
+    .plr-05-md {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
