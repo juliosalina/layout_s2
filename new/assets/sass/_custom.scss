@@ -208,11 +208,36 @@ h7 {
     padding: .5rem;
 }
 
-//sides 0
-.p-0 {
-    padding-left: 0;
-    padding-right: 0;
-}
+      .bold-block{
+        font-weight:bold;
+        display:block;
+        margin-bottom:0;
+      }
+      .light-text{
+        font-weight:normal;
+        font-size: 0.8rem;
+      }
+      h7{
+        &.underline{
+          border-bottom:.2rem solid $gray;
+          padding-left:.5rem;
+          padding-right:.5rem;
+          &.blue{
+            border-color:$blue;
+          }
+        }
+      }
+      h5{
+        &.left-line{
+          border-left:.3rem solid $gray;
+          background-color:$white-color;
+          padding:1rem .5rem 1rem .5rem;
+          @include border-radius(.2rem) 
+            &.blue{
+            border-color:$blue;
+          }
+        }
+      }
 
 .mb-05 {
     margin-bottom: .5em;

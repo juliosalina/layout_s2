@@ -19,21 +19,29 @@ $black: #000000;
   $drc-orange: #f89e55;
 
   //colors 
-
+  $white-color: #ffffff;
   $blue:#59A1DB;
+  $blue-dark:#3985BD;
   $gray:#F1F1F1;
   $gray-light: #f5f5f5;
 
-  
   //cores class
 .blue-bkg{
   background-color:$blue;
+}
+.blue-dark-bkg{
+	background-color:$blue-dark;
 }
 .gray-bkg{
   background-color:$gray;
 }
 .gray-light-bkg{
   background-color:$gray-light;
+}
+//cores letras
+
+.white-text{
+	color:$white-color;
 }
 
 @mixin border-radius($radius) {
