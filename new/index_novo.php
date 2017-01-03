@@ -20,6 +20,10 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap-flex.min.css" rel="stylesheet">
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- Charts -->
+    <link href="assets/charts/kendo.common.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/charts/kendo.default.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="menu-open">
@@ -58,6 +62,8 @@
     <script src="assets/js/jquery.scrollTo.min.js"></script>
     <!-- JS for funcions all system -->
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/kendo.all.min.js"></script>
 </body>
 
 </html>

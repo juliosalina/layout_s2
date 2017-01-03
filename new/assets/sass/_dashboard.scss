@@ -1,0 +1,26 @@
+.value {
+	font-weight: bold;
+	font-size: 2rem;
+	&.down {
+		&::before {
+			content: "\f01a";
+			color: #f03154;
+		}
+	}
+	&.up {
+		&::before {
+			content: "\f01b";
+			color: #3292e0;
+		}
+	}
+    &::before {
+        font-family: $icon-font;
+        font-size: 2rem;
+        vertical-align: baseline;
+        margin-right: 0.5rem;
+    }
+}
+
+.card {
+	width: 100%;
+}
