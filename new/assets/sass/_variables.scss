@@ -20,12 +20,15 @@ $black: #000000;
 
   //colors 
   $white-color: #ffffff;
+
   $blue:#59A1DB;
   $blue-dark:#3985BD;
+
   $gray:#F1F1F1;
   $gray-light: #f5f5f5;
+  $gray-dark:#DDD;
 
-  //cores class
+
 .blue-bkg{
   background-color:$blue;
 }
@@ -37,6 +40,10 @@ $black: #000000;
 }
 .gray-light-bkg{
   background-color:$gray-light;
+}
+
+.gray-dark-bkg{
+  background-color:$gray-dark;
 }
 //cores letras
 
