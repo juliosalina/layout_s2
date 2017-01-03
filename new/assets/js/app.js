@@ -206,3 +206,39 @@ var launchFullscreen = function(element) {
 $("#btn-fullscreen").on('click', function() {
     toggle_fullscreen();
 });
+
+//load pages
+var loadPage = function(page) {
+    var request = $.Deferred(),
+        path = 'templates/';
+
+    $.ajax({
+        url: path+page+'.php',
+        method: 'GET',
+        cache: true,
+        crossDomain: true,
+        success: function (data) {
+            request.resolve(data);
+        },
+        error: function() {
+            request.reject(false);
+        }
+    });
+
+    return request.promise();
+};
+
+//animation menu hover
+$('.itens-menu #sidebar-menu ul li').on('mouseover', function() {
+    $('body.menu-close .menu').addClass('changeWB');
+    $('body.menu-close .menu').removeClass('changeWS');
+});
+$('.itens-menu #sidebar-menu ul li').on('mouseout', function() {
+    $('body.menu-close .menu').addClass('changeWS');
+    $('body.menu-close .menu').removeClass('changeWB');
+});
+
+//load dashboard initial page
+loadPage('dashboard').then(function(data) {
+    $('.content-body').append(data);
+});

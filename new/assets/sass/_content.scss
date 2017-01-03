@@ -3,19 +3,23 @@
 		width: 100%;
 		position: relative;
 		display: block;
-		z-index: 10;
+		z-index: 5;
 		margin: 0;
-		padding: 0;
+		padding: 0 0 0 4.46rem;
 		.content {
 			width: 100%;
 			position: relative;
-			padding-left: 3.5rem;
 			display: block;
 			padding-top: 4rem;
 
 			.content-header {
 				background-color: $blue-header;
 				height: 7.5rem;
+			}
+			.content-body {
+				margin-top: -3.5rem;
+				padding-left: 1rem;
+				padding-right: 1rem;
 			}
 		}
 	}
