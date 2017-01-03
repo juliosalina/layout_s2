@@ -13,8 +13,7 @@ h7 {
 
 .custom-checkbox .custom-control-indicator{
   border-radius:50%;
-  background-color:#fff;
-
+  background-color:#fff; 
   &::after{
     font-family:$icon-font;
     content:"\f10c";
@@ -48,26 +47,6 @@ h7 {
   }
 }
 
-
-// .custom-control-input:checked ~ .custom-control-indicator{
-//   background-color:#fff;
-//     &::after{
-//     font-family:$icon-font;
-//     content:"\f05d";
-//     font-size: 1.2rem;
-//     margin-top: -0.5rem;
-//     position: absolute;
-//     outline:none;
-//   }
-// }
-// .custom-control-input:focus ~ .custom-control-indicator{
-//   @include shadow (none);
-// }
-// .custom-control-input:disabled  ~ .custom-control-indicator {
-//     &::after{
-//        color:$gray-dark;
-//     }
-// }
 
 .title-page-mobile {
     display: none;
