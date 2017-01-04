@@ -61,58 +61,6 @@ pointer-events:none;
 user-select: none;
 }
 
-/*stepmenu vertical*/
-
-.step-menu-v{
-width:12.5rem;
-padding:0;
-border-top:.1rem solid #ccc;
- .step-item{
-  border-left:.1rem solid #ccc;
-  border-right:.1rem solid #ccc;
-  list-style-type:none;
-  padding-top:2rem;
-  text-align:center;
-  position:relative;
-  font-size:.8rem;
-  background-color:#F0F0F0;
-  &.active{
-     font-weight:bold;
-  }
-  &.idle{
-     background-color:#DEDEDE;
-     &::after{
-      border-top: 20px solid #DEDEDE;
-     }
-  }
-   &::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 0;
-    height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-top: 20px solid #F0F0F0;
-    clear: both;
-    z-index:1;
-  }
-  &::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 103%;
-    width: 0;
-    height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-top: 20px solid #ccc;
-    clear: both;
-    z-index:1;
-    }
-  }
-}
 
 /*step menu horizontal*/
 /*stepmenu */
@@ -280,7 +228,6 @@ border-top:.1rem solid #ccc;
 .history-menu{
     height:4rem;
     z-index:1;
-    width: 63.7rem;
     p{
     margin-bottom:0;
     font-size:.9rem;
