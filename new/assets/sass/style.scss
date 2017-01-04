@@ -203,13 +203,16 @@ border-top:.1rem solid #ccc;
 
 .side-menu{
     width:23rem;
+    position: fixed;
+    right: 0;
+    top: 4rem;
+    width: 23rem;
+    z-index: 1;
   h3{
     font-size:1.5rem;
     margin:0;
   }
-  i{
-    color:#0092d0;
-  }
+
   label{
     background-color:$gray;
   }
@@ -219,6 +222,32 @@ border-top:.1rem solid #ccc;
   .card-header{
     margin:0;
     background-color:$gray;
+    i{
+      color:#0092d0;
+    }
+  }
+  .btn-profile{
+    background:$black;
+    position:absolute;
+    height:3rem;
+    width:3rem;
+    top:15rem;
+    color:#fff;
+    margin-left:-1rem;
+    padding-top:.1rem;
+    padding-right:.3rem;
+    cursor:pointer;
+    @include border-radius(.3rem);
+  }
+  &.closed{
+    width:3.7rem;
+    .profile-img{
+      width:3rem;
+      height:3rem;
+    }
+    .card-block{
+      display:none;
+    }
   }
 }
 
