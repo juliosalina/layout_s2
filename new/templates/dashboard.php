@@ -34,8 +34,8 @@
         <div class="card card-block">
             <div class="charts">
                 <div class="row ml-0 mr-0 flex-items-xs-middle">
-                    <div class="title-char col-xs-12 col-md-8 col-lg-8 col-xl-8 pl-0 pr-05-md mt-05 mb-05">Evolução Nota Centro Médico Sacomã</div>
-                    <div class="value up mt-05 mb-05 col-xs-12 col-md-4 col-lg-4 col-xl-4 pl-0 pr-05-md">9.4</div>
+                    <div class="title-char col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pl-0-md pr-05-md mt-05 mb-05">Evolução Nota Centro Médico Sacomã</div>
+                    <div class="value up mt-05 mb-05 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pl-0-md pr-05-md">9.4</div>
                 </div>
                 <div class="chart-one"></div>
             </div>
@@ -45,8 +45,8 @@
         <div class="card card-block">
             <div class="charts">
                 <div class="row ml-0 mr-0 flex-items-xs-middle">
-                    <div class="title-char col-xs-12 col-md-8 col-lg-8 col-xl-8 pl-0 pr-05-md mt-05 mb-05">Evolução Nota Usuário</div>
-                    <div class="value down mt-05 mb-05 col-xs-12 col-md-4 col-lg-4 col-xl-4 pl-0 pr-05-md">9.1</div>
+                    <div class="title-char col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pl-0-md pr-05-md mt-05 mb-05">Evolução Nota Usuário</div>
+                    <div class="value down mt-05 mb-05 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pl-0-md pr-05-md">9.1</div>
                 </div>
                 <div class="chart-one"></div>
             </div>

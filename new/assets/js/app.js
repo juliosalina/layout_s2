@@ -18,20 +18,14 @@ var $menu = $('.itens-menu'),
     $logoDiv = $('.logo'),
     $menuItem = $('#sidebar-menu a'),
     $userDetails = $('.user-details'),
-    $overlay = $('.overlay');
+    $overlay = $('.overlay'),
+    $subMenuItem = $('#sidebar-menu ul li ul li a'),
+    $contentBody = $('.content-body');
 
 /*********************************************************
 Initialize document and add scroll to side menu
 *********************************************************/
 $(document).ready(function() {
-    //slimscroll menu lateral
-    $menu.slimScroll({
-        height: 'auto',
-        position: 'right',
-        size: "7px",
-        color: '#bbb',
-        wheelStep: 5
-    });
 });
 
 var addOrRemoveClass = function(element, className, type) {
@@ -67,7 +61,7 @@ $menuButton.on('click', function() {
         }
 
         $userDetails.fadeOut(100);
-        $menu.fadeOut(100);
+        $menu.fadeOut(50);
         $logo.fadeOut(100, function() {
             $logo.attr('src', 'assets/images/logom.jpg');
             addOrRemoveClass($body, 'menu-open', 'remove');
@@ -99,7 +93,7 @@ $menuButton.on('click', function() {
 
     } else {
 
-        $menu.fadeOut(100);
+        $menu.fadeOut(50);
         $logo.fadeOut(100, function() {
             $logo.attr('src', 'assets/images/logo.jpg');
             addOrRemoveClass($body, 'menu-close', 'remove');
@@ -135,9 +129,8 @@ $menuButton.on('click', function() {
     }
 });
 
-//click menu submenu
+//click menu submenu open/close
 var menuItemClick = function(e) {
-
     if(!$body.hasClass('menu-close')) {
         var $this = e;
         if($(this).parent().hasClass('has_sub')) {
@@ -160,11 +153,10 @@ var menuItemClick = function(e) {
             $('.pull-right i', $(this).parent()).removeClass('fa-minus').addClass('fa-plus');
         }
     }
-
 };
-
 $menuItem.on('click', menuItemClick);
 
+//Initialize Toppltip
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 });
@@ -240,8 +232,40 @@ $('.itens-menu #sidebar-menu ul li').on('mouseout', function() {
 
 //load dashboard initial page
 loadPage('dashboard').then(function(data) {
-    $('.content-body').append(data);
+    window.pageName = 'dashboard';
+    $contentBody.html('');
+    $contentBody.append(data);
 });
+
+//Click Submenu
+var subMenuClick = function(el) {
+    $element = $(el);
+    window.pageName = $($element[0].target.attributes[1]).context.nodeValue;
+    var totalSub = $subMenuItem.length,
+        actualGroup = '';
+
+    for(var sub=0; sub<totalSub; sub++) {
+        if ($($subMenuItem[sub]).attr('data-page') === window.pageName) {
+            $($subMenuItem[sub]).addClass("active");
+            $($subMenuItem[sub]).parent().addClass("active");
+            $($subMenuItem[sub]).parent().parent().prev().addClass("active");
+            actualGroup = $($subMenuItem[sub]).attr('data-group');
+        } else if($($subMenuItem[sub]).attr('data-page') !== window.pageName && $($subMenuItem[sub]).attr('data-group') !== actualGroup) {
+            $($subMenuItem[sub]).removeClass("active");
+            $($subMenuItem[sub]).parent().removeClass("active");
+            $($subMenuItem[sub]).parent().parent().prev().removeClass("active");
+        } else if($($subMenuItem[sub]).attr('data-page') !== window.pageName && $($subMenuItem[sub]).attr('data-group') === actualGroup) {
+            $($subMenuItem[sub]).removeClass("active");
+        }  
+    }
+
+    loadPage('dashboard').then(function(data) {
+        $contentBody.html('');
+        $contentBody.append(data);
+    });
+};
+
+$subMenuItem.on('click', subMenuClick);
 
 //charts
 function createChart() {

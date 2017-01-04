@@ -27,12 +27,12 @@
     <link href="assets/charts/kendo.mobile.all.min.css" rel="stylesheet" type="text/css">
 </head>
 
-<body class="menu-open">
+<body class="menu-close">
 
     <!-- Begin page -->
     <div id="wrapper">
 
-        <div class="overlay toggle-open"></div>
+        <div class="overlay toggle-close"></div>
 
         <?php include "includes/header.php"; ?>
         
