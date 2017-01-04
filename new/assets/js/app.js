@@ -246,8 +246,17 @@ loadPage('dashboard').then(function(data) {
 //charts
 function createChart() {
     $('.chart-one').kendoChart({
+        dataSource: {
+            requestStart: function () {
+                kendo.ui.progress($("#loading"), true);
+            },
+            requestEnd: function () {
+                kendo.ui.progress($("#loading"), false);
+
+            }
+        },
         title: {
-            text: "Evolução Nota Centro Médico Sacomã"
+            //text: "Evolução Nota Centro Médico Sacomã"
         },
         legend: {
             position: "bottom"
@@ -255,8 +264,6 @@ function createChart() {
         seriesDefaults: {
             type: "area",
             area: {
-                color: "#7cb0d9",
-                opacity: 0.7,
                 line: {
                     style: "smooth"
                 },
@@ -268,11 +275,18 @@ function createChart() {
             }
         },
         series: [{
-            type: "area",
+            color: "#ececec",
+            opacity: 1,
+            name: "Meta",
+            data: [9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0]
+        }, {
+            color: "#7cb0d9",
+            opacity: 0.5,
             name: "Nota Mês",
             data: [7.5, 7.9, 8.7, 9.0, 8.3, 8.5, 9.7, 9.4]
         }],
         valueAxis: {
+            max: 10,
             labels: {
                 format: "{0}"
             },

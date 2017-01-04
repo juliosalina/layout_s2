@@ -24,6 +24,7 @@
     <!-- Charts -->
     <link href="assets/charts/kendo.common.min.css" rel="stylesheet" type="text/css">
     <link href="assets/charts/kendo.default.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/charts/kendo.mobile.all.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="menu-open">
