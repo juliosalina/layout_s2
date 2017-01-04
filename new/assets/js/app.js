@@ -242,3 +242,65 @@ $('.itens-menu #sidebar-menu ul li').on('mouseout', function() {
 loadPage('dashboard').then(function(data) {
     $('.content-body').append(data);
 });
+
+//charts
+function createChart() {
+    $('.chart-one').kendoChart({
+        title: {
+            text: "Evolução Nota Centro Médico Sacomã"
+        },
+        legend: {
+            position: "bottom"
+        },
+        seriesDefaults: {
+            type: "area",
+            area: {
+                color: "#7cb0d9",
+                opacity: 0.7,
+                line: {
+                    style: "smooth"
+                },
+                border: {
+                    dashType: "dashDot",
+                    color: "#5c99c9",
+                    width: 2
+                }
+            }
+        },
+        series: [{
+            type: "area",
+            name: "Nota Mês",
+            data: [7.5, 7.9, 8.7, 9.0, 8.3, 8.5, 9.7, 9.4]
+        }],
+        valueAxis: {
+            labels: {
+                format: "{0}"
+            },
+            line: {
+                visible: true
+            },
+            border: {
+                visible: true
+            },
+            axisCrossingValue: -10
+        },
+        categoryAxis: {
+            categories: ['Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+            majorGridLines: {
+                visible: false
+            },
+            labels: {
+                rotation: "auto"
+            }
+        },
+        tooltip: {
+            visible: true,
+            format: "{0}",
+            template: "#= series.name #: #= value #"
+        }
+    });
+}
+
+$(document).ready(createChart);
+$(document).bind("kendo:skinChange", createChart);
+
