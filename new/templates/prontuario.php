@@ -424,20 +424,6 @@
 
             </div>
 
-
-        <!-- JS-->
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-        <!-- sem motivo ainda para estes dois-->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>-->
-        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script> -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider.min.js"></script>
-        <script src="assets/js/select2.min.js"></script>
-        <script src="assets/js/kendo.all.min.js"></script>
-
-
-
-
         <script>
 
             $(window).on('load', function() {
