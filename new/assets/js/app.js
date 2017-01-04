@@ -259,7 +259,7 @@ var subMenuClick = function(el) {
         }  
     }
 
-    loadPage('dashboard').then(function(data) {
+    loadPage(window.pageName).then(function(data) {
         $contentBody.html('');
         $contentBody.append(data);
     });

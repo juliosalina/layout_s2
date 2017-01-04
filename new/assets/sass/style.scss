@@ -196,6 +196,7 @@ border-top:.1rem solid #ccc;
 position:fixed;
 width:12.5rem;
 padding:0;
+top:64px;
 border-top:.1rem solid #ccc;
  .step-item{
   border-left:.1rem solid #ccc;
@@ -278,6 +279,8 @@ border-top:.1rem solid #ccc;
 
 .history-menu{
     height:4rem;
+    z-index:1;
+    width: 63.7rem;
     p{
     margin-bottom:0;
     font-size:.9rem;
@@ -298,9 +301,9 @@ border-top:.1rem solid #ccc;
     color:#fff;
     text-align: center;
     padding-top:.1rem;
+    z-index:3;
   }
   .flex-direction-nav .flex-nav-next a{
-
     @include shadow(-41px 5px 27px -9px rgba(14,80,115,0.71)) 
   }
   .flex-direction-nav .flex-nav-prev a{
@@ -422,4 +425,42 @@ border-top:.1rem solid #ccc;
 }
 .waves-block {
     display: block;
+}
+
+//preloader
+
+.loading{
+//  position:fixed;
+  height:100%;
+  width:100%;
+  bottom:0;
+  top:0;
+  left:0;
+  right:0;
+  opacity:.8;
+  background:#fff;
+    svg{
+    position:absolute;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    margin:auto;
+  }
+}
+
+.path {
+  padding:10px;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2s linear infinite; 
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 2000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
