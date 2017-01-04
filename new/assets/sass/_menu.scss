@@ -142,16 +142,21 @@
                     display: none;
                     li {
                         border-top: 0;
-                    }
-                    a {
-                        color: rgba(34, 46, 58, .8);
-                        display: block;
-                        padding: 0.62rem 1.56rem 0.62rem 4.06rem;
-                        text-decoration: none;
-                        &:hover {
-                            color: #000;
+
+                        a {
+                            color: rgba(34, 46, 58, .8);
+                            display: block;
+                            padding: 0.62rem 1.56rem 0.62rem 4.06rem;
                             text-decoration: none;
-                            background-color: transparent;
+                            &:hover {
+                                color: #000;
+                                text-decoration: none;
+                                background-color: transparent;
+                            }
+                            &.active {
+                                color: #5091cd;
+                                background-color: #f2f2f2;
+                            }
                         }
                     }
                 }
@@ -252,6 +257,10 @@ body.menu-close {
                                         z-index: 6;
                                         &:hover {
                                             color: #222e3a;
+                                        }
+                                        &.active {
+                                            color: #5091cd;
+                                            background-color: #f2f2f2;
                                         }
                                     }
                                 }

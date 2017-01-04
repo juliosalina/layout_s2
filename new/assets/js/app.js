@@ -18,20 +18,17 @@ var $menu = $('.itens-menu'),
     $logoDiv = $('.logo'),
     $menuItem = $('#sidebar-menu a'),
     $userDetails = $('.user-details'),
-    $overlay = $('.overlay');
+    $overlay = $('.overlay'),
+    $subMenuItem = $('#sidebar-menu ul li ul li a'),
+    $contentBody = $('.content-body'),
+    $loading = $('.loading');
 
 /*********************************************************
 Initialize document and add scroll to side menu
 *********************************************************/
 $(document).ready(function() {
-    //slimscroll menu lateral
-    $menu.slimScroll({
-        height: 'auto',
-        position: 'right',
-        size: "7px",
-        color: '#bbb',
-        wheelStep: 5
-    });
+    $('#sidebar-menu ul li a:eq(0)').addClass('active');
+    $('#sidebar-menu ul li a:eq(0) i').addClass('active');
 });
 
 var addOrRemoveClass = function(element, className, type) {
@@ -67,7 +64,7 @@ $menuButton.on('click', function() {
         }
 
         $userDetails.fadeOut(100);
-        $menu.fadeOut(100);
+        $menu.fadeOut(50);
         $logo.fadeOut(100, function() {
             $logo.attr('src', 'assets/images/logom.jpg');
             addOrRemoveClass($body, 'menu-open', 'remove');
@@ -99,7 +96,7 @@ $menuButton.on('click', function() {
 
     } else {
 
-        $menu.fadeOut(100);
+        $menu.fadeOut(50);
         $logo.fadeOut(100, function() {
             $logo.attr('src', 'assets/images/logo.jpg');
             addOrRemoveClass($body, 'menu-close', 'remove');
@@ -135,9 +132,8 @@ $menuButton.on('click', function() {
     }
 });
 
-//click menu submenu
+//click menu submenu open/close
 var menuItemClick = function(e) {
-
     if(!$body.hasClass('menu-close')) {
         var $this = e;
         if($(this).parent().hasClass('has_sub')) {
@@ -160,11 +156,10 @@ var menuItemClick = function(e) {
             $('.pull-right i', $(this).parent()).removeClass('fa-minus').addClass('fa-plus');
         }
     }
-
 };
-
 $menuItem.on('click', menuItemClick);
 
+//Initialize Toppltip
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 });
@@ -240,8 +235,65 @@ $('.itens-menu #sidebar-menu ul li').on('mouseout', function() {
 
 //load dashboard initial page
 loadPage('dashboard').then(function(data) {
-    $('.content-body').append(data);
+    window.pageName = 'dashboard';
+    window.breadcrumb = 'Dashboard';
+    $contentBody.html('');
+    $contentBody.append(data);
+
+    $('.menu .title-page').text(window.breadcrumb);
+    $('.title-page-mobile .text').text(window.breadcrumb);
+
+    setTimeout(function() {
+        $loading.hide();
+    }, 1000);
 });
+
+//Click Submenu
+var subMenuClick = function(el) {
+    $element = $(el);
+    
+    window.pageName = $($element[0].target.attributes[1]).context.nodeValue;
+
+    var totalSub = $subMenuItem.length,
+        actualGroup = '';
+
+    $('#sidebar-menu ul li a:eq(0)').removeClass('active');
+    $('#sidebar-menu ul li a:eq(0) i').removeClass('active');
+
+    for(var sub=0; sub<totalSub; sub++) {
+        if ($($subMenuItem[sub]).attr('data-page') === window.pageName) {
+            $($subMenuItem[sub]).addClass("active");
+            $($subMenuItem[sub]).parent().addClass("active");
+            $($subMenuItem[sub]).parent().parent().prev().addClass("active");
+            actualGroup = $($subMenuItem[sub]).attr('data-group');
+
+            //create breadcrumb
+            window.breadcrumb = $($subMenuItem[sub]).parent().parent().prev().text() + '> ' + $($subMenuItem[sub]).text();
+
+        } else if($($subMenuItem[sub]).attr('data-page') !== window.pageName && $($subMenuItem[sub]).attr('data-group') !== actualGroup) {
+            $($subMenuItem[sub]).removeClass("active");
+            $($subMenuItem[sub]).parent().removeClass("active");
+            $($subMenuItem[sub]).parent().parent().prev().removeClass("active");
+        } else if($($subMenuItem[sub]).attr('data-page') !== window.pageName && $($subMenuItem[sub]).attr('data-group') === actualGroup) {
+            $($subMenuItem[sub]).removeClass("active");
+        }
+    }
+
+    $loading.show();
+    loadPage(window.pageName).then(function(data) {
+        $contentBody.html('');
+        $contentBody.append(data);
+
+        $('.menu .title-page').text(window.breadcrumb);
+        $('.title-page-mobile .text').text(window.breadcrumb);
+
+        setTimeout(function() {
+            $loading.hide();
+        }, 1000);
+    });
+};
+
+$subMenuItem.on('click', subMenuClick);
 
 //charts
 function createChart() {
