@@ -342,6 +342,18 @@ h7 {
     padding-right:1rem;
   }
 
+@media (min-width: 1200px) {
+  .pl-0-lg{
+    padding-left:.5rem;
+  }
+  .pr-0-lg{
+    padding-right:.5rem;
+  }
+
+
+}
+
+
 @media (min-width: 992px) and (max-width: 1199px) {
 
   .pl-0-lg{
@@ -350,6 +362,9 @@ h7 {
   .pr-0-lg{
     padding-right:0;
   }
+  // .plr-05-md {
+
+  // }
 }
 @media (max-width: 540px) {
     .pl-0-md {
