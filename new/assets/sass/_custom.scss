@@ -353,6 +353,15 @@ h7 {
 
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .pl-0-lg{
+    padding-left:.5rem;
+  }
+  .pr-0-lg{
+    padding-right:.5rem;
+  }
+
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
