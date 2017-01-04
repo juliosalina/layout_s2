@@ -48,7 +48,7 @@
                     <div class="title-char col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pl-0-md pr-05-md mt-05 mb-05">Evolução Nota Usuário</div>
                     <div class="value down mt-05 mb-05 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pl-0-md pr-05-md">9.1</div>
                 </div>
-                <div class="chart-one"></div>
+                <div class="chart-two"></div>
             </div>
         </div>
     </div>
