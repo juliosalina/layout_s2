@@ -30,7 +30,7 @@
 </div>
 
 <div class="chart row ml-0 mr-0">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 pl-0-md pr-05-md text-xs-center flex-items-xs-stretch">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pl-0-md pr-05-md text-xs-center flex-items-xs-stretch">
         <div class="card card-block">
             <div class="charts">
                 <div class="row ml-0 mr-0 flex-items-xs-middle">
@@ -41,7 +41,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 pr-0-md pl-05-md text-xs-center flex-items-xs-stretch">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pr-0-md pl-05-md text-xs-center flex-items-xs-stretch">
         <div class="card card-block">
             <div class="charts">
                 <div class="row ml-0 mr-0 flex-items-xs-middle">
