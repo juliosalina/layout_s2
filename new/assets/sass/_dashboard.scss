@@ -24,3 +24,23 @@
 .card {
 	width: 100%;
 }
+
+.charts {
+	.value {
+		position: relative;
+	    z-index: 10;
+	    text-align: right;
+	    right: 30px;
+	    font-size: 1.5rem;
+	    &::before {
+	    	font-size: 1.5rem;
+	    }
+	}
+	.title-char {
+		font-size: 1rem;
+		font-weight: bold;
+		color: $black;
+		text-align: left;
+		left: 30px;
+	}
+}
