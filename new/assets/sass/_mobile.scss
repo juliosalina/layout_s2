@@ -32,6 +32,7 @@
 		.title-page-mobile {
 			display: block;
 			top: 4rem;
+			font-size: 1.1rem;
 		}
 
 		.menu-fundo {
@@ -112,11 +113,16 @@
 	}
 
 	body.menu-close {
+		overflow: auto;
 		#wrapper {
 			.changeWS, .changeWB {
 				width: 0 !important;
 			}
 		}
+	}
+
+	body.menu-open {
+		overflow: hidden;
 	}
 
 	.charts {
