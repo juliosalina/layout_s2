@@ -342,6 +342,7 @@ h7 {
     padding-right:1rem;
   }
 
+//XL
 @media (min-width: 1200px) {
   .pl-0-lg{
     padding-left:.5rem;
@@ -353,6 +354,7 @@ h7 {
 
 }
 
+//LG
 @media (min-width: 768px) and (max-width: 991px) {
   .pl-0-lg{
     padding-left:0;
@@ -362,7 +364,7 @@ h7 {
   }
 
 }
-
+//MD
 @media (min-width: 992px) and (max-width: 1199px) {
 
   .pl-0-lg{
@@ -376,16 +378,23 @@ h7 {
   // }
 }
 
-
+//SM
 @media (min-width: 576px) and (max-width: 768px) {
-  .pl-0-lg{
+  .pl-0-lg,.pl-05-md{
     padding-left:0;
   }
-  .pr-0-lg{
+  .pr-0-lg,.pr-05-md{
     padding-right:0;
+  }
+
+  //left e right
+  .plr-05-md {
+      padding-right: 0;
+      padding-left: 0;
   }
 }
 
+//XS
 @media (max-width: 575px) {
 
     .pl-0-md {
