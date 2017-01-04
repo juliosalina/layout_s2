@@ -3,7 +3,7 @@
     <div class="menu-button button-menu-mobile open-left waves-effect waves-light toggle-close" data-toggle="tooltip" data-placement="bottom" title="Diminuir o menu">
         <i class="fa fa-navicon"></i>
     </div>
-    <div class="title-page toggle-close"><?php echo $tags['page-name']; ?></div>
+    <div class="title-page toggle-close"></div>
     <div class="logo toggle-close">
         <a href="index.html" class="logo toggle-close"><img src="assets/images/logom.jpg"></a>
     </div>
@@ -22,7 +22,7 @@
         <div id="sidebar-menu">
             <ul>
                 <li>
-                    <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-home"></i><span> Dashboard </span></a>
+                    <a href="index.php" class="waves-effect"><i class="fa fa-home"></i><span> Dashboard </span></a>
                 </li>
                 <li class="has_sub">
                     <a href="javascript:void(0);" class="waves-effect notclick" data-group="Recepção"><i class="fa fa-users" aria-hidden="true"></i> <span> Recepção </span> <span class="pull-right"><i class="fa fa-plus" aria-hidden="true"></i></span></a>

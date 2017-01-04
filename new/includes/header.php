@@ -43,5 +43,5 @@
     </div>
 </div>
 <div class="title-page-mobile">
-    <div class="text"><?php echo $tags['page-name']; ?></div>
+    <div class="text"></div>
 </div>

@@ -20,12 +20,15 @@ var $menu = $('.itens-menu'),
     $userDetails = $('.user-details'),
     $overlay = $('.overlay'),
     $subMenuItem = $('#sidebar-menu ul li ul li a'),
-    $contentBody = $('.content-body');
+    $contentBody = $('.content-body'),
+    $loading = $('.loading');
 
 /*********************************************************
 Initialize document and add scroll to side menu
 *********************************************************/
 $(document).ready(function() {
+    $('#sidebar-menu ul li a:eq(0)').addClass('active');
+    $('#sidebar-menu ul li a:eq(0) i').addClass('active');
 });
 
 var addOrRemoveClass = function(element, className, type) {
@@ -233,16 +236,29 @@ $('.itens-menu #sidebar-menu ul li').on('mouseout', function() {
 //load dashboard initial page
 loadPage('dashboard').then(function(data) {
     window.pageName = 'dashboard';
+    window.breadcrumb = 'Dashboard';
     $contentBody.html('');
     $contentBody.append(data);
+
+    $('.menu .title-page').text(window.breadcrumb);
+    $('.title-page-mobile .text').text(window.breadcrumb);
+
+    setTimeout(function() {
+        $loading.hide();
+    }, 1000);
 });
 
 //Click Submenu
 var subMenuClick = function(el) {
     $element = $(el);
+    
     window.pageName = $($element[0].target.attributes[1]).context.nodeValue;
+
     var totalSub = $subMenuItem.length,
         actualGroup = '';
+
+    $('#sidebar-menu ul li a:eq(0)').removeClass('active');
+    $('#sidebar-menu ul li a:eq(0) i').removeClass('active');
 
     for(var sub=0; sub<totalSub; sub++) {
         if ($($subMenuItem[sub]).attr('data-page') === window.pageName) {
@@ -250,18 +266,30 @@ var subMenuClick = function(el) {
             $($subMenuItem[sub]).parent().addClass("active");
             $($subMenuItem[sub]).parent().parent().prev().addClass("active");
             actualGroup = $($subMenuItem[sub]).attr('data-group');
+
+            //create breadcrumb
+            window.breadcrumb = $($subMenuItem[sub]).parent().parent().prev().text() + '> ' + $($subMenuItem[sub]).text();
+
         } else if($($subMenuItem[sub]).attr('data-page') !== window.pageName && $($subMenuItem[sub]).attr('data-group') !== actualGroup) {
             $($subMenuItem[sub]).removeClass("active");
             $($subMenuItem[sub]).parent().removeClass("active");
             $($subMenuItem[sub]).parent().parent().prev().removeClass("active");
         } else if($($subMenuItem[sub]).attr('data-page') !== window.pageName && $($subMenuItem[sub]).attr('data-group') === actualGroup) {
             $($subMenuItem[sub]).removeClass("active");
-        }  
+        }
     }
 
+    $loading.show();
     loadPage(window.pageName).then(function(data) {
         $contentBody.html('');
         $contentBody.append(data);
+
+        $('.menu .title-page').text(window.breadcrumb);
+        $('.title-page-mobile .text').text(window.breadcrumb);
+
+        setTimeout(function() {
+            $loading.hide();
+        }, 1000);
     });
 };
 

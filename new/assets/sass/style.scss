@@ -429,8 +429,8 @@ border-top:.1rem solid #ccc;
 
 //preloader
 
-.loading{
-//  position:fixed;
+.loading {
+  position:fixed;
   height:100%;
   width:100%;
   bottom:0;
@@ -439,6 +439,7 @@ border-top:.1rem solid #ccc;
   right:0;
   opacity:.8;
   background:#fff;
+  z-index: 50;
     svg{
     position:absolute;
     bottom:0;
