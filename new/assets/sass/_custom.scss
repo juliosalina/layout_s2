@@ -375,7 +375,19 @@ h7 {
 
   // }
 }
-@media (max-width: 540px) {
+
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .pl-0-lg{
+    padding-left:.5rem;
+  }
+  .pr-0-lg{
+    padding-right:.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+
     .pl-0-md {
         padding-left: 1rem;
     }
