@@ -463,8 +463,8 @@
 
 
         <script>
-            $(window).on('load', function() {
 
+            $(window).on('load', function() {
                 $('.flexslider').flexslider({
                     animation: "slide",
                     animationLoop: false,
@@ -478,7 +478,7 @@
                 });
             });
 
-           // Scroll para #
+           // Scroll animate para #
 
           $(function() {
             $('a[href*="#"]:not([href="#"])').click(function() {
@@ -494,6 +494,25 @@
               }
             });
           });
+
+          //função scroll
+
+          $(window).scroll(function() {
+
+            //fixar slider historico no scroll TODO CRIAR CLASSE
+            var scrollPosition = $(window).scrollTop();
+            if(scrollPosition > 10){
+              $('.step-menu-v').css('top','10px');
+              $('.history-menu').css({'position': 'fixed', 'top': '0'});
+            }else{
+               $('.step-menu-v').css('top','64px');
+               $('.history-menu').css({'position': 'relative', 'top': 'auto'});
+            }
+
+          });
+
+
+
         </script>
 
 </body>
