@@ -193,7 +193,7 @@ border-top:.1rem solid #ccc;
 /*stepmenu */
 
 .step-menu-v{
-  position:fixed;
+position:fixed;
 width:12.5rem;
 padding:0;
 border-top:.1rem solid #ccc;
@@ -242,6 +242,10 @@ border-top:.1rem solid #ccc;
     border-top: 20px solid #ccc;
     clear: both;
     z-index:1;
+    }
+    a{
+      text-decoration:none;
+      color:#000;
     }
   }
 }

@@ -33,11 +33,11 @@
 
         <!-- step menu -->
         <ul class="step-menu-v">
-            <li class="step-item">Pré-Consulta</li>
-            <li class="step-item">Anamnese</li>
-            <li class="step-item">Ex. Físico</li>
-            <li class="step-item">Res. Exames</li>
-            <li class="step-item active">Diagnóstico</li>
+            <li class="step-item"><a href="#menu-1">Pré-Consulta</a></li>
+            <li class="step-item"><a href="#menu-2">Anamnese</a></li>
+            <li class="step-item"><a href="#menu-3">Ex. Físico</a></li>
+            <li class="step-item"><a href="#menu-4">Res. Exames</a></li>
+            <li class="step-item active"><a href="#menu-5">Diagnóstico</a></li>
             <li class="step-item idle">Conduta</li>
             <li class="step-item idle">Procedimentos</li>
             <li class="step-item idle">Sol. Exames</li>
@@ -150,7 +150,7 @@
 
                 <!-- pre consulta -->
 
-                <div class="card card-block mt-1">
+                <div id="menu-1" class="card card-block mt-1">
                     <h6 class="card-title font-weight-bold">Pré-Consulta</h6>
                     <ul class="row fa-ul pl-3">
                         <li class="col-xs-12 col-lg-2 pl-0">
@@ -170,7 +170,7 @@
 
                  <!-- anamnese -->
 
-                <div class="card card-block">
+                <div id="menu-2" class="card card-block">
 
                     <h6 class="card-title font-weight-bold">Anamnese</h6>
 
@@ -194,7 +194,7 @@
 
             </div>
 
-            <div class="col-md-10 pr-05-md">
+            <div id="menu-3" class="col-md-10 pr-05-md">
                   <div class="card card-block">
                     <h6 class="card-title font-weight-bold">Exame Físico</h6>
                     <div class="row">
@@ -215,7 +215,7 @@
             </div>
 
 
-            <div class="col-md-10 pr-05-md">
+            <div id="menu-4" class="col-md-10 pr-05-md">
                 <div class="card card-block">
                     <h6 class="card-title font-weight-bold">Card title</h6>
 
@@ -261,7 +261,7 @@
                 </div>
             </div>
 
-            <div class="col-md-10 pr-05-md">
+            <div id="menu-5" class="col-md-10 pr-05-md">
                 <div class="card card-block">
                     <h6 class="card-title font-weight-bold">Solicitação de Exames e Procedimentos</h6>
                     <div class="row">
@@ -477,6 +477,23 @@
                     nextText: ""
                 });
             });
+
+           // Scroll para #
+
+          $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                  $('html, body').animate({
+                    scrollTop: target.offset().top
+                  }, 1000);
+                  return false;
+                }
+              }
+            });
+          });
         </script>
 
 </body>

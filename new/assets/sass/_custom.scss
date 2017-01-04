@@ -225,28 +225,6 @@ h7 {
     }
 }
 
-//espaçamentos
-//right
-.pr-05-md {
-    padding-right: .5rem;
-}
-
-//left
-.pl-05-md {
-    padding-left: .5rem
-}
-
-//left e right
-.plr-05-md {
-    padding-right: .5rem;
-    padding-left: .5rem
-}
-
-//todos lados
-.p-05 {
-    padding: .5rem;
-}
-
       .bold-block{
         font-weight:bold;
         display:block;
@@ -327,15 +305,47 @@ h7 {
     border-right: 0;
 }
 
-//paddings
-.pl-0-md {
-    padding-left: 0;
-}
+  //paddings
+  .pl-0-md{
+      padding-left: 0;
+  }
 
-.pr-0-md {
-    padding-right: 0;
-}
+  .pr-0-md {
+      padding-right: 0;
+  }
+  //espaçamentos
+  //right
+  .pr-05-md {
+      padding-right: .5rem;
+  }
 
+  //left
+  .pl-05-md {
+      padding-left: .5rem
+  }
+
+  //left e right
+  .plr-05-md {
+      padding-right: .5rem;
+      padding-left: .5rem
+  }
+
+  //todos lados
+  .p-05 {
+      padding: .5rem;
+  }
+
+  .pl-0-lg{
+    padding-left:1rem;
+  }
+@media (max-width: 992px){
+  .pl-0-lg{
+    padding-left:0;
+  }
+  .pr-0-lg{
+    padding-right:0;
+  }
+}
 @media (max-width: 540px) {
     .pl-0-md {
         padding-left: 1rem;
