@@ -197,6 +197,11 @@ h7 {
 
 //table
 table {
+  thead {
+    th {
+      border-top: none !important;
+    }
+  }
   tbody {
     tr {
       &:hover {
@@ -208,6 +213,34 @@ table {
       }
     }
   }
+}
+
+//form
+.form-control {
+  border-radius: 0;
+  font-size: 0.8rem;
+}
+
+.comment {
+  label {
+    font-size: 0.8rem;
+    color: #4a5869;
+    font-weight: bold;
+    &.more {
+      width: 9rem;
+    }
+  }
+}
+
+.hist {
+  position: relative;
+  z-index: 2;
+}
+
+.comment {
+  position: relative;
+  z-index: 1;
+  margin-top: -0.7rem;
 }
 
 //tabs

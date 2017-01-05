@@ -200,8 +200,8 @@
     </div>
 </div>
 
-<div class="cirurgia_pos row ml-0 mr-0">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-0-md pr-05-md flex-items-xs-stretch">
+<div class="cirurgia_pos hist row ml-0 mr-0">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-0-md pr-0-md flex-items-xs-stretch">
         <div class="card shadom-tab">
             <div class="card-header brd-b-0">
                 <ul class="nav nav-tabs card-header-tabs float-xs-left" role="tablist">
@@ -261,6 +261,22 @@
                         <p>asdasd a2</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cirurgia_pos comment row ml-0 mr-0">
+    <div class="card card-block">
+        <div class="row ml-0 mr-0">
+            <div class="col-md-9 plr-05-md flex-items-xs-middle">
+                <label class="mr-1">Comentário</label><input class="form-control" type="text" placeholder="Digite aqui o seu comentário...">
+            </div>
+            <div class="col-md-2 plr-05-md flex-items-xs-middle">
+               <label class="mr-1 more">Próx. Contato</label><input class="form-control" type="text" placeholder="Data">
+            </div>
+            <div class="col-md-1 pl-05-md pr-0 flex-items-xs-middle">
+                <button type="button" class="btn btn-primary btn-block"><i class="fa fa-plus"></i>Adicionar</button>
             </div>
         </div>
     </div>

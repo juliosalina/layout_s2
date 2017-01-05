@@ -302,6 +302,16 @@ var subMenuClick = function(el) {
             nextText: ""
         });
 
+        //tab control
+        $('a[data-toggle="tab"]').click(function (e) {
+            $this = $(e);
+            if($this.attr('href') !== '#historico') {
+                $('.comment').hide();
+            } else {
+                $('.comment').show();
+            }
+        });
+
     });
 };
 
