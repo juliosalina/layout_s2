@@ -25,10 +25,12 @@ $black: #000000;
   $blue-dark:#3985BD;
   $blue-darker:#00578B;
   $blue-medium:#59A1DB;
+  $blue-medium-dark: #4a5869;
 
   $gray:#F1F1F1;
   $gray-light: #f5f5f5;
   $gray-dark:#DDD;
+  $gray-light: #e8e8e8;
 
 
 .blue-bkg{
@@ -54,6 +56,9 @@ $black: #000000;
 
 .white-text{
 	color:$white-color;
+}
+.blue-medium-dark-text {
+  color: $blue-medium-dark;
 }
 
 //fontes
