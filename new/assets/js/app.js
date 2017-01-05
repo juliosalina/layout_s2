@@ -290,6 +290,18 @@ var subMenuClick = function(el) {
         setTimeout(function() {
             $loading.hide();
         }, 1000);
+
+
+        $('.flexslider').flexslider({
+            animation: "slide",
+            animationLoop: false,
+            controlNav: true,
+            pauseOnHover: true,
+            touch: true,
+            prevText: "",
+            nextText: ""
+        });
+
     });
 };
 

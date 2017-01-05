@@ -45,22 +45,75 @@
         <div class="card card-secondary">
             <div class="card-header">Agendamentos</div>
             <div class="row card-block">
-
                 <div class="block-item">
                     <i class="fa fa-eye fa-lg"></i>
-                    <i class="fa fa-eye fa-lg"></i>
-                    <i class="fa fa-eye fa-lg"></i>
+                    <i class="fa fa-refresh fa-lg"></i>
+                    <i class="fa fa-trash fa-lg"></i>
                 </div>
 
                 <div class="col-xs-12 col-md-12 plr-05-md pr-0-lg">
-                    <ul class="list-group">
-                        <li class="list-group-item"><label>Data:</label>27/12/2016 - 07:45</li>
-                        <li class="list-group-item"><label>Produto:</label>CONSULTA NUTRICIONISTA</li>
-                        <li class="list-group-item"><label>Profissional:</label>Mirelle Maira Santos</li>
-                        <li class="list-group-item"><label>Clínica:</label>ITAQUERA</li>
-                        <li class="list-group-item"><label>Valor</label>R$ 90,00</li>
-                    </ul>
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><label>Data:</label>27/12/2016 - 07:45</li>
+                                    <li class="list-group-item"><label>Produto:</label>CONSULTA NUTRICIONISTA</li>
+                                    <li class="list-group-item"><label>Profissional:</label>Mirelle Maira Santos</li>
+                                    <li class="list-group-item"><label>Clínica:</label>ITAQUERA</li>
+                                    <li class="list-group-item"><label>Valor</label>R$ 90,00</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><label>Data:</label>27/12/2016 - 07:45</li>
+                                    <li class="list-group-item"><label>Produto:</label>CONSULTA NUTRICIONISTA</li>
+                                    <li class="list-group-item"><label>Profissional:</label>Mirelle Maira Santos</li>
+                                    <li class="list-group-item"><label>Clínica:</label>ITAQUERA</li>
+                                    <li class="list-group-item"><label>Valor</label>R$ 90,00</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><label>Data:</label>27/12/2016 - 07:45</li>
+                                    <li class="list-group-item"><label>Produto:</label>CONSULTA NUTRICIONISTA</li>
+                                    <li class="list-group-item"><label>Profissional:</label>Mirelle Maira Santos</li>
+                                    <li class="list-group-item"><label>Clínica:</label>ITAQUERA</li>
+                                    <li class="list-group-item"><label>Valor</label>R$ 90,00</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><label>Data:</label>27/12/2016 - 07:45</li>
+                                    <li class="list-group-item"><label>Produto:</label>CONSULTA NUTRICIONISTA</li>
+                                    <li class="list-group-item"><label>Profissional:</label>Mirelle Maira Santos</li>
+                                    <li class="list-group-item"><label>Clínica:</label>ITAQUERA</li>
+                                    <li class="list-group-item"><label>Valor</label>R$ 90,00</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><label>Data:</label>27/12/2016 - 07:45</li>
+                                    <li class="list-group-item"><label>Produto:</label>CONSULTA NUTRICIONISTA</li>
+                                    <li class="list-group-item"><label>Profissional:</label>Mirelle Maira Santos</li>
+                                    <li class="list-group-item"><label>Clínica:</label>ITAQUERA</li>
+                                    <li class="list-group-item"><label>Valor</label>R$ 90,00</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><label>Data:</label>27/12/2016 - 07:45</li>
+                                    <li class="list-group-item"><label>Produto:</label>CONSULTA NUTRICIONISTA</li>
+                                    <li class="list-group-item"><label>Profissional:</label>Mirelle Maira Santos</li>
+                                    <li class="list-group-item"><label>Clínica:</label>ITAQUERA</li>
+                                    <li class="list-group-item"><label>Valor</label>R$ 90,00</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+            <div class="row">
+                <div class="setas brd-t col-xs-12 col-md-12 plr-05-md pr-0-lg"></div>
             </div>
         </div>
     </div>
@@ -69,7 +122,7 @@
 
 <!-- blocos fundo cinza -->
 <div class="cirurgia_pos row ml-0 mr-0">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-0-md pr-0-md flex-items-xs-stretch">
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 pl-0-md pr-0-md flex-items-xs-stretch">
         <div class="card card-block">
             <h4 class="card-title">Dados da Cirurgia 1</h4>
             <div class="row">
@@ -117,31 +170,32 @@
                         </ul>
                     </div>
                 </div>
-
-                <!-- botoes -->
-
-                <div class="row col-md-4 pr-0-md pl-05-md brd-l">
-
-                  <div class="col-md-6 plr-05-md mb-05">
-                      <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
-                  </div>
-                  <div class="col-md-6 pl-05-md pr-0-md mb-05">
-                      <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
-                  </div>
-                  <div class="col-md-6 plr-05-md mb-05">
-                      <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
-                  </div>
-                  <div class="col-md-6 pl-05-md pr-0-md mb-05">
-                      <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
-                  </div>
-                  <div class="col-md-6 plr-05-md mb-05">
-                      <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
-                  </div>
-                  <div class="col-md-6 pl-05-md pr-0-md mb-05">
-                      <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
-                  </div>
-                </div>
-
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-0-md pr-0-md flex-items-xs-stretch">
+        <!-- botoes -->
+        <div class="card card-block">
+            <h4 class="card-title">Dados da Cirurgia 1</h4>
+            <div class="row col-md-4 pr-0-md pl-05-md brd-l">
+              <div class="col-md-6 plr-05-md mb-05">
+                  <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
+              </div>
+              <div class="col-md-6 pl-05-md pr-0-md mb-05">
+                  <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
+              </div>
+              <div class="col-md-6 plr-05-md mb-05">
+                  <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
+              </div>
+              <div class="col-md-6 pl-05-md pr-0-md mb-05">
+                  <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
+              </div>
+              <div class="col-md-6 plr-05-md mb-05">
+                  <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
+              </div>
+              <div class="col-md-6 pl-05-md pr-0-md mb-05">
+                  <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
+              </div>
             </div>
         </div>
     </div>

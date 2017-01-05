@@ -64,6 +64,7 @@
     <script src="assets/js/app.js"></script>
     <script src="assets/js/select2.min.js"></script>
     <script src="assets/js/kendo.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider.min.js"></script>
 </body>
 
 </html>

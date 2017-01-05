@@ -228,4 +228,35 @@ html[xmlns] .flexslider .slides {
 .flex-control-thumbs .flex-active { 
   opacity: 1; 
   cursor: default; 
-} 
+}
+
+.cirurgia_pos {
+  .slides {
+  }
+  .flex-direction-nav {
+    top: 1.4rem;
+    position: relative;
+    color: #5091cd;
+
+    .flex-nav-next {
+      a {
+        margin-right:-23px;
+        &::before {
+          font-size: 35px;
+          color: #5091cd;
+        }
+      }
+    }
+
+    .flex-prev {
+      &::before {
+        font-size: 35px;
+        color: #5091cd;
+      }
+    }
+  }
+  .flex-control-nav {
+    z-index: 5;
+    bottom: -45px;
+  }
+}
