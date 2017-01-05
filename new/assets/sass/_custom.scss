@@ -129,7 +129,8 @@ h7 {
     .card-header {
         background-color: #0092D0;
         color: #fff;
-        padding: 0.25rem 1rem;
+        padding: 0.25rem 0.7rem;
+        border-radius: 0.1rem;
     }
 }
 
@@ -137,30 +138,41 @@ h7 {
     .card-header {
         background-color: #0092D0;
         color: #fff;
-        padding: 0.25rem 1rem;
+        padding: 0.25rem 0.7rem;
+        border-radius: 0.1rem;
     }
 }
 
-.card-block .block-item {
-    position: absolute;
-    right: 1rem;
-    top: 2.5rem;
+.card-block {
+  padding: 0.8rem;
+    .block-item {
+      position: absolute;
+      right: 1rem;
+      top: 2.5rem;
+      i {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+  }
 }
 
 .card {
     border: 0;
-    @include shadow(2px 2px 3px 0px $gray);
+    @include shadow(2px 2px 3px 0px rgba(0, 0, 0, .1));
     //listas
-    .list-group .list-group-item {
-        border: 0;
-        padding: 0 1.25rem;
-        font-size: .7rem;
-        background: transparent;
-        label {
-            font-weight: bold;
-            margin-bottom: 0;
-            margin-right: 0.25rem;
-        }
+    .list-group {
+      line-height: 1rem;
+      .list-group-item {
+          border: 0;
+          padding: 0 1rem 0 0;
+          font-size: .7rem;
+          background: transparent;
+          label {
+              font-weight: bold;
+              margin-bottom: 0;
+              margin-right: 0.25rem;
+          }
+      }
     }
     &.no-shadow {
         @include shadow(none);
