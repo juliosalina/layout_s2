@@ -1,6 +1,6 @@
 h7 {
     &.underline {
-        border-bottom: .2rem solid $gray;
+        border-bottom: .2rem solid $gray-dark;
         padding-left: .5rem;
         padding-right: .5rem;
         &.blue {
@@ -352,6 +352,10 @@ h7 {
   }
   .pr-0-lg{
     padding-right:1rem;
+  }
+
+  .pr-6{
+    padding-right:6rem;
   }
 
 //XL
