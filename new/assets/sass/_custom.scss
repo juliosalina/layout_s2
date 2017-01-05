@@ -94,11 +94,24 @@ h7 {
     }
     &:hover {
         //TODO MIXIN PARA SHADOWS
-        opacity: 0.7
+        opacity: 0.8
     }
     &.btn-nav {
         background-color: #0092D0;
         color: #fff;
+    }
+    &.disable {
+      background-color: #c0c0c0;
+      color: #535353;
+      border-top: solid .2rem #c0c0c0;
+      &:hover {
+        cursor: default;
+        background-color: #c0c0c0;
+        opacity: 1;
+      }
+    }
+    &.align {
+      padding: .3rem 1rem 0.5rem 1rem;
     }
 }
 
@@ -177,23 +190,61 @@ h7 {
     &.no-shadow {
         @include shadow(none);
     }
+    &.shadom-tab {
+        box-shadow: 0px 2px 0px 0 rgba(0,0,0,.1);
+    }
+}
+
+//table
+table {
+  tbody {
+    tr {
+      &:hover {
+        background-color: #f5f5f5;
+      }
+      th {
+        font-weight: normal;
+        padding: .65rem;
+      }
+    }
+  }
 }
 
 //tabs
-.nav-tabs .nav-link {
-    margin-right: .1rem;
-    margin-left: 0;
-    border-right: .1rem solid #FCFBFB;
-    border-left: .1rem solid #FCFBFB;
-    border-top: .1rem solid #FCFBFB;
-    color: #414141;
-    font-weight: bold;
-    background-color: #FCFBFB;
-    &.active {
-        border-top: .2rem solid #0092D0;
-        border-left: 0.1rem solid $gray;
-        border-right: 0.1rem solid $gray;
+.nav-tabs {
+  .nav-item {
+    .nav-link {
+      margin-right: .1rem;
+      margin-left: 0;
+      border-right: .1rem solid #fcfbfb;
+      border-left: .1rem solid #fcfbfb;
+      border-top: .1rem solid #fcfbfb;
+      color: #3f3f3f;
+      font-weight: bold;
+      background-color: #fcfbfb;
+
+      &:hover {
+        border-color: none !important;
+        border-bottom: 0 !important;
+        background-color: #ffffff;
+      }
     }
+    &.active {
+      border-top: .2rem solid #0092D0;
+      border-left: 0.1rem solid $gray;
+      border-right: 0.1rem solid $gray;
+      background-color: #ffffff;
+
+      .nav-link {
+        background-color: #ffffff !important;
+        border-bottom: 0 !important;
+        &:hover {
+          border-color: none !important;
+          border-bottom: 0 !important;
+        }
+      }
+    }
+  }
 }
 
 .card-header-tabs {
@@ -269,11 +320,11 @@ h7 {
       }
 
 .mb-05 {
-    margin-bottom: .5em;
+  margin-bottom: .5em !important;
 }
 
 .mt-05 {
-    margin-top: .5em;
+  margin-top: .5em !important;
 }
 
 //bordas
@@ -295,6 +346,10 @@ h7 {
 
 .brd-r {
     border-right: .1rem solid $gray;
+}
+
+.brd-gray-light {
+  border: .1rem solid $gray-light;
 }
 
 .brd-0 {
@@ -352,6 +407,14 @@ h7 {
   }
   .pr-0-lg{
     padding-right:1rem;
+  }
+
+  .pt-05 {
+    padding-top: .5rem;
+  }
+
+  .pb-05 {
+    padding-bottom: .5rem;
   }
 
 //XL

@@ -122,14 +122,13 @@
 
 <!-- blocos fundo cinza -->
 <div class="cirurgia_pos row ml-0 mr-0">
-    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 pl-0-md pr-0-md flex-items-xs-stretch">
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 pl-0-md pr-05-md flex-items-xs-stretch">
         <div class="card card-block">
-            <h4 class="card-title">Dados da Cirurgia 1</h4>
-            <div class="row">
-
-                <div class="col-md-2 pl-0-md pr-05-md flex-items-xs-stretch">
-                    <div class="col-xs-12 gray-bkg flex-items-xs-middle p-05">
-                        <i class="fa fa-hospital-o fa-2x"></i>
+            <h7 class="card-title font-weight-bold">Dados da Cirurgia</h7>
+            <div class="row ml-0 mr-0 mt-05">
+                <div class="col-md-3 pl-0-md pr-05-md flex-items-xs-stretch">
+                    <div class="col-xs-12 gray-bkg flex-items-xs-middle pr-1 pl-1 pt-05 pb-05 brd-gray-light">
+                        <i class="fa fa-hospital-o fa-2x mr-1 blue-medium-dark-text"></i>
                         <ul class="list-group">
                             <li class="list-group-item"><label>Label:</label>Cras justo odio</li>
                             <li class="list-group-item"><label>Label:</label>Dapibus ac facilisi</li>
@@ -138,9 +137,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-2 plr-05-md flex-items-xs-stretch">
-                    <div class="col-xs-12 gray-bkg flex-items-xs-middle p-05">
-                        <i class="fa fa-user-md fa-2x"></i>
+                <div class="col-md-3 plr-05-md pr-0-lg flex-items-xs-stretch">
+                    <div class="col-xs-12 gray-bkg flex-items-xs-middle pr-1 pl-1 pt-05 pb-05 brd-gray-light">
+                        <i class="fa fa-user-md fa-2x mr-1 blue-medium-dark-text"></i>
                         <ul class="list-group">
                             <li class="list-group-item"><label>Label:</label>Cras justo odio</li>
                             <li class="list-group-item"><label>Label:</label>Dapibus ac facilisis</li>
@@ -149,9 +148,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-2 plr-05-md flex-items-xs-stretch">
-                     <div class="col-xs-12 gray-bkg flex-items-xs-middle p-05">
-                        <i class="fa fa-calendar fa-2x"></i>
+                <div class="col-md-3 plr-05-md pr-0-lg flex-items-xs-stretch">
+                     <div class="col-xs-12 gray-bkg flex-items-xs-middle pr-1 pl-1 pt-05 pb-05 brd-gray-light">
+                        <i class="fa fa-calendar fa-2x mr-1 blue-medium-dark-text"></i>
                         <ul class="list-group">
                             <li class="list-group-item"><label>Label:</label>Cras justo odio</li>
                             <li class="list-group-item"><label>Label:</label>Dapibus ac facilisis</li>
@@ -160,9 +159,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-2 pl-05-md pr-1 flex-items-xs-stretch">
-                     <div class="col-xs-12 gray-bkg flex-items-xs-middle p-05">
-                        <i class="fa fa-calendar-check-o fa-2x"></i>
+                <div class="col-md-3 pr-0-md pl-05-md flex-items-xs-stretch">
+                     <div class="col-xs-12 gray-bkg flex-items-xs-middle pr-1 pl-1 pt-05 pb-05 brd-gray-light">
+                        <i class="fa fa-calendar-check-o fa-2x mr-1 blue-medium-dark-text"></i>
                         <ul class="list-group">
                             <li class="list-group-item"><label>Label:</label>Cras justo odio</li>
                             <li class="list-group-item"><label>Label:</label>Dapibus ac facilisi</li>
@@ -173,29 +172,95 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-0-md pr-0-md flex-items-xs-stretch">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pr-0-md pl-05-md flex-items-xs-stretch">
         <!-- botoes -->
         <div class="card card-block">
-            <h4 class="card-title">Dados da Cirurgia 1</h4>
-            <div class="row col-md-4 pr-0-md pl-05-md brd-l">
-              <div class="col-md-6 plr-05-md mb-05">
-                  <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
+            <h7 class="card-title font-weight-bold">Ações</h7>
+            <div class="row ml-0 mr-0 mt-05">
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-0-md pr-05-md mb-05 text-xs-center flex-items-xs-stretch">
+                  <button type="button" class="btn btn-secondary btn-sm btn-block light-text align">Liberar Cirurgia</button>
               </div>
-              <div class="col-md-6 pl-05-md pr-0-md mb-05">
-                  <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 plr-05-md pr-0-lg mb-05 text-xs-center flex-items-xs-stretch">
+                  <button type="button" class="btn btn-secondary btn-sm btn-block light-text disable align">Retorno Cirurgião</button>
               </div>
-              <div class="col-md-6 plr-05-md mb-05">
-                  <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pr-0-md pl-05-md mb-05 text-xs-center flex-items-xs-stretch">
+                  <button type="button" class="btn btn-secondary btn-sm btn-block light-text disable align">Consulta Cardiologia</button>
               </div>
-              <div class="col-md-6 pl-05-md pr-0-md mb-05">
-                  <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-0-md pr-05-md text-xs-center flex-items-xs-stretch">
+                  <button type="button" class="btn btn-secondary btn-sm btn-block light-text disable align">Finalizar Cirurgia</button>
               </div>
-              <div class="col-md-6 plr-05-md mb-05">
-                  <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 plr-05-md pr-0-lg text-xs-center flex-items-xs-stretch">
+                  <button type="button" class="btn btn-secondary btn-sm btn-block light-text disable align">Agendar Cirurgia</button>
               </div>
-              <div class="col-md-6 pl-05-md pr-0-md mb-05">
-                  <button type="button" class="btn btn-secondary btn-block light-text">Retorno Cirurgião</button>
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pr-0-md pl-05-md text-xs-center flex-items-xs-stretch">
+                  <button type="button" class="btn btn-secondary btn-sm btn-block light-text disable align">Retorno Cardiologia</button>
               </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cirurgia_pos row ml-0 mr-0">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-0-md pr-05-md flex-items-xs-stretch">
+        <div class="card shadom-tab">
+            <div class="card-header brd-b-0">
+                <ul class="nav nav-tabs card-header-tabs float-xs-left" role="tablist">
+                    <li class="nav-item active">
+                        <a class="nav-link" data-toggle="tab" href="#historico" role="tab">Histórico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#atendimentos" role="tab">Últimos atendimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#documentacao" role="tab">Documentação</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-block brd-l">
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="historico" role="tabpanel">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="head">#</th>
+                                    <th class="head">Data</th>
+                                    <th class="head">Informação</th>
+                                    <th class="head">Usuário</th>
+                                    <th class="head">Próx. Contato</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <th>16/11/2016 14:27</th>
+                                    <th>Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                                    <th>Gaston Augusto Perez Pouilleux</th>
+                                    <th>19/11/2016</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <th>16/11/2016 14:27</th>
+                                    <th>Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                                    <th>Gaston Augusto Perez Pouilleux</th>
+                                    <th>19/11/2016</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <th>16/11/2016 14:27</th>
+                                    <th>Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                                    <th>Gaston Augusto Perez Pouilleux</th>
+                                    <th>19/11/2016</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="atendimentos" role="tabpanel">
+                        <p>asdas</p>
+                    </div>
+                    <div class="tab-pane fade" id="documentacao" role="tabpanel">
+                        <p>asdasd a2</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
