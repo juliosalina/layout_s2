@@ -142,7 +142,7 @@ user-select: none;
 
 .step-menu-v{
 position:fixed;
-width:12.5rem;
+width:10.5rem;
 padding:0;
 top:64px;
 border-top:.1rem solid #ccc;
@@ -173,8 +173,8 @@ border-top:.1rem solid #ccc;
     top: 100%;
     width: 0;
     height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
+    border-left: 5.2rem solid transparent;
+    border-right: 5.2rem solid transparent;
     border-top: 20px solid #F0F0F0;
     clear: both;
     z-index:1;
@@ -186,8 +186,8 @@ border-top:.1rem solid #ccc;
     top: 103%;
     width: 0;
     height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
+    border-left: 5.2rem solid transparent;
+    border-right: 5.2rem solid transparent;
     border-top: 20px solid #ccc;
     clear: both;
     z-index:1;
@@ -222,9 +222,9 @@ border-top:.1rem solid #ccc;
   .card-header{
     margin:0;
     background-color:$gray;
-    i{
-      color:#0092d0;
-    }
+     i{
+       color:#0092d0;
+     }
   }
   .btn-profile{
     background:$black;
@@ -235,19 +235,38 @@ border-top:.1rem solid #ccc;
     color:#fff;
     margin-left:-1rem;
     padding-top:.1rem;
-    padding-right:.3rem;
     cursor:pointer;
     @include border-radius(.3rem);
+  }
+  .profile-img{
+    margin-top:3rem;
+    margin-bottom:1rem;
   }
   &.closed{
     width:3.7rem;
     .profile-img{
       width:3rem;
       height:3rem;
+      margin-top:1rem;
+      margin-bottom:0;
     }
-    .card-block{
-      display:none;
-    }
+    .hide-on-close{
+      visibility:hidden;
+     }
+     .card-header{
+      a{
+        display:block;
+        float:left;
+        margin-left: -0.3rem;
+        i{
+          font-size:2.2rem;
+        }
+      }
+     }
+     h5.card-title{
+      font-size:.7rem;
+      margin:0 0 0 -.5rem;
+     }
   }
 }
 
@@ -263,10 +282,13 @@ border-top:.1rem solid #ccc;
     line-height:1rem;
   }
    .slides li{
-    padding-left:.4rem;
+   // margin:0 4px; // necessário ser px para slider
+   //border-right:1px solid #87C3E8; // necessário ser px para slider
     height:4rem;
-    border-right:.1rem solid #87C3E8;
     cursor:pointer;
+    &:hover{
+      background-color:$blue-darker;
+    }
   }
     .flex-direction-nav li a{
     background-color:#87C3E8;
@@ -284,6 +306,13 @@ border-top:.1rem solid #ccc;
   }
   .flex-direction-nav .flex-nav-prev a{
     @include shadow(43px 5px 27px -9px rgba(14,80,115,0.71)) 
+  }
+  .history-info{
+    background-color:#fff;
+    position:absolute;
+    margin-top:4rem;
+    color:#000;
+    background-color:#000;
   }
 }
 
