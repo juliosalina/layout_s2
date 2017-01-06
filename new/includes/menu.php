@@ -49,7 +49,7 @@
                 <li class="has_sub">
                     <a href="javascript:void(0);" class="waves-effect notclick" data-group="Médico"><i class="fa fa-user-md" aria-hidden="true"></i><span> Médico </span><span class="pull-right"><i class="fa fa-plus" aria-hidden="true"></i></span></a>
                     <ul class="list-unstyled">
-                        <li><a href="javascript:void(0);" data-path="medico" data-page="prontuario" data-group="Médico">Atendimento</a></li>
+                        <li><a href="javascript:void(0);" data-path="medico" data-page="atendimento" data-group="Médico">Atendimento</a></li>
                         <li><a href="javascript:void(0);" data-path="medico" data-page="pacientes" data-group="Médico">Pacientes</a></li>
                         <li><a href="javascript:void(0);" data-path="medico" data-page="escalas_medico" data-group="Médico">Escala</a></li>
                         <li><a href="javascript:void(0);" data-path="medico" data-page="pop" data-group="Médico">POP</a></li>

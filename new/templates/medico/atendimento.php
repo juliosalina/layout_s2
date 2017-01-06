@@ -462,6 +462,7 @@
                 </li>
             </ul>
         </div>
-
-
     </div>
+
+
+<script src="assets/js/modules/medico/atendimento.js"></script>
