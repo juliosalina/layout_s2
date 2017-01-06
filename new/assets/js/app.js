@@ -89,9 +89,6 @@ $menuButton.on('click', function() {
             $('.menu .slimScrollBar').remove();
             $('.menu .slimScrollRail').remove();
 
-            $menuButton.attr('title','Extender o menu');
-            $menuButton.attr('data-original-title','Extender o menu');
-
         });
 
     } else {
@@ -126,9 +123,6 @@ $menuButton.on('click', function() {
             color: '#bbb',
             wheelStep: 5
         });
-
-        $menuButton.attr('title','Diminuir o menu');
-        $menuButton.attr('data-original-title','Diminuir o menu');
     }
 });
 

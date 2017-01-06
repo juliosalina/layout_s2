@@ -1,6 +1,6 @@
 <div class="menu-fundo toggle-close"></div>
 <div class="menu toggle-close">
-    <div class="menu-button button-menu-mobile open-left waves-effect waves-light toggle-close" data-toggle="tooltip" data-placement="bottom" title="Diminuir o menu">
+    <div class="menu-button button-menu-mobile open-left waves-effect waves-light toggle-close">
         <i class="fa fa-navicon"></i>
     </div>
     <div class="title-page toggle-close"></div>
