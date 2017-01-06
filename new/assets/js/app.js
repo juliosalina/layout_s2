@@ -352,27 +352,20 @@ var subMenuClick = function(el) {
 
             var scrollPosition = $(window).scrollTop();
             if (scrollPosition > 10) {
-                $('.step-menu-v,.side-menu').css('top', '10px');
-                $('.history-menu').css({
-                    'position': 'fixed',
-                    'top': '0'
-                });
+                $('.step-menu-v,.side-menu').css('top', '4.5rem');
+
+              //  $('.history-menu').css('top','7.2rem');
             } else {
-                $('.step-menu-v,.side-menu').css('top', '64px');
-                $('.history-menu').css({
-                    'position': 'relative',
-                    'top': 'auto'
-                });
+                $('.step-menu-v,.side-menu').css('top', '8.4rem');
+              //  $('.history-menu').css('top', 'auto');
             }
 
-             // var elYpos = $('#menu-1').getBoundingClientRect();
-             // console.log(elYpos); 
 
         });
 
         //abrir e fechar menu historico
 
-        $('.history-menu li,.history-info .close-btn').click(function() {
+        $('.history-menu slides li,.history-info .close-btn').click(function() {
             $('.history-info').toggleClass('closed');
         });
 

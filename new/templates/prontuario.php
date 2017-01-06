@@ -1,14 +1,4 @@
 
-<!-- topo  -->
-<div class="row">
-    <div class="col-md-6">
-        <h5 class="left-line blue mb-1">Atendimento do paciente <b>Nome Sobrenome</b></h5>
-    </div>
-    <div class="col-md-6 pr-05-md text-xs-right">
-        <button type="button" class="btn btn-nav btn-lg"><i class="fa fa-arrow-left"></i>Voltar</button>
-    </div>
-</div>
-
 <!-- step menu -->
 <ul class="step-menu-v">
     <li class="step-item col-md-12"><a href="#menu-1">Pré-Consulta</a></li>
@@ -422,12 +412,12 @@
 <div class="row flex-items-xs-right">
     <div class="card text-xs-center side-menu closed">
         <div class="card-header row no-pad">
-            <div class="col-md-6 flex-xs-middle">
+            <div class="col-md-7 flex-xs-middle">
                 <a href="#"><i class="fa fa-3x fa-play-circle mr-1"></i></a>
                 <a href="#"><i class="fa fa-3x fa-pause-circle mr-1"></i></a>
                 <a hr ef="#"><i class="fa fa-3x fa-ban mr-1"></i></a>
             </div>
-            <div class="col-md-6 flex-xs-middle text-xs-right">
+            <div class="col-md-5 flex-xs-middle text-xs-right">
                 <h3 class="font-weight-bold hide-on-close">11: 11: 11</h3>
             </div>
         </div>
