@@ -197,12 +197,12 @@ $("#btn-fullscreen").on('click', function() {
 });
 
 //load pages
-var loadPage = function(page) {
+var loadPage = function(page, pathPage) {
     var request = $.Deferred(),
-        path = 'templates/';
+        path = 'templates/'+pathPage+'/'+page+'.php';
 
     $.ajax({
-        url: path+page+'.php',
+        url: path,
         method: 'GET',
         cache: true,
         crossDomain: true,
@@ -228,7 +228,7 @@ $('.itens-menu #sidebar-menu ul li').on('mouseout', function() {
 });
 
 //load dashboard initial page
-loadPage('dashboard').then(function(data) {
+loadPage('dashboard', 'home').then(function(data) {
     window.pageName = 'dashboard';
     window.breadcrumb = 'Dashboard';
     $contentBody.html('');
@@ -274,7 +274,7 @@ var subMenuClick = function(el) {
     }
 
     $loading.show();
-    loadPage(window.pageName).then(function(data) {
+    loadPage(window.pageName, $element.data('path')).then(function(data) {
         $contentBody.html('');
         $contentBody.append(data);
 
@@ -284,27 +284,6 @@ var subMenuClick = function(el) {
         setTimeout(function() {
             $loading.hide();
         }, 1000);
-
-
-        $('.card-slider').flexslider({
-            animation: "slide",
-            animationLoop: false,
-            controlNav: true,
-            pauseOnHover: true,
-            touch: true,
-            prevText: "",
-            nextText: ""
-        });
-
-        //tab control
-        $('a[data-toggle="tab"]').click(function (e) {
-            $this = $(this);
-            if($this.attr('href') !== '#historico') {
-                $('.comment').hide();
-            } else {
-                $('.comment').show();
-            }
-        });
 
         //prontuario
 
@@ -383,148 +362,4 @@ var subMenuClick = function(el) {
 };
 
 $subMenuItem.on('click', subMenuClick);
-
-//charts
-function createChart() {
-    $('.chart-one').kendoChart({
-        dataSource: {
-            requestStart: function () {
-                kendo.ui.progress($("#loading"), true);
-            },
-            requestEnd: function () {
-                kendo.ui.progress($("#loading"), false);
-
-            }
-        },
-        title: {
-            //text: "Evolução Nota Centro Médico Sacomã"
-        },
-        legend: {
-            position: "bottom"
-        },
-        seriesDefaults: {
-            type: "area",
-            area: {
-                line: {
-                    style: "smooth"
-                },
-                border: {
-                    dashType: "dashDot",
-                    color: "#5c99c9",
-                    width: 2
-                }
-            }
-        },
-        series: [{
-            color: "#ececec",
-            opacity: 1,
-            name: "Meta",
-            data: [9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0]
-        }, {
-            color: "#7cb0d9",
-            opacity: 0.5,
-            name: "Nota Mês",
-            data: [7.5, 7.9, 8.7, 9.0, 8.3, 8.5, 9.7, 9.4]
-        }],
-        valueAxis: {
-            max: 10,
-            labels: {
-                format: "{0}"
-            },
-            line: {
-                visible: true
-            },
-            border: {
-                visible: true
-            },
-            axisCrossingValue: -10
-        },
-        categoryAxis: {
-            categories: ['Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
-            majorGridLines: {
-                visible: false
-            },
-            labels: {
-                rotation: "auto"
-            }
-        },
-        tooltip: {
-            visible: true,
-            format: "{0}",
-            template: "#= series.name #: #= value #"
-        }
-    });
-
-    $('.chart-two').kendoChart({
-        dataSource: {
-            requestStart: function () {
-                kendo.ui.progress($("#loading"), true);
-            },
-            requestEnd: function () {
-                kendo.ui.progress($("#loading"), false);
-
-            }
-        },
-        title: {
-            //text: "Evolução Nota Centro Médico Sacomã"
-        },
-        legend: {
-            position: "bottom"
-        },
-        seriesDefaults: {
-            type: "area",
-            area: {
-                line: {
-                    style: "smooth"
-                },
-                border: {
-                    dashType: "dashDot",
-                    color: "#5c99c9",
-                    width: 2
-                }
-            }
-        },
-        series: [{
-            color: "#ececec",
-            opacity: 1,
-            name: "Meta",
-            data: [9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0]
-        }, {
-            color: "#7cb0d9",
-            opacity: 0.5,
-            name: "Nota Mês",
-            data: [5.0, 6.9, 8.7, 7.5, 8.3, 8.5, 10, 9.1]
-        }],
-        valueAxis: {
-            max: 10,
-            labels: {
-                format: "{0}"
-            },
-            line: {
-                visible: true
-            },
-            border: {
-                visible: true
-            },
-            axisCrossingValue: -10
-        },
-        categoryAxis: {
-            categories: ['Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
-            majorGridLines: {
-                visible: false
-            },
-            labels: {
-                rotation: "auto"
-            }
-        },
-        tooltip: {
-            visible: true,
-            format: "{0}",
-            template: "#= series.name #: #= value #"
-        }
-    });
-}
-
-$(document).ready(createChart);
-$(document).bind("kendo:skinChange", createChart);
 

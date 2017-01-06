@@ -538,3 +538,5 @@
         </div>
     </div>
 </div>
+
+<script src="assets/js/modules/posconsulta/cirurgia.js"></script>
