@@ -76,8 +76,9 @@ h7 {
 
 //buttons
 .btn {
-    font-weight: bold;
+    font-weight: normal;
     border-radius: .2rem;
+    padding: .5rem 1rem .75rem 1rem !important;
     i {
         padding: 0 .3rem;
     }
@@ -217,24 +218,46 @@ h7 {
     }
 }
 
-thead, tbody, tr, td, th { display: block; }
-
 //table
+
+.total {
+  padding-right: 0.6rem;
+}
+
 table {
   width: 100%;
 
-  tr {
-    &::after {
-      content: ' ';
-      display: block;
-      visibility: hidden;
-      clear: both;
+  &.normal {
+    tbody {
+      height: auto;
+      overflow-y: hidden;
+      tr {
+        &:hover {
+          background-color: #ffffff;
+        }
+        th {
+          font-weight: normal;
+          padding: .65rem !important;
+        }
+      }
+    }
+  }
+
+  &:not(.normal) {
+    thead, tbody, tr, td, th { display: block; }
+    tr {
+      &::after {
+        content: ' ';
+        display: block;
+        visibility: hidden;
+        clear: both;
+      }
     }
   }
 
   tbody th, thead th {
     float: left;
-}
+  }
 
   thead {
     th {
@@ -242,6 +265,7 @@ table {
       padding: .65rem !important;
     }
   }
+
   tbody {
     height: 8rem;
     overflow-y: auto;

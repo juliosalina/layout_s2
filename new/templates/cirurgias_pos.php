@@ -337,6 +337,20 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="row total brd-t pt-05">
+                        <div class="col-xs-6 flex-items-xs-stretch font-weight-bold">
+                            Total DRC
+                        </div>
+                        <div class="col-xs-2 flex-items-xs-stretch">
+                            R$ 4.031,00
+                        </div>
+                        <div class="col-xs-2 flex-items-xs-stretch">
+                            R$ 551,00
+                        </div>
+                        <div class="col-xs-2 flex-items-xs-stretch font-weight-bold">
+                            R$ 3.480,00
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="atendimentos" role="tabpanel">
                     <p>asdas</p>
@@ -441,6 +455,23 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="row total brd-t pt-05">
+                            <div class="col-xs-6 flex-items-xs-stretch font-weight-bold">
+                                Total Hospital*
+                            </div>
+                            <div class="col-xs-2 flex-items-xs-stretch">
+                                R$ 4.031,00
+                            </div>
+                            <div class="col-xs-1 flex-items-xs-stretch">
+                                R$ 0,00
+                            </div>
+                            <div class="col-xs-1 flex-items-xs-stretch font-weight-bold">
+                                R$ 220,00
+                            </div>
+                            <div class="col-xs-2 flex-items-xs-stretch font-weight-bold">
+                                R$ 2.250,00
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="apartamento" role="tabpanel">
                         <p>asdas</p>
@@ -451,6 +482,59 @@
                 </div>
             </div>
         </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="cirurgia_pos row ml-0 mr-0">
+    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 pl-0-md pr-05-md flex-items-xs-stretch">
+        <div class="card card-block">
+            <h7 class="card-title font-weight-bold">Preços Hospital (Exame anatomopátologo / OPME)</h7>
+            <div class="row">
+                <table class="table normal">
+                    <thead>
+                        <tr>
+                            <th class="head col-xs-3">Item</th>
+                            <th class="head col-xs-6">Info</th>
+                            <th class="head col-xs-3">Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="col-xs-3">Materiais</th>
+                            <th class="col-xs-6"><input class="form-control" type="text" placeholder=""></th>
+                            <th class="col-xs-3"><input class="form-control" type="text" placeholder=""></th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="col-xs-3">Exames</th>
+                            <th class="col-xs-6"><input class="form-control" type="text" placeholder=""></th>
+                            <th class="col-xs-3"><input class="form-control" type="text" placeholder=""></th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="col-xs-3">Formas de Pagamento</th>
+                            <th class="col-xs-9"><textarea class="form-control mb-1" id="exampleTextarea" rows="3"></textarea></th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="col-xs-3">Informações ao Paciente</th>
+                            <th class="col-xs-9"><textarea class="form-control mb-1" id="exampleTextarea" rows="3"></textarea></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 pr-0-md pl-05-md flex-items-xs-stretch">
+        <!-- bloco valores -->
+        <div class="card card-block text-xs-center">
+            <h7 class="card-title font-weight-bold">Total DRC</h7>
+            <h3 class="font-weight-bold">R$ 3.480,00</h3>
+            <p class="card-text">Estimativa valor hospital</p>
+            <h3 class="font-weight-bold blurry">R$ 3.480,00</h3>
+            <p class="card-text">Estimativa valor total</p>
+            <h3 class="font-weight-bold blurry">R$ 3.480,00</h3>
+            <a href="#" class="btn btn-secondary btn-block mt-3"><i class="fa fa-print"></i>Orçamento hospitalar</a>
+            <a href="#" class="btn btn-primary btn-block mb-2"><i class="fa fa-plus"></i>Selecionar hospital</a>
         </div>
     </div>
 </div>
