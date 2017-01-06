@@ -250,9 +250,9 @@ loadPage('dashboard').then(function(data) {
 
 //Click Submenu
 var subMenuClick = function(el) {
-    $element = $(el);
+    $element = $(this);
     
-    window.pageName = $($element[0].target.attributes[1]).context.nodeValue;
+    window.pageName = $element.data('page');
 
     var totalSub = $subMenuItem.length,
         actualGroup = '';
@@ -304,7 +304,7 @@ var subMenuClick = function(el) {
 
         //tab control
         $('a[data-toggle="tab"]').click(function (e) {
-            $this = $(e);
+            $this = $(this);
             if($this.attr('href') !== '#historico') {
                 $('.comment').hide();
             } else {

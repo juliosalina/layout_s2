@@ -181,19 +181,19 @@
                   <button type="button" class="btn btn-secondary btn-sm btn-block light-text align">Liberar Cirurgia</button>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 plr-05-md pr-0-lg mb-05 text-xs-center flex-items-xs-stretch">
-                  <button type="button" class="btn btn-secondary btn-sm btn-block light-text disable align">Retorno Cirurgião</button>
+                  <button type="button" class="btn btn-secondary btn-sm btn-block light-text disable align" disabled>Retorno Cirurgião</button>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pr-0-md pl-05-md mb-05 text-xs-center flex-items-xs-stretch">
-                  <button type="button" class="btn btn-secondary btn-sm btn-block light-text disable align">Consulta Cardiologia</button>
+                  <button type="button" class="btn btn-secondary btn-sm btn-block light-text disable align" disabled>Consulta Cardiologia</button>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-0-md pr-05-md text-xs-center flex-items-xs-stretch">
-                  <button type="button" class="btn btn-secondary btn-sm btn-block light-text disable align">Finalizar Cirurgia</button>
+                  <button type="button" class="btn btn-secondary btn-sm btn-block light-text disable align" disabled>Finalizar Cirurgia</button>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 plr-05-md pr-0-lg text-xs-center flex-items-xs-stretch">
-                  <button type="button" class="btn btn-secondary btn-sm btn-block light-text disable align">Agendar Cirurgia</button>
+                  <button type="button" class="btn btn-secondary btn-sm btn-block light-text disable align" disabled>Agendar Cirurgia</button>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pr-0-md pl-05-md text-xs-center flex-items-xs-stretch">
-                  <button type="button" class="btn btn-secondary btn-sm btn-block light-text disable align">Retorno Cardiologia</button>
+                  <button type="button" class="btn btn-secondary btn-sm btn-block light-text disable align" disabled>Retorno Cardiologia</button>
               </div>
             </div>
         </div>
@@ -222,34 +222,55 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th class="head">#</th>
-                                    <th class="head">Data</th>
-                                    <th class="head">Informação</th>
-                                    <th class="head">Usuário</th>
-                                    <th class="head">Próx. Contato</th>
+                                    <th class="head col-xs-1">#</th>
+                                    <th class="head col-xs-1">Data</th>
+                                    <th class="head col-xs-6">Informação</th>
+                                    <th class="head col-xs-3">Usuário</th>
+                                    <th class="head col-xs-1">Próx. Contato</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <th>16/11/2016 14:27</th>
-                                    <th>Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
-                                    <th>Gaston Augusto Perez Pouilleux</th>
-                                    <th>19/11/2016</th>
+                                    <th scope="row" class="col-xs-1">1</th>
+                                    <th class="col-xs-1">16/11/2016 14:27</th>
+                                    <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                                    <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
+                                    <th class="col-xs-1">19/11/2016</th>
                                 </tr>
                                 <tr>
-                                    <th scope="row">2</th>
-                                    <th>16/11/2016 14:27</th>
-                                    <th>Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
-                                    <th>Gaston Augusto Perez Pouilleux</th>
-                                    <th>19/11/2016</th>
+                                    <th scope="row" class="col-xs-1">2</th>
+                                    <th class="col-xs-1">16/11/2016 14:27</th>
+                                    <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                                    <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
+                                    <th class="col-xs-1">19/11/2016</th>
                                 </tr>
                                 <tr>
-                                    <th scope="row">3</th>
-                                    <th>16/11/2016 14:27</th>
-                                    <th>Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
-                                    <th>Gaston Augusto Perez Pouilleux</th>
-                                    <th>19/11/2016</th>
+                                    <th scope="row" class="col-xs-1">3</th>
+                                    <th class="col-xs-1">16/11/2016 14:27</th>
+                                    <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                                    <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
+                                    <th class="col-xs-1">19/11/2016</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-xs-1">4</th>
+                                    <th class="col-xs-1">16/11/2016 14:27</th>
+                                    <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                                    <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
+                                    <th class="col-xs-1">19/11/2016</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-xs-1">5</th>
+                                    <th class="col-xs-1">16/11/2016 14:27</th>
+                                    <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                                    <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
+                                    <th class="col-xs-1">19/11/2016</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-xs-1">6</th>
+                                    <th class="col-xs-1">16/11/2016 14:27</th>
+                                    <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                                    <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
+                                    <th class="col-xs-1">19/11/2016</th>
                                 </tr>
                             </tbody>
                         </table>
@@ -278,6 +299,158 @@
             <div class="col-md-1 pl-05-md pr-0 flex-items-xs-middle">
                 <button type="button" class="btn btn-primary btn-block"><i class="fa fa-plus"></i>Adicionar</button>
             </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="cirurgia_pos row ml-0 mr-0">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pl-0-md pr-05-md flex-items-xs-stretch">
+        <div class="card card-block">
+            <h7 class="card-title font-weight-bold">Orçamento - Preços DRC</h7>
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="historico" role="tabpanel">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="head col-xs-1">#</th>
+                                <th class="head col-xs-5">Produto</th>
+                                <th class="head col-xs-2">Valor</th>
+                                <th class="head col-xs-2">Descontos</th>
+                                <th class="head col-xs-2">Valor Final</th>
+                            </tr>
+                        </thead>
+                        <tbody class="budget">
+                            <tr>
+                                <th scope="row" class="col-xs-1">1</th>
+                                <th class="col-xs-5">ADENOAMIGDALECTOMIA</th>
+                                <th class="col-xs-2">R$ 1.835,00</th>
+                                <th class="col-xs-2">100%</th>
+                                <th class="col-xs-2">R$ 1.835,00</th>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="col-xs-1">2</th>
+                                <th class="col-xs-5">ADENOAMIGDALECTOMIA</th>
+                                <th class="col-xs-2">R$ 1.835,00</th>
+                                <th class="col-xs-2">100%</th>
+                                <th class="col-xs-2">R$ 1.835,00</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="atendimentos" role="tabpanel">
+                    <p>asdas</p>
+                </div>
+                <div class="tab-pane fade" id="documentacao" role="tabpanel">
+                    <p>asdasd a2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 plr-05-md pr-0-lg flex-items-xs-stretch">
+        <div class="card card-block">
+            <h6 class="card-title font-weight-bold">Hospitais indicados pelo cirurgião</h6>
+            <div class="row">
+                <div class="col-md-4 pl-0-md pr-05-md">
+                    <button type="button" class="btn btn-secondary btn-block light-text">Hospital Ruben Berta</button>
+                </div>
+                <div class="col-md-4 plr-05-md">
+                    <button type="button" class="btn btn-secondary btn-block light-text inactive">Hospital Assunção</button>
+                </div>
+                <div class="col-md-4 pr-0-md pl-05-md">
+                    <button type="button" class="btn btn-secondary btn-block light-text inactive">Hospital Externo</button>
+                </div>
+            </div>
+            <div class="row no-pad mt-1">
+              <div class="col-md-2 text-xs-center"><i class="fa fa fa-map-marker fa-5x"></i></div>
+              <div class="col-md-10">
+                <p class="mb-0 mt-1">Avenida João Firmino, 250 - Assunção - São Bernardo do Campo</p>
+                <p>CEP: 09810-250 - São Paulo / SP</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 pr-0-md pl-05-md flex-items-xs-stretch">
+        <div class="card card-block">
+        <div class="row no-pad">
+            <div class="col-md-12">
+                <p class="mt-2 mb-2 text-xs-center">Clique no botão abaixo para imprimir a Carta de Internação do paciente</p>
+                <button type="button" class="btn btn-primary btn-block"><i class="fa fa-print"></i>Carta de Internação</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="cirurgia_pos row ml-0 mr-0">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-0-md pr-0-md flex-items-xs-stretch">
+        <div class="card card-block">
+            <h7 class="card-title font-weight-bold">Preços Hospital (Produtos) - Hospital Ruben Berta</h7>
+            <div class="card shadom-tab">
+            <div class="card-header intern brd-b-0">
+                <ul class="nav nav-tabs card-header-tabs float-xs-left" role="tablist">
+                    <li class="nav-item active">
+                        <a class="nav-link" data-toggle="tab" href="#enfermaria" role="tab">Enfermaria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#apartamento" role="tab">Apartamento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#hospital_dia" role="tab">Hospital Dia</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-block brd-l">
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="enfermaria" role="tabpanel">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="head col-xs-1">#</th>
+                                    <th class="head col-xs-5">Produto</th>
+                                    <th class="head col-xs-2">Valor Acomodação</th>
+                                    <th class="head col-xs-1">Valor Anestesia</th>
+                                    <th class="head col-xs-1">Descontos</th>
+                                    <th class="head col-xs-2">Valor Final</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="col-xs-1">1</th>
+                                    <th class="col-xs-5">ADENOAMIGDALECTOMIA</th>
+                                    <th class="col-xs-2">R$ 1.835,00</th>
+                                    <th class="col-xs-1">R$ 0,00</th>
+                                    <th class="col-xs-1">20%</th>
+                                    <th class="col-xs-2">R$ 1.956,00</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-xs-1">1</th>
+                                    <th class="col-xs-5">ADENOAMIGDALECTOMIA</th>
+                                    <th class="col-xs-2">R$ 1.835,00</th>
+                                    <th class="col-xs-1">R$ 0,00</th>
+                                    <th class="col-xs-1">20%</th>
+                                    <th class="col-xs-2">R$ 1.956,00</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-xs-1">1</th>
+                                    <th class="col-xs-5">ADENOAMIGDALECTOMIA</th>
+                                    <th class="col-xs-2">R$ 1.835,00</th>
+                                    <th class="col-xs-1">R$ 0,00</th>
+                                    <th class="col-xs-1">20%</th>
+                                    <th class="col-xs-2">R$ 1.956,00</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="apartamento" role="tabpanel">
+                        <p>asdas</p>
+                    </div>
+                    <div class="tab-pane fade" id="hospital_dia" role="tabpanel">
+                        <p>asdasd a2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
 </div>

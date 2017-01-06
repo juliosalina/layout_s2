@@ -105,13 +105,18 @@ h7 {
       color: #535353;
       border-top: solid .2rem #c0c0c0;
       &:hover {
-        cursor: default;
         background-color: #c0c0c0;
         opacity: 1;
       }
     }
     &.align {
       padding: .3rem 1rem 0.5rem 1rem;
+    }
+    &.inactive {
+      background-color: #c0c0c0;
+      border: 0;
+      border-top: solid .2rem #878787;
+      color: #2e2e2e;
     }
 }
 
@@ -133,6 +138,17 @@ h7 {
     }
 }
 
+.card-header {
+  &.intern {
+    background-color: #ffffff;
+    .nav-item:not(.active) {
+      border-top: solid 1px #eeeeee;
+      border-right: solid 1px #eeeeee;
+      border-left: solid 1px #eeeeee;
+    }
+  }
+}
+
 //cards/blocos
 .card-primary {
     background-color: #87C3E8;
@@ -144,6 +160,9 @@ h7 {
         color: #fff;
         padding: 0.25rem 0.7rem;
         border-radius: 0.1rem;
+        &.intern {
+          background-color: #ffffff;
+        }
     }
 }
 
@@ -153,6 +172,9 @@ h7 {
         color: #fff;
         padding: 0.25rem 0.7rem;
         border-radius: 0.1rem;
+        &.intern {
+          background-color: #ffffff;
+        }
     }
 }
 
@@ -195,21 +217,45 @@ h7 {
     }
 }
 
+thead, tbody, tr, td, th { display: block; }
+
 //table
 table {
+  width: 100%;
+
+  tr {
+    &::after {
+      content: ' ';
+      display: block;
+      visibility: hidden;
+      clear: both;
+    }
+  }
+
+  tbody th, thead th {
+    float: left;
+}
+
   thead {
     th {
       border-top: none !important;
+      padding: .65rem !important;
     }
   }
   tbody {
+    height: 8rem;
+    overflow-y: auto;
+    &.budget {
+      height: 6rem;
+    }
+
     tr {
       &:hover {
         background-color: #f5f5f5;
       }
       th {
         font-weight: normal;
-        padding: .65rem;
+        padding: .65rem !important;
       }
     }
   }
