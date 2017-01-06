@@ -26,6 +26,7 @@ $black: #000000;
   $blue-darker:#00578B;
   $blue-medium:#59A1DB;
   $blue-medium-dark: #4a5869;
+  $blue-light: #f1f8ff;
 
   $gray:#F1F1F1;
   $gray-light: #f5f5f5;
@@ -35,6 +36,9 @@ $black: #000000;
 
 .blue-bkg{
   background-color:$blue;
+}
+.blue-light-bkg{
+  background-color:$blue-light;
 }
 .blue-medium-bkg{
   background-color:$blue-medium;

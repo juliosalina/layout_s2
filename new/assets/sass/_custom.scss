@@ -1,10 +1,13 @@
-h7 {
+h1,h2,h3,h4,h5,h6,h7 {
     &.underline {
         border-bottom: .2rem solid $gray-dark;
-        padding-left: .5rem;
-        padding-right: .5rem;
+        display:inline-block;
         &.blue {
             border-color: $blue;
+        }
+        &.thin-block{
+        border-bottom: .1rem solid $gray-dark;
+        display:block;
         }
     }
 }
@@ -392,11 +395,10 @@ h7 {
   }
 
   //left e right
-  .plr-05-md {
+  .plr-05-md, .plr-05 {
       padding-right: .5rem;
       padding-left: .5rem
   }
-
   //todos lados
   .p-05 {
       padding: .5rem;
@@ -493,5 +495,5 @@ h7 {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
+  }
 }

@@ -279,18 +279,28 @@ border-top:.1rem solid #ccc;
 .history-menu{
     height:3.5rem;
     z-index:1;
+    line-height:.8rem;
     p{
     margin-bottom:0;
-    font-size:.9rem;
-    line-height:1rem;
+    font-size:.8rem;
   }
    .slides li{
-   // margin:0 4px; // necessário ser px para slider
-   //border-right:1px solid #87C3E8; // necessário ser px para slider
     height:3.5rem;
     cursor:pointer;
+    padding-top:.5rem;
     &:hover{
       background-color:$blue-darker;
+    }
+    &:after{
+      content:" ";
+      position:absolute;
+      top:0;
+      width:2px;
+      height:3.5rem;
+      background-color:$blue;
+    }
+    div{
+      margin-left:1rem;
     }
   }
     .flex-direction-nav li a{
@@ -302,6 +312,7 @@ border-top:.1rem solid #ccc;
     color:#fff;
     text-align: center;
     z-index:3;
+    padding-top:1.3rem;
   }
   .flex-direction-nav .flex-nav-next a{
   //  @include shadow(-41px 5px 27px -9px rgba(14,80,115,0.71)) 
@@ -310,18 +321,31 @@ border-top:.1rem solid #ccc;
   //  @include shadow(43px 5px 27px -9px rgba(14,80,115,0.71)) 
   }
   .history-info{
-    background-color:#fcfbfb;
     position:absolute;
     margin-top:3.5rem;
     color:#000;
     display:block;
-    @include shadow(2px 2px 3px 3px rgba(0, 0, 0, .1));
+    @include shadow(2px 7px 2px 0 rgba(0, 0, 0, .1));
       &.closed{
         display:none;
     }
     .card{
      @include shadow(none);
      background-color:transparent;
+    }
+    label{
+      font-size:.8rem;
+    }
+    p{
+      font-size:.76em;
+    }
+    ul{
+      li{
+        i{
+          float:left;
+          margin-right:.5rem;
+        }
+      }
     }
   }
 }
