@@ -539,4 +539,4 @@
     </div>
 </div>
 
-<script src="assets/js/modules/posconsulta/cirurgia.js"></script>
+<script src="assets/js/modules/pos_consulta/cirurgia.js"></script>
