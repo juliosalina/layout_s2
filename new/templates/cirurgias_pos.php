@@ -52,7 +52,7 @@
                 </div>
 
                 <div class="col-xs-12 col-md-12 plr-05-md pr-0-lg">
-                    <div class="flexslider">
+                    <div class="flexslider card-slider">
                         <ul class="slides">
                             <li>
                                 <ul class="list-group">
