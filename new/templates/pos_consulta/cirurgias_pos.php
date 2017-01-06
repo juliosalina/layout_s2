@@ -538,3 +538,5 @@
         </div>
     </div>
 </div>
+
+<script src="assets/js/modules/pos_consulta/cirurgia.js"></script>
