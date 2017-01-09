@@ -149,7 +149,6 @@ h7 {
     [class*="col-"] {
         padding-left: .25rem;
         padding-right: .25rem;
-        margin-bottom: .5rem;
         .row [class*="col-"] {
             margin-bottom: 0;
             [class*="col-"] {
@@ -203,7 +202,7 @@ h7 {
 }
 
 .card-block {
-    padding: 0.8rem;
+    padding: 1rem;
     .block-item {
         position: absolute;
         right: 1rem;
