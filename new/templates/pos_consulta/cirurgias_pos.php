@@ -393,7 +393,7 @@
             </div>
         </div>
     </div>
-    </div>  
+    </div>
 </div>
 
 <div class="cirurgia_pos row ml-0 mr-0">

@@ -1,7 +1,13 @@
-h1,h2,h3,h4,h5,h6,h7 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
     &.underline {
-            border-bottom: .2rem solid $gray;
-            display: inline-block;
+        border-bottom: .2rem solid $gray;
+        display: inline-block;
         &.blue {
             border-color: $blue;
             padding-left: .5rem;
@@ -12,20 +18,17 @@ h1,h2,h3,h4,h5,h6,h7 {
             display: block;
         }
     }
-        &.left-line {
-            border-left: .3rem solid $gray;
-            background-color: $white-color;
-            padding: 1rem .5rem 1rem .5rem;
-            @include border-radius(.2rem) &.blue {
-                border-color: $blue;
+    &.left-line {
+        border-left: .3rem solid $gray;
+        background-color: $white-color;
+        padding: 1rem .5rem 1rem .5rem;
+        @include border-radius(.2rem) &.blue {
+            border-color: $blue;
         }
     }
 }
 
-
-
 //checkbox custom
-
 .custom-checkbox .custom-control-indicator {
     border-radius: 50%;
     background-color: #fff;
@@ -89,7 +92,6 @@ h1,h2,h3,h4,h5,h6,h7 {
 }
 
 //buttons
-
 .btn {
     font-weight: normal;
     border-radius: .2rem;
@@ -138,7 +140,6 @@ h1,h2,h3,h4,h5,h6,h7 {
 
 //classes para grid
 //sem padding para col filhos de row
-
 // .row {
 //     &.no-pad {
 //         [class*="col-"] {
@@ -154,27 +155,24 @@ h1,h2,h3,h4,h5,h6,h7 {
 //         }
 //     }
 // }
+.row {
+    margin-left: -.8rem !important;
+    margin-right: -.8rem !important;
     .row {
-        margin-top: 1rem;
-        margin-left: -.8rem;
-        margin-right: -.8rem;
+        margin: 0;
+    }
+    div {
+        padding-left: .25rem !important;
+        padding-right: .25rem !important;
+        margin-bottom: .5rem;
+        .row div {
+            margin-bottom: 0;
             div {
-            padding-left: .25rem!important;
-            padding-right: .25rem!important;
-            margin-bottom: .5rem;
-            .row div {
                 margin-bottom: 0;
-                div {
-                    margin-bottom: 0;
-                }
             }
         }
-        .row{
-            margin: 0;
-        }
     }
-    
-  
+}
 
 .card-header {
     &.intern {
@@ -188,7 +186,6 @@ h1,h2,h3,h4,h5,h6,h7 {
 }
 
 //cards/blocos
-
 .card-primary {
     background-color: #87C3E8;
     border: 0;
@@ -257,7 +254,6 @@ h1,h2,h3,h4,h5,h6,h7 {
 }
 
 //table
-
 .total {
     padding-right: 0.6rem;
 }
@@ -325,7 +321,6 @@ table {
 }
 
 //form
-
 .form-control {
     border-radius: 0;
     font-size: 0.8rem;
@@ -354,7 +349,6 @@ table {
 }
 
 //tabs
-
 .nav-tabs {
     .nav-item {
         .nav-link {
@@ -408,8 +402,6 @@ table {
 }
 
 //FONTES
-
-
 .bold-block {
     font-weight: bold;
     display: block;
@@ -421,7 +413,6 @@ table {
     font-size: 0.8rem;
 }
 
-
 .mb-05 {
     margin-bottom: .5rem !important;
 }
@@ -429,7 +420,8 @@ table {
 .mt-05 {
     margin-top: .5rem !important;
 }
-.mt-5{
+
+.mt-5 {
     margin-top: 5rem !important;
 }
 
@@ -522,74 +514,80 @@ table {
 }
 
 .pt-05 {
-        padding-top: .5rem;
-    }
+    padding-top: .5rem;
+}
+
 .pb-05 {
     padding-bottom: .5rem;
 }
-    //XL
-    @media (min-width: 1200px) {
-        .pl-0-lg {
-            padding-left: .5rem;
-        }
-        .pr-0-lg {
-            padding-right: .5rem;
-        }
+
+//XL
+@media (min-width: 1200px) {
+    .pl-0-lg {
+        padding-left: .5rem;
     }
-    //LG
-    @media (min-width: 768px) and (max-width: 991px) {
-        .pl-0-lg {
-            padding-left: 0;
-        }
-        .pr-0-lg {
-            padding-right: 0;
-        }
+    .pr-0-lg {
+        padding-right: .5rem;
     }
-    //MD
-    @media (min-width: 992px) and (max-width: 1199px) {
-        .pl-0-lg {
-            padding-left: 0;
-        }
-        .pr-0-lg {
-            padding-right: 0; 
-        }
-        // .plr-05-md {
-        // }
+}
+
+//LG
+@media (min-width: 768px) and (max-width: 991px) {
+    .pl-0-lg {
+        padding-left: 0;
     }
-    //SM
-    @media (min-width: 576px) and (max-width: 767px) {
-        .pl-0-lg,
-        .pl-05-md {
-            padding-left: 0;
-        }
-        .pr-0-lg,
-        .pr-05-md {
-            padding-right: 0;
-        }
-        //left e right
-        .plr-05-md {
-            padding-right: 0;
-            padding-left: 0;
-        }
+    .pr-0-lg {
+        padding-right: 0;
     }
-    //XS
-    @media (max-width: 575px) {
-        .pl-0-md {
-            padding-left: 1rem;
-        }
-        .pr-0-md {
-            padding-right: 1rem;
-        }
-        .pl-05-md,
-        .pl-0-lg {
-            padding-left: 1rem;
-        }
-        .pr-05-md,
-        .pr-0-lg {
-            padding-right: 1rem
-        }
-        .plr-05-md {
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
+}
+
+//MD
+@media (min-width: 992px) and (max-width: 1199px) {
+    .pl-0-lg {
+        padding-left: 0;
     }
+    .pr-0-lg {
+        padding-right: 0;
+    }
+    // .plr-05-md {
+    // }
+}
+
+//SM
+@media (min-width: 576px) and (max-width: 767px) {
+    .pl-0-lg,
+    .pl-05-md {
+        padding-left: 0;
+    }
+    .pr-0-lg,
+    .pr-05-md {
+        padding-right: 0;
+    }
+    //left e right
+    .plr-05-md {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+//XS
+@media (max-width: 575px) {
+    .pl-0-md {
+        padding-left: 1rem;
+    }
+    .pr-0-md {
+        padding-right: 1rem;
+    }
+    .pl-05-md,
+    .pl-0-lg {
+        padding-left: 1rem;
+    }
+    .pr-05-md,
+    .pr-0-lg {
+        padding-right: 1rem
+    }
+    .plr-05-md {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
