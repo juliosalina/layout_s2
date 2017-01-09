@@ -161,13 +161,13 @@ h7 {
     .row {
         margin: 0;
     }
-    div {
-        padding-left: .25rem !important;
-        padding-right: .25rem !important;
+    [class*="col-"] {
+        padding-left: .25rem;
+        padding-right: .25rem;
         margin-bottom: .5rem;
-        .row div {
+        .row [class*="col-"] {
             margin-bottom: 0;
-            div {
+            [class*="col-"] {
                 margin-bottom: 0;
             }
         }
