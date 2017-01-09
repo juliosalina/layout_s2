@@ -271,13 +271,17 @@
             <div id="menu-5" class="card card-block">
                 <h6 class="card-title font-weight-bold">Solicitação de Exames e Procedimentos</h6>
                 <div class="row">
-                    <div class="col-md-4 pl-0">
+
+                    <div class="col-md-4 pl-1">
+
                         <div class="col-md-12">
                             <h7 class="underline blue">Pacotes</h7>
                         </div>
 
                     </div>
+
                     <div class="col-md-8">
+
                         <div class="col-md-12">
                             <h7 class="underline blue">Exames</h7>
                         </div>
@@ -286,7 +290,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-4 pl-0 mt-1">
+                    <div class="col-md-4 mt-1 pl-1">
                         <div class="col-md-12">
                             <ul class="text-xs-left ">
                                 <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
@@ -452,9 +456,11 @@
     <div class="card text-xs-center side-menu closed">
         <div class="card-header row">
             <div class="col-md-7 flex-xs-middle">
+                
                 <a href="#"><i class="fa fa-3x fa-play-circle mr-1"></i></a>
                 <a href="#"><i class="fa fa-3x fa-pause-circle mr-1"></i></a>
                 <a hr ef="#"><i class="fa fa-3x fa-ban mr-1"></i></a>
+                
             </div>
             <div class="col-md-5 flex-xs-middle text-xs-right">
                 <h3 class="font-weight-bold hide-on-close">11: 11: 11</h3>
