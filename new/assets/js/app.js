@@ -275,8 +275,11 @@ var subMenuClick = function(el) {
 
     $loading.show();
     loadPage(window.pageName, $element.data('path')).then(function(data) {
-        $contentBody.html('');
-        $contentBody.append(data);
+        $contentBody.fadeOut(350, function() {
+            $contentBody.html('');
+            $contentBody.append(data);
+            $contentBody.fadeIn(350);
+        });
 
         $('.menu .title-page').text(window.breadcrumb);
         $('.title-page-mobile .text').text(window.breadcrumb);

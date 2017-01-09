@@ -54,70 +54,71 @@
                         <i class="fa fa-refresh fa-lg"></i>
                         <i class="fa fa-trash fa-lg"></i>
                     </div>
-
-                    <div class="col-xs-12 col-md-12 plr-05-md pr-0-lg">
-                        <div class="flexslider card-slider">
-                            <ul class="slides">
-                                <li>
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><label>Data:</label>27/12/2016 - 07:45</li>
-                                        <li class="list-group-item"><label>Produto:</label>CONSULTA NUTRICIONISTA</li>
-                                        <li class="list-group-item"><label>Profissional:</label>Mirelle Maira Santos</li>
-                                        <li class="list-group-item"><label>Clínica:</label>ITAQUERA</li>
-                                        <li class="list-group-item"><label>Valor</label>R$ 90,00</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><label>Data:</label>27/12/2016 - 07:45</li>
-                                        <li class="list-group-item"><label>Produto:</label>CONSULTA NUTRICIONISTA</li>
-                                        <li class="list-group-item"><label>Profissional:</label>Mirelle Maira Santos</li>
-                                        <li class="list-group-item"><label>Clínica:</label>ITAQUERA</li>
-                                        <li class="list-group-item"><label>Valor</label>R$ 90,00</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><label>Data:</label>27/12/2016 - 07:45</li>
-                                        <li class="list-group-item"><label>Produto:</label>CONSULTA NUTRICIONISTA</li>
-                                        <li class="list-group-item"><label>Profissional:</label>Mirelle Maira Santos</li>
-                                        <li class="list-group-item"><label>Clínica:</label>ITAQUERA</li>
-                                        <li class="list-group-item"><label>Valor</label>R$ 90,00</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><label>Data:</label>27/12/2016 - 07:45</li>
-                                        <li class="list-group-item"><label>Produto:</label>CONSULTA NUTRICIONISTA</li>
-                                        <li class="list-group-item"><label>Profissional:</label>Mirelle Maira Santos</li>
-                                        <li class="list-group-item"><label>Clínica:</label>ITAQUERA</li>
-                                        <li class="list-group-item"><label>Valor</label>R$ 90,00</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><label>Data:</label>27/12/2016 - 07:45</li>
-                                        <li class="list-group-item"><label>Produto:</label>CONSULTA NUTRICIONISTA</li>
-                                        <li class="list-group-item"><label>Profissional:</label>Mirelle Maira Santos</li>
-                                        <li class="list-group-item"><label>Clínica:</label>ITAQUERA</li>
-                                        <li class="list-group-item"><label>Valor</label>R$ 90,00</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><label>Data:</label>27/12/2016 - 07:45</li>
-                                        <li class="list-group-item"><label>Produto:</label>CONSULTA NUTRICIONISTA</li>
-                                        <li class="list-group-item"><label>Profissional:</label>Mirelle Maira Santos</li>
-                                        <li class="list-group-item"><label>Clínica:</label>ITAQUERA</li>
-                                        <li class="list-group-item"><label>Valor</label>R$ 90,00</li>
-                                    </ul>
-                                </li>
-                            </ul>
+                    <div class="col-xs-12">
+                        <div class="col-md-12">
+                            <div class="flexslider card-slider">
+                                <ul class="slides">
+                                    <li>
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><label>Data:</label>27/12/2016 - 07:45</li>
+                                            <li class="list-group-item"><label>Produto:</label>CONSULTA NUTRICIONISTA</li>
+                                            <li class="list-group-item"><label>Profissional:</label>Mirelle Maira Santos</li>
+                                            <li class="list-group-item"><label>Clínica:</label>ITAQUERA</li>
+                                            <li class="list-group-item"><label>Valor</label>R$ 90,00</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><label>Data:</label>27/12/2016 - 07:45</li>
+                                            <li class="list-group-item"><label>Produto:</label>CONSULTA NUTRICIONISTA</li>
+                                            <li class="list-group-item"><label>Profissional:</label>Mirelle Maira Santos</li>
+                                            <li class="list-group-item"><label>Clínica:</label>ITAQUERA</li>
+                                            <li class="list-group-item"><label>Valor</label>R$ 90,00</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><label>Data:</label>27/12/2016 - 07:45</li>
+                                            <li class="list-group-item"><label>Produto:</label>CONSULTA NUTRICIONISTA</li>
+                                            <li class="list-group-item"><label>Profissional:</label>Mirelle Maira Santos</li>
+                                            <li class="list-group-item"><label>Clínica:</label>ITAQUERA</li>
+                                            <li class="list-group-item"><label>Valor</label>R$ 90,00</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><label>Data:</label>27/12/2016 - 07:45</li>
+                                            <li class="list-group-item"><label>Produto:</label>CONSULTA NUTRICIONISTA</li>
+                                            <li class="list-group-item"><label>Profissional:</label>Mirelle Maira Santos</li>
+                                            <li class="list-group-item"><label>Clínica:</label>ITAQUERA</li>
+                                            <li class="list-group-item"><label>Valor</label>R$ 90,00</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><label>Data:</label>27/12/2016 - 07:45</li>
+                                            <li class="list-group-item"><label>Produto:</label>CONSULTA NUTRICIONISTA</li>
+                                            <li class="list-group-item"><label>Profissional:</label>Mirelle Maira Santos</li>
+                                            <li class="list-group-item"><label>Clínica:</label>ITAQUERA</li>
+                                            <li class="list-group-item"><label>Valor</label>R$ 90,00</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><label>Data:</label>27/12/2016 - 07:45</li>
+                                            <li class="list-group-item"><label>Produto:</label>CONSULTA NUTRICIONISTA</li>
+                                            <li class="list-group-item"><label>Profissional:</label>Mirelle Maira Santos</li>
+                                            <li class="list-group-item"><label>Clínica:</label>ITAQUERA</li>
+                                            <li class="list-group-item"><label>Valor</label>R$ 90,00</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="setas brd-t col-xs-12 col-md-12 plr-05-md pr-0-lg"></div>
+                    <div class="setas brd-t col-xs-12"></div>
                 </div>
             </div>
         </div>
@@ -370,7 +371,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <div class="row total brd-t pt-05">
+                        <div class="row total brd-t pt-05 pl-1">
                             <div class="col-xs-6 flex-items-xs-stretch font-weight-bold">
                                 Total DRC
                             </div>
@@ -500,7 +501,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="row total brd-t pt-05">
+                                <div class="row total brd-t pt-05 pl-1">
                                     <div class="col-xs-6 flex-items-xs-stretch font-weight-bold">
                                         Total Hospital*
                                     </div>

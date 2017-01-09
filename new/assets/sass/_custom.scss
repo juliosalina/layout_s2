@@ -144,7 +144,7 @@ h7 {
     margin-left: -.8rem !important;
     margin-right: -.8rem !important;
     .row {
-        margin: 0;
+        margin: 0 !important;
     }
     [class*="col-"] {
         padding-left: .25rem;
