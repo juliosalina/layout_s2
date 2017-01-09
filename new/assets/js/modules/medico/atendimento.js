@@ -19,31 +19,64 @@ $('.history-menu').flexslider({
     }, 
 });
 
-// Scroll animate para #
 
-$(function() {
-    $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html, body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-                return false;
-            }
-        }
+
+
+// highlight stepmenu
+var lastId,
+    topMenu = $(".step-menu-v"),
+    topMenuHeight = topMenu.outerHeight()+15,
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
     });
-});
+
+    menuItems.click(function(e){
+      var href = $(this).attr("href"),
+          offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+      $('html, body').stop().animate({ 
+          scrollTop: offsetTop
+      }, 300);
+      e.preventDefault();
+    });
+
+
 
 //função scroll
 $(window).scroll(function() {
+
+
+    //highlight stepmenu
+
+
+   // Get container scroll position
+   var fromTop = $(this).scrollTop()+topMenuHeight;
+   
+   // Get id of current scroll item
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top < fromTop)
+       return this;
+   });
+   // Get the id of the current element
+   cur = cur[cur.length-1];
+   var id = cur && cur.length ? cur[0].id : "";
+   
+   if (lastId !== id) {
+       lastId = id;
+       // Set/remove active class
+       menuItems
+         .parent().removeClass("active").end().filter("[href='#"+id+"']").parent().addClass("active").removeClass('idle');
+   } 
+
 
     //fixar slider historico no scroll TODO CRIAR CLASSE
     var scrollPosition = $(window).scrollTop();
     if (scrollPosition > 10) {
         $('.step-menu-v,.side-menu').css('top', '4.5rem');
-        $('.history-menu').css('top','64px');
+        $('.history-menu').css('top','64px'); //usar rem
     } else {
         $('.step-menu-v,.side-menu').css('top', '7.6rem');
         $('.history-menu').css('top','auto');

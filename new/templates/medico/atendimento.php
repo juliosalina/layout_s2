@@ -1,14 +1,14 @@
 
 <!-- step menu -->
 <ul class="step-menu-v">
-    <li class="step-item col-md-12"><a href="#menu-1">Pré-Consulta</a></li>
-    <li class="step-item col-md-12"><a href="#menu-2">Anamnese</a></li>
-    <li class="step-item col-md-12"><a href="#menu-3">Ex. Físico</a></li>
+    <li class="step-item"><a href="#menu-1">Pré-Consulta</a></li>
+    <li class="step-item"><a href="#menu-2">Anamnese</a></li>
+    <li class="step-item"><a href="#menu-3">Ex. Físico</a></li>
     <li class="step-item"><a href="#menu-4">Res. Exames</a></li>
     <li class="step-item active"><a href="#menu-5">Diagnóstico</a></li>
     <li class="step-item idle"><a href="#menu-6">Conduta</a></li>
     <li class="step-item idle"><a href="#menu-7">Procedimentos</a></li>
-    <li class="step-item idle"><a href="#menu-8">Sol. Exames<</a></li>
+    <li class="step-item idle"><a href="#menu-8">Sol. Exames</a></li>
     <li class="step-item idle"><a href="#menu-9">Prescrição</a></li>
     <li class="step-item idle"><a href="#menu-10">Atestado</a></li>
     <li class="step-item idle"><a href="#menu-11">Orientações</a></li>
@@ -85,6 +85,24 @@
                 </div>
             </div>
             <ul class="slides">
+                <li>
+                    <div><b>10 / 11 / 2015</b>
+                        <p>Nathalia Naibi Mosqueira</p>
+                        <p>Cardiologia</p>
+                    </div>
+                </li>
+                <li>
+                    <div><b>10 / 11 / 2015</b>
+                        <p>Nathalia Naibi Mosqueira</p>
+                        <p>Cardiologia</p>
+                    </div>
+                </li>
+                <li>
+                    <div><b>10 / 11 / 2015</b>
+                        <p>Nathalia Naibi Mosqueira</p>
+                        <p>Cardiologia</p>
+                    </div>
+                </li>
                 <li>
                     <div><b>10 / 11 / 2015</b>
                         <p>Nathalia Naibi Mosqueira</p>
