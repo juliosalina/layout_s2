@@ -139,21 +139,42 @@ h1,h2,h3,h4,h5,h6,h7 {
 //classes para grid
 //sem padding para col filhos de row
 
-.row {
-    &.no-pad {
-        [class*="col-"] {
-            padding: 0;
-        }
-    }
+// .row {
+//     &.no-pad {
+//         [class*="col-"] {
+//             padding: 0;
+//         }
+//     }
+//     .row {
+//         margin: 0;
+//     }
+//     [class*="col-"] {
+//         &.no-pad {
+//             padding: 0;
+//         }
+//     }
+// }
     .row {
-        margin: 0;
-    }
-    [class*="col-"] {
-        &.no-pad {
-            padding: 0;
+        margin-top: 1rem;
+        margin-left: -.8rem;
+        margin-right: -.8rem;
+            div {
+            padding-left: .25rem!important;
+            padding-right: .25rem!important;
+            margin-bottom: .5rem;
+            .row div {
+                margin-bottom: 0;
+                div {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .row{
+            margin: 0;
         }
     }
-}
+    
+  
 
 .card-header {
     &.intern {
