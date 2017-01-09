@@ -20,7 +20,7 @@
 
     <div class="col-md-10 pr-6">
 
-        <div class="col-md-12">
+        <div class="col-md-12 pr-0">
 
             <h7 class="blue-medium-bkg white-text p-05"><i class="fa fa-history pr-05-md"></i>Histórico</h7>
 
@@ -28,7 +28,7 @@
 
             <div class="flexslider history-menu white-text blue-dark-bkg">
                 <div class="history-info blue-light-bkg col-md-12">
-                    <div class="card card-block pt-1 pr-0 pl-0">
+                    <div class="card card-block">
 
                         <h6 class="underline blue plr-05">Histórico - 10/11/2015 - Nathalia Nalbi Mosqueira - Cardiologia</h6>
 
@@ -68,7 +68,7 @@
                                 <p>Em uso de cefalexina 1g há 3 dias</p>
                             </li>
                             <li>
-                                <h7 class="underline thin-block pb-05 pl-0 mt-1 mb-05 font-weight-bold">Exame Físico</h7>
+                                <h7 class="underline thin-block pb-05 mt-1 mb-05 font-weight-bold">Exame Físico</h7>
                                 <p>Lesão ulcerada em 2 QDD</p>
                                 <p>Tinea cruris</p>
                                 <p>Fibroma mole em região cervical</p>
@@ -220,8 +220,8 @@
             <div id="menu-3" class="card card-block">
                 <h6 class="card-title font-weight-bold">Exame Físico</h6>
                 <div class="row">
-                    <div class="col-md-8 pl-0">
-                        <textarea class="form-control mb-1" id="exampleTextarea" rows="9"></textarea>
+                    <div class="col-md-8 pl-1">
+                        <textarea class="form-control mb-1 pl-1" id="exampleTextarea" rows="9"></textarea>
                     </div>
                     <div class="col-md-2 text-xs-center flex-items-xs-middle">
                         Clique no corpo ao lado para acessar as marcações do paciente.
@@ -272,112 +272,128 @@
                 <h6 class="card-title font-weight-bold">Solicitação de Exames e Procedimentos</h6>
                 <div class="row">
                     <div class="col-md-4 pl-0">
-                        <h7 class="underline blue">Pacotes</h7>
+                        <div class="col-md-12">
+                            <h7 class="underline blue">Pacotes</h7>
+                        </div>
+
                     </div>
                     <div class="col-md-8">
-                        <h7 class="underline blue">Exames</h7>
+                        <div class="col-md-12">
+                            <h7 class="underline blue">Exames</h7>
+                        </div>
+
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-4 pl-0 mt-1">
-                        <ul class="text-xs-left ">
-                            <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
-                            <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
-                            <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
-                            <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
-                            <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
-                            <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
-                            <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
-                        </ul>
+                        <div class="col-md-12">
+                            <ul class="text-xs-left ">
+                                <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
+                                <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
+                                <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
+                                <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
+                                <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
+                                <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
+                                <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
+                            </ul>
+                        </div>
+
+
                     </div>
                     <div class="col-md-4 mt-2">
-
-                        <div class="form-check">
-                            <label class="custom-control custom-checkbox">
+                        <div class="col-md-12">
+                            <div class="form-check">
+                                <label class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Check this custom checkbox</span>
                       </label>
-                        </div>
+                            </div>
 
-                        <div class="form-check">
-                            <label class="custom-control custom-checkbox">
+                            <div class="form-check">
+                                <label class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Check this custom checkbox</span>
                       </label>
-                        </div>
+                            </div>
 
-                        <div class="form-check">
-                            <label class="custom-control custom-checkbox">
+                            <div class="form-check">
+                                <label class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Check this custom checkbox</span>
                       </label>
-                        </div>
+                            </div>
 
-                        <div class="form-check">
-                            <label class="custom-control custom-checkbox">
+                            <div class="form-check">
+                                <label class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Check this custom checkbox</span>
                       </label>
-                        </div>
+                            </div>
 
-                        <div class="form-check">
-                            <label class="custom-control custom-checkbox">
+                            <div class="form-check">
+                                <label class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Check this custom checkbox</span>
                       </label>
+                            </div>
+
                         </div>
 
 
                     </div>
 
                     <div class="col-md-4 mt-2">
-                        <div class="form-check">
-                            <label class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Check this custom checkbox</span>
-                  </label>
+                        <div class="col-md-12">
+                            <div class="form-check">
+                                <label class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">Check this custom checkbox</span>
+                          </label>
+                            </div>
+
+                            <div class="form-check">
+                                <label class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">Check this custom checkbox</span>
+                          </label>
+                            </div>
+
+                            <div class="form-check">
+                                <label class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">Check this custom checkbox</span>
+                          </label>
+                            </div>
+
+                            <div class="form-check">
+                                <label class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">Check this custom checkbox</span>
+                          </label>
+                            </div>
+
+                            <div class="form-check">
+                                <label class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" disabled>
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">Check this custom checkbox</span>
+                          </label>
+                            </div>
                         </div>
 
-                        <div class="form-check">
-                            <label class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Check this custom checkbox</span>
-                  </label>
-                        </div>
-
-                        <div class="form-check">
-                            <label class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Check this custom checkbox</span>
-                  </label>
-                        </div>
-
-                        <div class="form-check">
-                            <label class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Check this custom checkbox</span>
-                  </label>
-                        </div>
-
-                        <div class="form-check">
-                            <label class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" disabled>
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Check this custom checkbox</span>
-                  </label>
-                        </div>
 
                     </div>
+
                     <div class="row col-md-12 pr-0 flex-items-xs-right">
                         <div class="col-md-2 flex-items-xs-middle"><label>3 selecionado(s)</label></div>
                         <div class="col-md-2 plr-05-md"><button type="button" class="btn btn-primary btn-block light-text">Incluir selecionados</button></div>
