@@ -1,7 +1,6 @@
 <div class="cirurgia_pos row ml-0 mr-0">
-
     <!-- card misto-->
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-0-md pr-05-md flex-items-xs-stretch">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 pl-0-md pr-05-md flex-items-xs-stretch">
         <div class="card card-secondary">
             <div class="card-header">Paciente</div>
             <div class="row card-block">
@@ -30,7 +29,7 @@
     </div>
 
     <!-- card azul-->
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 plr-05-md pr-0-lg flex-items-xs-stretch">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 plr-05-md pr-0-lg flex-items-xs-stretch">
         <div class="card card-inverse card-primary">
             <div class="card-header">Status Cirurgia</div>
             <div class="card-block">
@@ -41,7 +40,7 @@
     </div>
 
     <!-- card misto-->
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pr-0-md pl-05-md flex-items-xs-stretch">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 pr-0-md pl-05-md flex-items-xs-stretch">
         <div class="card card-secondary">
             <div class="card-header">Agendamentos</div>
             <div class="row card-block">
@@ -117,16 +116,15 @@
             </div>
         </div>
     </div>
-
 </div>
 
 <!-- blocos fundo cinza -->
 <div class="cirurgia_pos row ml-0 mr-0">
-    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 pl-0-md pr-05-md flex-items-xs-stretch">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-0-md pr-0-md flex-items-xs-stretch">
         <div class="card card-block">
             <h7 class="card-title font-weight-bold">Dados da Cirurgia</h7>
             <div class="row ml-0 mr-0 mt-05">
-                <div class="col-md-3 pl-0-md pr-05-md flex-items-xs-stretch">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 pl-0-md pr-05-md flex-items-xs-stretch">
                     <div class="col-xs-12 gray-bkg flex-items-xs-middle pr-1 pl-1 pt-05 pb-05 brd-gray-light">
                         <i class="fa fa-hospital-o fa-2x mr-1 blue-medium-dark-text"></i>
                         <ul class="list-group">
@@ -137,7 +135,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 plr-05-md pr-0-lg flex-items-xs-stretch">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 plr-05-md pr-0-lg flex-items-xs-stretch">
                     <div class="col-xs-12 gray-bkg flex-items-xs-middle pr-1 pl-1 pt-05 pb-05 brd-gray-light">
                         <i class="fa fa-user-md fa-2x mr-1 blue-medium-dark-text"></i>
                         <ul class="list-group">
@@ -148,8 +146,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 plr-05-md pr-0-lg flex-items-xs-stretch">
-                     <div class="col-xs-12 gray-bkg flex-items-xs-middle pr-1 pl-1 pt-05 pb-05 brd-gray-light">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 plr-05-md pr-0-lg flex-items-xs-stretch">
+                    <div class="col-xs-12 gray-bkg flex-items-xs-middle pr-1 pl-1 pt-05 pb-05 brd-gray-light">
                         <i class="fa fa-calendar fa-2x mr-1 blue-medium-dark-text"></i>
                         <ul class="list-group">
                             <li class="list-group-item"><label>Label:</label>Cras justo odio</li>
@@ -159,8 +157,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 pr-0-md pl-05-md flex-items-xs-stretch">
-                     <div class="col-xs-12 gray-bkg flex-items-xs-middle pr-1 pl-1 pt-05 pb-05 brd-gray-light">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 pr-0-md pl-05-md flex-items-xs-stretch">
+                    <div class="col-xs-12 gray-bkg flex-items-xs-middle pr-1 pl-1 pt-05 pb-05 brd-gray-light">
                         <i class="fa fa-calendar-check-o fa-2x mr-1 blue-medium-dark-text"></i>
                         <ul class="list-group">
                             <li class="list-group-item"><label>Label:</label>Cras justo odio</li>
@@ -172,7 +170,10 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pr-0-md pl-05-md flex-items-xs-stretch">
+</div>
+
+<div class="cirurgia_pos row ml-0 mr-0">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-0-md pr-0-md flex-items-xs-stretch">
         <!-- botoes -->
         <div class="card card-block">
             <h7 class="card-title font-weight-bold">Ações</h7>
@@ -303,7 +304,6 @@
     </div>
 </div>
 
-
 <div class="cirurgia_pos row ml-0 mr-0">
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pl-0-md pr-05-md flex-items-xs-stretch">
         <div class="card card-block">
@@ -393,7 +393,7 @@
             </div>
         </div>
     </div>
-    </div>
+    </div>  
 </div>
 
 <div class="cirurgia_pos row ml-0 mr-0">
@@ -485,7 +485,6 @@
         </div>
     </div>
 </div>
-
 
 <div class="cirurgia_pos row ml-0 mr-0">
     <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 pl-0-md pr-05-md flex-items-xs-stretch">
