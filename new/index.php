@@ -50,7 +50,7 @@
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- Modernizr -->
-    <script src="assets/js/modernizr.min.js"></script>
+<!--    <script src="assets/js/modernizr.min.js"></script> -->
     <!-- Polyfill to remove click delays on browsers with touch UIs -->
     <script src="assets/js/fastclick.js"></script>
     <!-- Create a scrollbar on somethings div-->

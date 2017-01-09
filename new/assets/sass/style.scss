@@ -157,7 +157,7 @@ user-select: none;
 position:fixed;
 width:10.5rem;
 padding:0;
-top:8.4rem;
+top:7.6rem;
 border-top:.1rem solid #ccc;
 @include transition (.5s);
  .step-item{
@@ -213,7 +213,7 @@ border-top:.1rem solid #ccc;
   }
 }
 
-.setas {
+.setas { // todo arrumar um pai para este cara
   height: 2rem;
 }
 
@@ -300,6 +300,7 @@ border-top:.1rem solid #ccc;
     height:3.5rem;
     z-index:1;
     line-height:.8rem;
+    position:fixed;
     width:inherit;
     p{
     margin-bottom:0;

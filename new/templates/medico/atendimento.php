@@ -17,11 +17,14 @@
 
 <div class="row pl-1 flex-items-xs-right">
 
-    <!-- historico slider -->
+    <!-- wrapper direito -->
 
     <div class="col-md-10 pr-6 pl-0">
 
         <h7 class="blue-medium-bkg white-text p-05"><i class="fa fa-history pr-05-md"></i>Histórico</h7>
+
+          <!-- historico slider -->
+
         <div class="flexslider history-menu white-text blue-dark-bkg">
             <div class="history-info blue-light-bkg col-md-12">
                 <div class="card card-block pt-1 pr-0 pl-0">
@@ -153,7 +156,7 @@
 
         <!-- pre consulta -->
 
-        <div id="menu-1" class="card card-block mt-1">
+        <div id="menu-1" class="card card-block mt-5">
             <h6 class="card-title font-weight-bold">Pré-Consulta</h6>
             <ul class="row fa-ul pl-3">
                 <li class="col-xs-12 col-lg-2 pl-0">

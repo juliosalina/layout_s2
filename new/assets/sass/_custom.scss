@@ -1,24 +1,31 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-h7 {
+h1,h2,h3,h4,h5,h6,h7 {
     &.underline {
-        border-bottom: .2rem solid $gray-dark;
-        display: inline-block;
+            border-bottom: .2rem solid $gray;
+            display: inline-block;
         &.blue {
             border-color: $blue;
+            padding-left: .5rem;
+            padding-right: .5rem;
         }
         &.thin-block {
             border-bottom: .1rem solid $gray-dark;
             display: block;
         }
     }
+        &.left-line {
+            border-left: .3rem solid $gray;
+            background-color: $white-color;
+            padding: 1rem .5rem 1rem .5rem;
+            @include border-radius(.2rem) &.blue {
+                border-color: $blue;
+        }
+    }
 }
 
+
+
 //checkbox custom
+
 .custom-checkbox .custom-control-indicator {
     border-radius: 50%;
     background-color: #fff;
@@ -82,6 +89,7 @@ h7 {
 }
 
 //buttons
+
 .btn {
     font-weight: normal;
     border-radius: .2rem;
@@ -130,6 +138,7 @@ h7 {
 
 //classes para grid
 //sem padding para col filhos de row
+
 .row {
     &.no-pad {
         [class*="col-"] {
@@ -158,6 +167,7 @@ h7 {
 }
 
 //cards/blocos
+
 .card-primary {
     background-color: #87C3E8;
     border: 0;
@@ -226,6 +236,7 @@ h7 {
 }
 
 //table
+
 .total {
     padding-right: 0.6rem;
 }
@@ -293,6 +304,7 @@ table {
 }
 
 //form
+
 .form-control {
     border-radius: 0;
     font-size: 0.8rem;
@@ -321,6 +333,7 @@ table {
 }
 
 //tabs
+
 .nav-tabs {
     .nav-item {
         .nav-link {
@@ -374,27 +387,7 @@ table {
 }
 
 //FONTES
-.bold-block {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 0;
-}
 
-.light-text {
-    font-weight: normal;
-    font-size: 0.8rem;
-}
-
-h7 {
-    &.underline {
-        border-bottom: .2rem solid $gray;
-        padding-left: .5rem;
-        padding-right: .5rem;
-        &.blue {
-            border-color: $blue;
-        }
-    }
-}
 
 .bold-block {
     font-weight: bold;
@@ -407,34 +400,16 @@ h7 {
     font-size: 0.8rem;
 }
 
-h7 {
-    &.underline {
-        border-bottom: .2rem solid $gray;
-        padding-left: .5rem;
-        padding-right: .5rem;
-        &.blue {
-            border-color: $blue;
-        }
-    }
-}
-
-h5 {
-    &.left-line {
-        border-left: .3rem solid $gray;
-        background-color: $white-color;
-        padding: 1rem .5rem 1rem .5rem;
-        @include border-radius(.2rem) &.blue {
-            border-color: $blue;
-        }
-    }
-}
 
 .mb-05 {
-    margin-bottom: .5em !important;
+    margin-bottom: .5rem !important;
 }
 
 .mt-05 {
-    margin-top: .5em !important;
+    margin-top: .5rem !important;
+}
+.mt-5{
+    margin-top: 5rem !important;
 }
 
 //bordas
@@ -528,9 +503,9 @@ h5 {
 .pt-05 {
         padding-top: .5rem;
     }
-    .pb-05 {
-        padding-bottom: .5rem;
-    }
+.pb-05 {
+    padding-bottom: .5rem;
+}
     //XL
     @media (min-width: 1200px) {
         .pl-0-lg {

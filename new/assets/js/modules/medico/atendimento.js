@@ -10,7 +10,13 @@ $('.history-menu').flexslider({
     touch: true,
     prevText: "",
     nextText: "",
-    move: 1
+    move: 1,
+    start: function(){
+        //seta largura baseada no pai necessário para posicionamento fixo
+        var parentSlider =  $('.history-menu').parent();
+        var sizeSlider =  parentSlider.width();
+        parentSlider.css('width',sizeSlider);
+    }, 
 });
 
 // Scroll animate para #
@@ -32,16 +38,18 @@ $(function() {
 
 //função scroll
 $(window).scroll(function() {
+
     //fixar slider historico no scroll TODO CRIAR CLASSE
     var scrollPosition = $(window).scrollTop();
     if (scrollPosition > 10) {
         $('.step-menu-v,.side-menu').css('top', '4.5rem');
-
-      //  $('.history-menu').css('top','7.2rem');
+        $('.history-menu').css('top','64px');
     } else {
-        $('.step-menu-v,.side-menu').css('top', '8.4rem');
-      //  $('.history-menu').css('top', 'auto');
+        $('.step-menu-v,.side-menu').css('top', '7.6rem');
+        $('.history-menu').css('top','auto');
     }
+
+
 });
 
 //abrir e fechar menu historico
