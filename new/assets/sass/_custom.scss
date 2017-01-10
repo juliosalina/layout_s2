@@ -59,6 +59,10 @@ h1,h2,h3,h4,h5,h6,h7 {
     }
 }
 
+.custom-control-description{
+    font-size:.7rem;
+}
+
 .title-page-mobile {
     display: none;
     font-size: 1.3rem;
@@ -160,10 +164,7 @@ h1,h2,h3,h4,h5,h6,h7 {
             padding-right: 6rem;
         }
     }
-    .pad-05,
-    .pad-1,
-    .pad-2,
-    .pad-3 {
+    .pad-05,.pad-1,.pad-2,.pad-3 {
         //todo mover
         width: 100%;
     }

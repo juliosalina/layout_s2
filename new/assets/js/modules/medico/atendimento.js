@@ -20,9 +20,16 @@ $('.history-menu').flexslider({
 });
 
 
+$('.scrollitem').slimScroll({
+    height: '9.5rem',
+    position: 'right',
+    size: "7px",
+    color: '#bbb',
+    wheelStep: 5
+});
 
 
-// highlight stepmenu
+// highlight stepmenu click
 var lastId,
     topMenu = $(".step-menu-v"),
     topMenuHeight = topMenu.outerHeight()+140,

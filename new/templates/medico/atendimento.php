@@ -261,58 +261,72 @@
             <div id="menu-4" class="card card-block">
                 <h6 class="card-title font-weight-bold">Resultados de Exames</h6>
 
-                <table class="table">
+                <table class="table table-responsive">
                     <thead>
-                        <tr>
+                        <tr class="row">
                             <th class="head col-xs-1">#</th>
-                            <th class="head col-xs-1">Data</th>
-                            <th class="head col-xs-6">Unidade</th>
-                            <th class="head col-xs-3">Exames</th>
-                            <th class="head col-xs-1">Resultados</th>
+                            <th class="head col-xs-1 ellipsis">Data</th>
+                            <th class="head col-xs-6 ellipsis">Unidade</th>
+                            <th class="head col-xs-3 ellipsis">Exames</th>
+                            <th class="head col-xs-1 ellipsis">Resultados</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row" class="col-xs-1">1</th>
-                            <th class="col-xs-1">16/11/2016 14:27</th>
-                            <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
-                            <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
-                            <th class="col-xs-1">19/11/2016</th>
+                        <tr class="row">
+                            <th scope="row" class="col-xs-1">1</td>
+                            <td class="col-xs-1 ellipsis">16/11/2016 14:27</td>
+                            <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</td>
+                            <td class="col-xs-3 ellipsis">Gaston Augusto Perez Pouilleux</td>
+                            <td class="col-xs-1 ellipsis">19/11/2016</td>
                         </tr>
-                        <tr>
-                            <th scope="row" class="col-xs-1">2</th>
-                            <th class="col-xs-1">16/11/2016 14:27</th>
-                            <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
-                            <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
-                            <th class="col-xs-1">19/11/2016</th>
+                        <tr class="row">
+                            <th scope="row" class="col-xs-1">1</td>
+                            <td class="col-xs-1 ellipsis">16/11/2016 14:27</td>
+                            <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</td>
+                            <td class="col-xs-3 ellipsis">Gaston Augusto Perez Pouilleux</td>
+                            <td class="col-xs-1 ellipsis">19/11/2016</td>
                         </tr>
-                        <tr>
-                            <th scope="row" class="col-xs-1">3</th>
-                            <th class="col-xs-1">16/11/2016 14:27</th>
-                            <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
-                            <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
-                            <th class="col-xs-1">19/11/2016</th>
+                        <tr class="row">
+                            <th scope="row" class="col-xs-1">1</td>
+                            <td class="col-xs-1 ellipsis">16/11/2016 14:27</td>
+                            <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</td>
+                            <td class="col-xs-3 ellipsis">Gaston Augusto Perez Pouilleux</td>
+                            <td class="col-xs-1 ellipsis">19/11/2016</td>
                         </tr>
-                        <tr>
-                            <th scope="row" class="col-xs-1">4</th>
-                            <th class="col-xs-1">16/11/2016 14:27</th>
-                            <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
-                            <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
-                            <th class="col-xs-1">19/11/2016</th>
+                        <tr class="row">
+                            <th scope="row" class="col-xs-1">1</td>
+                            <td class="col-xs-1 ellipsis">16/11/2016 14:27</td>
+                            <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</td>
+                            <td class="col-xs-3 ellipsis">Gaston Augusto Perez Pouilleux</td>
+                            <td class="col-xs-1 ellipsis">19/11/2016</td>
                         </tr>
-                        <tr>
-                            <th scope="row" class="col-xs-1">5</th>
-                            <th class="col-xs-1">16/11/2016 14:27</th>
-                            <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
-                            <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
-                            <th class="col-xs-1">19/11/2016</th>
+                        <tr class="row">
+                            <th scope="row" class="col-xs-1">1</td>
+                            <td class="col-xs-1 ellipsis">16/11/2016 14:27</td>
+                            <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</td>
+                            <td class="col-xs-3 ellipsis">Gaston Augusto Perez Pouilleux</td>
+                            <td class="col-xs-1 ellipsis">19/11/2016</td>
                         </tr>
-                        <tr>
-                            <th scope="row" class="col-xs-1">6</th>
-                            <th class="col-xs-1">16/11/2016 14:27</th>
-                            <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
-                            <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
-                            <th class="col-xs-1">19/11/2016</th>
+                        <tr class="row">
+                            <th scope="row" class="col-xs-1">1</td>
+                            <td class="col-xs-1 ellipsis">16/11/2016 14:27</td>
+                            <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</td>
+                            <td class="col-xs-3 ellipsis">Gaston Augusto Perez Pouilleux</td>
+                            <td class="col-xs-1 ellipsis">19/11/2016</td>
+                        </tr>
+                        <tr class="row">
+                            <th scope="row" class="col-xs-1">1</td>
+                            <td class="col-xs-1 ellipsis">16/11/2016 14:27</td>
+                            <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</td>
+                            <td class="col-xs-3 ellipsis">Gaston Augusto Perez Pouilleux</td>
+                            <td class="col-xs-1 ellipsis">19/11/2016</td>
+                        </tr>
+                        <tr class="row">
+                            <th scope="row" class="col-xs-1">1</td>
+                            <td class="col-xs-1 ellipsis">16/11/2016 14:27</td>
+                            <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</td>
+                            <td class="col-xs-3 ellipsis">Gaston Augusto Perez Pouilleux</td>
+                            <td class="col-xs-1 ellipsis">19/11/2016</td>
                         </tr>
                     </tbody>
                 </table>
@@ -356,15 +370,17 @@
 
                 <div class="row">
                     <div class="col-md-4 mt-1">
-                        <div class="pad-05">
-                            <ul class="text-xs-left ">
-                                <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
-                                <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
-                                <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
-                                <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
-                                <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
-                                <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
-                                <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
+                        <div class="pad-05 scrollitem">
+                            <ul class="text-xs-left">
+                                <li class="brd-b">Alergologia</li>
+                                <li class="brd-b">CAF ambulatorial</li>
+                                <li class="brd-b">Cardiologia I</li>
+                                <li class="brd-b">Cardiologia II</li>
+                                <li class="brd-b">Clínica A</li>
+                                <li class="brd-b">Cĺinica B</li>
+                                <li class="brd-b">Dermato</li>
+                                <li class="brd-b">Endocrino 1</li>
+                                <li class="brd-b">Endocrino 2</li>
                             </ul>
                         </div>
 
@@ -374,42 +390,35 @@
                         <div class="pad-05">
                             <div class="form-check">
                                 <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Check this custom checkbox</span>
-                      </label>
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Cintilografia Mioc. Esforço/ repouso C/ Dipiridamol</span>
+                              </label>
                             </div>
 
                             <div class="form-check">
                                 <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Check this custom checkbox</span>
-                      </label>
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Ecocardiograma Com Doppler Colorido - Ecodoppler</span>
+                              </label>
                             </div>
 
                             <div class="form-check">
                                 <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Check this custom checkbox</span>
-                      </label>
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">M.a.p.a</span>
+                              </label>
                             </div>
+
 
                             <div class="form-check">
                                 <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Check this custom checkbox</span>
-                      </label>
-                            </div>
-
-                            <div class="form-check">
-                                <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" disabled>
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Check this custom checkbox</span>
-                      </label>
+                                <input type="checkbox" class="custom-control-input" disabled>
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Ecg - Eletrocardiograma</span>
+                              </label>
                             </div>
 
                         </div>
@@ -423,7 +432,7 @@
                                 <label class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input">
                             <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description">Check this custom checkbox</span>
+                            <span class="custom-control-description">Holter De 24hs</span>
                           </label>
                             </div>
 
@@ -431,7 +440,7 @@
                                 <label class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input">
                             <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description">Check this custom checkbox</span>
+                            <span class="custom-control-description">Teste Ergométrico</span>
                           </label>
                             </div>
 
@@ -439,7 +448,7 @@
                                 <label class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input">
                             <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description">Check this custom checkbox</span>
+                            <span class="custom-control-description">Cintilografia Miocardio Repouso Esforço</span>
                           </label>
                             </div>
 
@@ -447,7 +456,7 @@
                                 <label class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input">
                             <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description">Check this custom checkbox</span>
+                            <span class="custom-control-description">Ecodoppler Transesofagico</span>
                           </label>
                             </div>
 
@@ -455,7 +464,7 @@
                                 <label class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" disabled>
                             <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description">Check this custom checkbox</span>
+                            <span class="custom-control-description">Rx Torax 2 PA E Perfil</span>
                           </label>
                             </div>
                         </div>
@@ -476,13 +485,13 @@
                         </div>
                         <div class="col-md-3">
                             <div class="pad-05">
-                                <button type="button" class="btn btn-secondary btn-block light-text">Incluir selecionados</button>
+                                <button type="button" class="btn btn-secondary btn-block light-text">Selecionar Todos</button>
                             </div>
 
                         </div>
                         <div class="col-md-3">
                             <div class=pad-05 "">
-                                <button type="button" class="btn btn-secondary btn-block light-text">Incluir selecionados</button>
+                                <button type="button" class="btn btn-secondary btn-block light-text">Limpar Seleção</button>
                             </div>
                         </div>
                     </div>
@@ -522,12 +531,12 @@
 
 <div class="row flex-items-xs-right">
     <div class="card text-xs-center side-menu closed">
-        <div class="card-header row">
+        <div class="card-header row pl-1">
             <div class="col-md-7 flex-xs-middle">
 
                 <a href="#"><i class="fa fa-3x fa-play-circle mr-1"></i></a>
                 <a href="#"><i class="fa fa-3x fa-pause-circle mr-1"></i></a>
-                <a hr ef="#"><i class="fa fa-3x fa-ban mr-1"></i></a>
+                <a href="#"><i class="fa fa-3x fa-ban mr-1"></i></a>
 
             </div>
 
