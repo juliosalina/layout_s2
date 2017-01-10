@@ -219,21 +219,9 @@
             <div id="menu-3" class="card card-block">
                 <h6 class="card-title font-weight-bold">Exame Físico</h6>
                 <div class="row">
-                    <div class="col-md-8 pl-0">
-                        <div class="pad-0">
-                             <textarea class="form-control mb-1" id="exampleTextarea" rows="9"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-md-2 text-xs-center flex-items-xs-middle">
-                        <div class="pad-0">
-                             Clique no corpo ao lado para acessar as marcações do paciente.
-                        </div>
-                    </div>
-                    <div class="col-md-2 text-xs-right">
-                        <div class="pad-0">
-                            <img src="img/medico1.jpg">
-                        </div>
-                    </div>
+                    <div class="col-md-8 pl-0"><textarea class="form-control mb-1" id="exampleTextarea" rows="9"></textarea></div>
+                    <div class="col-md-2 text-xs-center flex-items-xs-middle">Clique no corpo ao lado para acessar as marcações do paciente.</div>
+                    <div class="col-md-2 text-xs-center"><img src="img/medico1.jpg"></div>
                 </div>
             </div>
 

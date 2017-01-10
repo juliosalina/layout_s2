@@ -88,6 +88,7 @@ $(window).scroll(function() {
 //abrir e fechar menu historico
 $('.history-menu slides li,.history-info .close-btn').click(function() {
     $('.history-info').toggleClass('closed');
+    console.log('clicou');
 });
 
 //abrir e fechar side-menu
