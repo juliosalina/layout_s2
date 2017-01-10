@@ -20,7 +20,7 @@
 
     <div class="col-md-10 pr-6">
 
-        <div class="col-md-12 pr-0">
+        <div class="pad-05 pr-0">
 
             <h7 class="blue-medium-bkg white-text p-05"><i class="fa fa-history pr-05-md"></i>Histórico</h7>
 
@@ -198,7 +198,6 @@
             <div id="menu-2" class="card card-block">
 
                 <h6 class="card-title font-weight-bold">Anamnese</h6>
-
                 <label for="exampleSelect1">Example select</label>
                 <select class="form-control mb-1" id="exampleSelect1">
               <option>1</option>
@@ -220,14 +219,20 @@
             <div id="menu-3" class="card card-block">
                 <h6 class="card-title font-weight-bold">Exame Físico</h6>
                 <div class="row">
-                    <div class="col-md-8 pl-1">
-                        <textarea class="form-control mb-1 pl-1" id="exampleTextarea" rows="9"></textarea>
+                    <div class="col-md-8 pl-0">
+                        <div class="pad-0">
+                             <textarea class="form-control mb-1" id="exampleTextarea" rows="9"></textarea>
+                        </div>
                     </div>
                     <div class="col-md-2 text-xs-center flex-items-xs-middle">
-                        Clique no corpo ao lado para acessar as marcações do paciente.
+                        <div class="pad-0">
+                             Clique no corpo ao lado para acessar as marcações do paciente.
+                        </div>
                     </div>
                     <div class="col-md-2 text-xs-right">
-                        <img src="img/medico1.jpg">
+                        <div class="pad-0">
+                            <img src="img/medico1.jpg">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -272,9 +277,9 @@
                 <h6 class="card-title font-weight-bold">Solicitação de Exames e Procedimentos</h6>
                 <div class="row">
 
-                    <div class="col-md-4 pl-1">
+                    <div class="col-md-4">
 
-                        <div class="col-md-12">
+                        <div class="pad-05">
                             <h7 class="underline blue">Pacotes</h7>
                         </div>
 
@@ -282,7 +287,7 @@
 
                     <div class="col-md-8">
 
-                        <div class="col-md-12">
+                        <div class="pad-05">
                             <h7 class="underline blue">Exames</h7>
                         </div>
 
@@ -290,8 +295,8 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-4 mt-1 pl-1">
-                        <div class="col-md-12">
+                    <div class="col-md-4 mt-1">
+                        <div class="pad-05">
                             <ul class="text-xs-left ">
                                 <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
                                 <li class="brd-b mt-1">Difilobotríase e espargatroíse</li>
@@ -306,7 +311,7 @@
 
                     </div>
                     <div class="col-md-4 mt-2">
-                        <div class="col-md-12">
+                        <div class="pad-05">
                             <div class="form-check">
                                 <label class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input">
@@ -353,7 +358,7 @@
                     </div>
 
                     <div class="col-md-4 mt-2">
-                        <div class="col-md-12">
+                        <div class="pad-05">
                             <div class="form-check">
                                 <label class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input">
@@ -398,11 +403,28 @@
 
                     </div>
 
-                    <div class="row col-md-12 pr-0 flex-items-xs-right">
-                        <div class="col-md-2 flex-items-xs-middle"><label>3 selecionado(s)</label></div>
-                        <div class="col-md-2 plr-05-md"><button type="button" class="btn btn-primary btn-block light-text">Incluir selecionados</button></div>
-                        <div class="col-md-2 plr-05-md"><button type="button" class="btn btn-secondary btn-block light-text">Incluir selecionados</button></div>
-                        <div class="col-md-2 pl-05-md pr-0-md"><button type="button" class="btn btn-secondary btn-block light-text">Incluir selecionados</button></div>
+                    <div class="row pr-0 flex-items-xs-right">
+                        <div class="col-md-2 flex-items-xs-middle">
+                            <div class="pad-05">
+                                <label>3 selecionado(s)</label>
+                            </div>
+                        </div>
+                        <div class="col-md-2 plr-05-md">
+                        <div class="pad-05">
+                            <button type="button" class="btn btn-primary btn-block light-text">Incluir selecionados</button>
+                        </div>
+                        </div>
+                        <div class="col-md-2 plr-05-md">
+                            <div class="pad-05">
+                            <button type="button" class="btn btn-secondary btn-block light-text">Incluir selecionados</button>
+                        </div>
+                           
+                        </div>
+                        <div class="col-md-2 pl-05-md pr-0-md">
+                            <div class=pad-05"">
+                                <button type="button" class="btn btn-secondary btn-block light-text">Incluir selecionados</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -410,37 +432,44 @@
 
             <div id="menu-6" class="card card-block">
                 <h6 class="card-title font-weight-bold">Card title6</h6>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br>
                 Lorem ipsum dolor sit amet, magna maecenas in a nostra, ante mauris morbi laoreet nisl odio. Leo gravida, nibh suspendisse cras in sed justo interdum, integer sed proin. Elit semper elit conubia nunc nulla per, quis vel nulla pede cursus. Consectetuer condimentum luctus ac est duis. Ullamcorper tellus orci nec, id vehicula suspendisse ultrices, dolor ut pede. Venenatis ligula turpis quis wisi, et pulvinar in in sit proin vitae. Erat aliquam, wisi ullamcorper dui in.
             </div>
 
             <div id="menu-7" class="card card-block">
                 <h6 class="card-title font-weight-bold">Card title7</h6>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 Lorem ipsum dolor sit amet, magna maecenas in a nostra, ante mauris morbi laoreet nisl odio. Leo gravida, nibh suspendisse cras in sed justo interdum, integer sed proin. Elit semper elit conubia nunc nulla per, quis vel nulla pede cursus. Consectetuer condimentum luctus ac est duis. Ullamcorper tellus orci nec, id vehicula suspendisse ultrices, dolor ut pede. Venenatis ligula turpis quis wisi, et pulvinar in in sit proin vitae. Erat aliquam, wisi ullamcorper dui in.
             </div>
 
 
             <div id="menu-8" class="card card-block">
                 <h6 class="card-title font-weight-bold">Card title8</h6>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 Lorem ipsum dolor sit amet, magna maecenas in a nostra, ante mauris morbi laoreet nisl odio. Leo gravida, nibh suspendisse cras in sed justo interdum, integer sed proin. Elit semper elit conubia nunc nulla per, quis vel nulla pede cursus. Consectetuer condimentum luctus ac est duis. Ullamcorper tellus orci nec, id vehicula suspendisse ultrices, dolor ut pede. Venenatis ligula turpis quis wisi, et pulvinar in in sit proin vitae. Erat aliquam, wisi ullamcorper dui in.
             </div>
 
             <div id="menu-9" class="card card-block">
                 <h6 class="card-title font-weight-bold">Card title9</h6>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 Lorem ipsum dolor sit amet, magna maecenas in a nostra, ante mauris morbi laoreet nisl odio. Leo gravida, nibh suspendisse cras in sed justo interdum, integer sed proin. Elit semper elit conubia nunc nulla per, quis vel nulla pede cursus. Consectetuer condimentum luctus ac est duis. Ullamcorper tellus orci nec, id vehicula suspendisse ultrices, dolor ut pede. Venenatis ligula turpis quis wisi, et pulvinar in in sit proin vitae. Erat aliquam, wisi ullamcorper dui in.
             </div>
 
             <div id="menu-10" class="card card-block">
                 <h6 class="card-title font-weight-bold">Card title10</h6>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 Lorem ipsum dolor sit amet, magna maecenas in a nostra, ante mauris morbi laoreet nisl odio. Leo gravida, nibh suspendisse cras in sed justo interdum, integer sed proin. Elit semper elit conubia nunc nulla per, quis vel nulla pede cursus. Consectetuer condimentum luctus ac est duis. Ullamcorper tellus orci nec, id vehicula suspendisse ultrices, dolor ut pede. Venenatis ligula turpis quis wisi, et pulvinar in in sit proin vitae. Erat aliquam, wisi ullamcorper dui in.
             </div>
 
             <div id="menu-11" class="card card-block">
                 <h6 class="card-title font-weight-bold">Card title11</h6>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 Lorem ipsum dolor sit amet, magna maecenas in a nostra, ante mauris morbi laoreet nisl odio. Leo gravida, nibh suspendisse cras in sed justo interdum, integer sed proin. Elit semper elit conubia nunc nulla per, quis vel nulla pede cursus. Consectetuer condimentum luctus ac est duis. Ullamcorper tellus orci nec, id vehicula suspendisse ultrices, dolor ut pede. Venenatis ligula turpis quis wisi, et pulvinar in in sit proin vitae. Erat aliquam, wisi ullamcorper dui in.
             </div>
 
             <div id="menu-12" class="card card-block">
                 <h6 class="card-title font-weight-bold">Card title12</h6>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 Lorem ipsum dolor sit amet, magna maecenas in a nostra, ante mauris morbi laoreet nisl odio. Leo gravida, nibh suspendisse cras in sed justo interdum, integer sed proin. Elit semper elit conubia nunc nulla per, quis vel nulla pede cursus. Consectetuer condimentum luctus ac est duis. Ullamcorper tellus orci nec, id vehicula suspendisse ultrices, dolor ut pede. Venenatis ligula turpis quis wisi, et pulvinar in in sit proin vitae. Erat aliquam, wisi ullamcorper dui in.
             </div>
         </div>
@@ -456,12 +485,13 @@
     <div class="card text-xs-center side-menu closed">
         <div class="card-header row">
             <div class="col-md-7 flex-xs-middle">
-                
+
                 <a href="#"><i class="fa fa-3x fa-play-circle mr-1"></i></a>
                 <a href="#"><i class="fa fa-3x fa-pause-circle mr-1"></i></a>
                 <a hr ef="#"><i class="fa fa-3x fa-ban mr-1"></i></a>
-                
+
             </div>
+
             <div class="col-md-5 flex-xs-middle text-xs-right">
                 <h3 class="font-weight-bold hide-on-close">11: 11: 11</h3>
             </div>

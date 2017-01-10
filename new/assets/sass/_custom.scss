@@ -155,10 +155,31 @@ h7 {
                 margin-bottom: 0;
             }
         }
+        //todo remover 
         &.pr-6 {
             padding-right: 6rem;
         }
     }
+    .pad-05,.pad-1,.pad-2,.pad-3{
+        //todo mover
+        width:100%;
+    }
+    .pad-0{
+        padding:0;
+    }
+    .pad-05{
+        padding-left:.25rem;
+        padding-right:.25rem;
+        }
+    .pad-1{
+        padding:.4rem;
+     }
+    .pad-2{
+        padding:.8rem;
+     }
+    .pad-3{
+        padding:1.2rem;
+     }
 }
 
 .card-header {
