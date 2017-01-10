@@ -404,23 +404,23 @@
                     </div>
 
                     <div class="row pr-0 flex-items-xs-right">
-                        <div class="col-md-2 flex-items-xs-middle">
+                        <div class="col-md-3 flex-items-xs-middle">
                             <div class="pad-05">
                                 <label>3 selecionado(s)</label>
                             </div>
                         </div>
-                        <div class="col-md-2 plr-05-md">
+                        <div class="col-md-3">
                         <div class="pad-05">
                             <button type="button" class="btn btn-primary btn-block light-text">Incluir selecionados</button>
                         </div>
                         </div>
-                        <div class="col-md-2 plr-05-md">
+                        <div class="col-md-3">
                             <div class="pad-05">
                             <button type="button" class="btn btn-secondary btn-block light-text">Incluir selecionados</button>
                         </div>
                            
                         </div>
-                        <div class="col-md-2 pl-05-md pr-0-md">
+                        <div class="col-md-3">
                             <div class=pad-05"">
                                 <button type="button" class="btn btn-secondary btn-block light-text">Incluir selecionados</button>
                             </div>
