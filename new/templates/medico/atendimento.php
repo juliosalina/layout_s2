@@ -266,9 +266,9 @@
                         <tr>
                             <th class="head col-xs-1">#</th>
                             <th class="head col-xs-1">Data</th>
-                            <th class="head col-xs-6">Informação</th>
-                            <th class="head col-xs-3">Usuário</th>
-                            <th class="head col-xs-1">Próx. Contato</th>
+                            <th class="head col-xs-6">Unidade</th>
+                            <th class="head col-xs-3">Exames</th>
+                            <th class="head col-xs-1">Resultados</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -325,7 +325,7 @@
 
             <div id="menu-6" class="card card-block">
                 <h6 class="card-title font-weight-bold">Conduta</h6>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br> Lorem ipsum dolor sit amet, magna maecenas in a nostra, ante mauris morbi laoreet nisl odio. Leo gravida, nibh suspendisse cras in sed justo interdum, integer sed proin. Elit semper elit conubia nunc nulla per, quis vel nulla pede cursus. Consectetuer condimentum luctus ac est duis. Ullamcorper tellus orci nec, id vehicula suspendisse ultrices, dolor ut pede. Venenatis ligula turpis quis wisi, et pulvinar in in sit proin vitae. Erat aliquam, wisi ullamcorper dui in.
+                  <textarea class="form-control mb-1" rows="2"></textarea>
             </div>
 
             <div id="menu-7" class="card card-block">
