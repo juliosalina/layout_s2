@@ -1,7 +1,7 @@
 <div class="cirurgia_pos row">
     <!-- card misto-->
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 flex-items-xs-stretch">
-        <div class="col-md-12 flex-items-xs-stretch">
+        <div class="pad-05 flex-items-xs-stretch">
             <div class="card card-secondary">
                 <div class="card-header">Paciente</div>
                 <div class="row card-block">
@@ -32,7 +32,7 @@
 
     <!-- card azul-->
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 flex-items-xs-stretch">
-        <div class="col-md-12 flex-items-xs-stretch">
+        <div class="pad-05 flex-items-xs-stretch">
             <div class="card card-inverse card-primary">
                 <div class="card-header">Status Cirurgia</div>
                 <div class="card-block">
@@ -45,7 +45,7 @@
 
     <!-- card misto-->
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 flex-items-xs-stretch">
-        <div class="col-md-12 flex-items-xs-stretch">
+        <div class="pad-05 flex-items-xs-stretch">
             <div class="card card-secondary">
                 <div class="card-header">Agendamentos</div>
                 <div class="row card-block">
@@ -55,7 +55,7 @@
                         <i class="fa fa-trash fa-lg"></i>
                     </div>
                     <div class="col-xs-12">
-                        <div class="col-md-12">
+                        <div class="pad-05">
                             <div class="flexslider card-slider">
                                 <ul class="slides">
                                     <li>
@@ -127,13 +127,13 @@
 
 <!-- blocos fundo cinza -->
 <div class="cirurgia_pos row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 flex-items-xs-stretch">
-        <div class="col-md-12 flex-items-xs-stretch">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 flex-items-xs-stretch">
+        <div class="pad-05 flex-items-xs-stretch">
             <div class="card card-block">
                 <h7 class="card-title font-weight-bold">Dados da Cirurgia</h7>
                 <div class="row mt-05">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 flex-items-xs-stretch">
-                        <div class="col-md-12 flex-items-xs-stretch">
+                        <div class="pad-05 flex-items-xs-stretch">
                             <div class="col-xs-12 gray-bkg flex-items-xs-middle pr-1 pl-1 pt-05 pb-05 brd-gray-light">
                                 <i class="fa fa-hospital-o fa-2x mr-1 blue-medium-dark-text"></i>
                                 <ul class="list-group">
@@ -181,42 +181,39 @@
             </div>
         </div>
     </div>
-</div>
-
-<div class="cirurgia_pos row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 flex-items-xs-stretch">
-        <div class="col-md-12 flex-items-xs-stretch">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 flex-items-xs-stretch">
+        <div class="pad-05 flex-items-xs-stretch">
             <!-- botoes -->
             <div class="card card-block">
                 <h7 class="card-title font-weight-bold">Ações</h7>
                 <div class="row">
-                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2 col-xl-2 text-xs-center flex-items-xs-stretch">
-                        <div class="col-md-12 flex-items-xs-stretch">
+                  <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-6 text-xs-center flex-items-xs-stretch">
+                        <div class="pad-05 flex-items-xs-stretch mb-05">
                             <button type="button" class="btn btn-secondary btn-sm btn-block light-text align">Liberar Cirurgia</button>
                         </div>
                   </div>
-                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2 col-xl-2 text-xs-center flex-items-xs-stretch">
-                        <div class="col-md-12 flex-items-xs-stretch">
+                  <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-6 text-xs-center flex-items-xs-stretch">
+                        <div class="pad-05 flex-items-xs-stretch mb-05">
                             <button type="button" class="btn btn-secondary btn-sm btn-block light-text disable align" disabled>Retorno Cirurgião</button>
                         </div>
                   </div>
-                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2 col-xl-2 text-xs-center flex-items-xs-stretch">
-                        <div class="col-md-12 flex-items-xs-stretch">
+                  <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-6 text-xs-center flex-items-xs-stretch">
+                        <div class="pad-05 flex-items-xs-stretch mb-05">
                             <button type="button" class="btn btn-secondary btn-sm btn-block light-text disable align" disabled>Consulta Cardiologia</button>
                         </div>
                   </div>
-                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2 col-xl-2 text-xs-center flex-items-xs-stretch">
-                        <div class="col-md-12 flex-items-xs-stretch">
+                  <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-6 text-xs-center flex-items-xs-stretch">
+                        <div class="pad-05 flex-items-xs-stretch mb-05">
                             <button type="button" class="btn btn-secondary btn-sm btn-block light-text disable align" disabled>Finalizar Cirurgia</button>
                         </div>
                   </div>
-                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2 col-xl-2 text-xs-center flex-items-xs-stretch">
-                        <div class="col-md-12 flex-items-xs-stretch">
+                  <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-6 text-xs-center flex-items-xs-stretch">
+                        <div class="pad-05 flex-items-xs-stretch mb-05">
                             <button type="button" class="btn btn-secondary btn-sm btn-block light-text disable align" disabled>Agendar Cirurgia</button>
                         </div>
                   </div>
-                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2 col-xl-2 text-xs-center flex-items-xs-stretch">
-                        <div class="col-md-12 flex-items-xs-stretch">
+                  <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-6 text-xs-center flex-items-xs-stretch">
+                        <div class="pad-05 flex-items-xs-stretch mb-05">
                             <button type="button" class="btn btn-secondary btn-sm btn-block light-text disable align" disabled>Retorno Cardiologia</button>
                         </div>
                   </div>
@@ -228,7 +225,7 @@
 
 <div class="cirurgia_pos hist row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 flex-items-xs-stretch">
-        <div class="col-md-12 flex-items-xs-stretch">
+        <div class="pad-05 flex-items-xs-stretch">
             <div class="card shadom-tab">
                 <div class="card-header brd-b-0">
                     <ul class="nav nav-tabs card-header-tabs float-xs-left" role="tablist">
@@ -319,17 +316,17 @@
     <div class="card card-block">
         <div class="row">
             <div class="col-md-9 flex-items-xs-middle">
-                <div class="col-md-12 flex-items-xs-stretch">
+                <div class="pad-05 flex-items-xs-stretch">
                     <label class="mr-1 flex-items-xs-middle">Comentário</label><input class="form-control" type="text" placeholder="Digite aqui o seu comentário...">
                 </div>
             </div>
             <div class="col-md-2 flex-items-xs-middle">
-                <div class="col-md-12 flex-items-xs-stretch">
+                <div class="pad-05 flex-items-xs-stretch">
                 <label class="mr-1 more flex-items-xs-middle">Próx. Contato</label><input class="form-control" type="text" placeholder="Data">
                </div>
             </div>
             <div class="col-md-1 flex-items-xs-middle">
-                <div class="col-md-12 flex-items-xs-stretch">
+                <div class="pad-05 flex-items-xs-stretch">
                     <button type="button" class="btn btn-primary btn-block"><i class="fa fa-plus"></i>Adicionar</button>
                 </div>
             </div>
@@ -339,7 +336,7 @@
 
 <div class="cirurgia_pos row">
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 flex-items-xs-stretch">
-        <div class="col-md-12 flex-items-xs-stretch">
+        <div class="pad-05 flex-items-xs-stretch">
             <div class="card card-block">
                 <h7 class="card-title font-weight-bold">Orçamento - Preços DRC</h7>
                 <div class="tab-content">
@@ -397,22 +394,22 @@
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 flex-items-xs-stretch">
-        <div class="col-md-12 flex-items-xs-stretch">
+        <div class="pad-05 flex-items-xs-stretch">
             <div class="card card-block">
                 <h6 class="card-title font-weight-bold">Hospitais indicados pelo cirurgião</h6>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="col-md-12 flex-items-xs-stretch">
+                        <div class="pad-05 flex-items-xs-stretch">
                             <button type="button" class="btn btn-secondary btn-block light-text">Hospital Ruben Berta</button>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="col-md-12 flex-items-xs-stretch">
+                        <div class="pad-05 flex-items-xs-stretch">
                             <button type="button" class="btn btn-secondary btn-block light-text inactive">Hospital Assunção</button>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="col-md-12 flex-items-xs-stretch">
+                        <div class="pad-05 flex-items-xs-stretch">
                             <button type="button" class="btn btn-secondary btn-block light-text inactive">Hospital Externo</button>
                         </div>
                     </div>
@@ -428,10 +425,10 @@
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 flex-items-xs-stretch">
-        <div class="col-md-12 flex-items-xs-stretch">
+        <div class="pad-05 flex-items-xs-stretch">
             <div class="card card-block">
                 <div class="row no-pad">
-                    <div class="col-md-12">
+                    <div class="pad-05">
                         <p class="mt-2 mb-2 text-xs-center">Clique no botão abaixo para imprimir a Carta de Internação do paciente</p>
                         <button type="button" class="btn btn-primary btn-block"><i class="fa fa-print"></i>Carta de Internação</button>
                     </div>
@@ -443,7 +440,7 @@
 
 <div class="cirurgia_pos row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 flex-items-xs-stretch">
-        <div class="col-md-12 flex-items-xs-stretch">
+        <div class="pad-05 flex-items-xs-stretch">
             <div class="card card-block">
                 <h7 class="card-title font-weight-bold">Preços Hospital (Produtos) - Hospital Ruben Berta</h7>
                 <div class="card shadom-tab">
@@ -535,7 +532,7 @@
 
 <div class="cirurgia_pos row">
     <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 flex-items-xs-stretch">
-        <div class="col-md-12 flex-items-xs-stretch">
+        <div class="pad-05 flex-items-xs-stretch">
             <div class="card card-block">
                 <h7 class="card-title font-weight-bold">Preços Hospital (Exame anatomopátologo / OPME)</h7>
                 <div class="row">
@@ -573,7 +570,7 @@
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 flex-items-xs-stretch">
-        <div class="col-md-12 flex-items-xs-stretch">
+        <div class="pad-05 flex-items-xs-stretch">
             <!-- bloco valores -->
             <div class="card card-block text-xs-center">
                 <h7 class="card-title font-weight-bold">Total DRC</h7>
