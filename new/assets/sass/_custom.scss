@@ -1,10 +1,4 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-h7 {
+h1,h2,h3,h4,h5,h6,h7 {
     &.underline {
         border-bottom: .2rem solid $gray;
         display: inline-block;
@@ -139,13 +133,12 @@ h7 {
 }
 
 //classes para grid
-
 .row {
     margin-left: -.8rem !important;
     margin-right: -.8rem !important;
     .row {
         margin: 0 !important;
-        width:100%;
+        width: 100%;
     }
     [class*="col-"] {
         padding-left: .25rem;
@@ -161,23 +154,26 @@ h7 {
             padding-right: 6rem;
         }
     }
-    .pad-05,.pad-1,.pad-2,.pad-3{
+    .pad-05,
+    .pad-1,
+    .pad-2,
+    .pad-3 {
         //todo mover
-        width:100%;
+        width: 100%;
     }
-    .pad-05{
-        padding-left:.25rem;
-        padding-right:.25rem;
-        }
-    .pad-1{
-        padding:.4rem;
-     }
-    .pad-2{
-        padding:.8rem;
-     }
-    .pad-3{
-        padding:1.2rem;
-     }
+    .pad-05 {
+        padding-left: .25rem;
+        padding-right: .25rem;
+    }
+    .pad-1 {
+        padding: .4rem;
+    }
+    .pad-2 {
+        padding: .8rem;
+    }
+    .pad-3 {
+        padding: 1.2rem;
+    }
 }
 
 .card-header {
@@ -526,7 +522,6 @@ table {
 .pb-05 {
     padding-bottom: .5rem;
 }
-
 
 //XL
 @media (min-width: 1200px) {
