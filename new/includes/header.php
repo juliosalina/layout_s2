@@ -1,11 +1,11 @@
 <div class="header row flex-items-xs-middle">
     <div class="content-left col-xs-4">
-        <div class="col-md-12">
+        <div class="pad-05">
             <div class="title-page"></div>
         </div>
     </div>
     <div class="content-right col-xs-8">
-        <div class="col-md-12 text-xs-right">
+        <div class="pad-05 text-xs-right">
             <div class="search">
                 <form class="navbar-form pull" role="search">
                     <div class="form-group">
