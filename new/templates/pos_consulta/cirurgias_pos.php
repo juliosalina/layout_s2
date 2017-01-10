@@ -341,21 +341,25 @@
 </div>
 
 <div class="cirurgia_pos comment row">
-    <div class="card card-block">
-        <div class="row">
-            <div class="col-md-9 flex-items-xs-middle">
-                <div class="pad-05 flex-items-xs-stretch">
-                    <label class="mr-1 flex-items-xs-middle">Comentário</label><input class="form-control" type="text" placeholder="Digite aqui o seu comentário...">
-                </div>
-            </div>
-            <div class="col-md-2 flex-items-xs-middle">
-                <div class="pad-05 flex-items-xs-stretch">
-                <label class="mr-1 more flex-items-xs-middle">Próx. Contato</label><input class="form-control" type="text" placeholder="Data">
-               </div>
-            </div>
-            <div class="col-md-1 flex-items-xs-middle">
-                <div class="pad-05 flex-items-xs-stretch">
-                    <button type="button" class="btn btn-primary btn-block"><i class="fa fa-plus"></i>Adicionar</button>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 flex-items-xs-stretch">
+        <div class="pad-05 flex-items-xs-stretch">
+            <div class="card card-block">
+                <div class="row">
+                    <div class="col-md-8 flex-items-xs-middle">
+                        <div class="pad-05 flex-items-xs-stretch">
+                            <label class="mr-1 flex-items-xs-middle">Comentário</label><input class="form-control" type="text" placeholder="Digite aqui o seu comentário...">
+                        </div>
+                    </div>
+                    <div class="col-md-3 flex-items-xs-middle">
+                        <div class="pad-05 flex-items-xs-stretch">
+                            <label class="mr-1 more flex-items-xs-middle">Próx. Contato</label><input class="form-control" type="text" placeholder="Data">
+                       </div>
+                    </div>
+                    <div class="col-md-1 flex-items-xs-middle">
+                        <div class="pad-05 flex-items-xs-stretch">
+                            <button type="button" class="btn btn-primary btn-sm btn-block"><i class="fa fa-plus"></i>Adicionar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
