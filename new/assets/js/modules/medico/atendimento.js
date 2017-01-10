@@ -25,7 +25,7 @@ $('.history-menu').flexslider({
 // highlight stepmenu
 var lastId,
     topMenu = $(".step-menu-v"),
-    topMenuHeight = topMenu.outerHeight()+15,
+    topMenuHeight = topMenu.outerHeight()+140,
     // All list items
     menuItems = topMenu.find("a"),
     // Anchors corresponding to menu items
@@ -50,8 +50,6 @@ $(window).scroll(function() {
 
 
     //highlight stepmenu
-
-
    // Get container scroll position
    var fromTop = $(this).scrollTop()+topMenuHeight;
    
@@ -60,6 +58,7 @@ $(window).scroll(function() {
      if ($(this).offset().top < fromTop)
        return this;
    });
+
    // Get the id of the current element
    cur = cur[cur.length-1];
    var id = cur && cur.length ? cur[0].id : "";
@@ -67,16 +66,16 @@ $(window).scroll(function() {
    if (lastId !== id) {
        lastId = id;
        // Set/remove active class
-       menuItems
-         .parent().removeClass("active").end().filter("[href='#"+id+"']").parent().addClass("active").removeClass('idle');
+       menuItems.parent().removeClass("active").end().filter("[href='#"+id+"']").parent().addClass("active").removeClass('idle').nextAll().addClass('idle');
    } 
 
 
     //fixar slider historico no scroll TODO CRIAR CLASSE
+
     var scrollPosition = $(window).scrollTop();
     if (scrollPosition > 10) {
         $('.step-menu-v,.side-menu').css('top', '4.5rem');
-        $('.history-menu').css('top','64px'); //usar rem
+        $('.history-menu').css('top','4rem');
     } else {
         $('.step-menu-v,.side-menu').css('top', '7.6rem');
         $('.history-menu').css('top','auto');
@@ -85,14 +84,19 @@ $(window).scroll(function() {
 
 });
 
-//abrir e fechar menu historico
-$('.history-menu slides li,.history-info .close-btn').click(function() {
-    $('.history-info').toggleClass('closed');
-    console.log('clicou');
-});
+  //abrir e fechar menu historico
+  $('.history-info .close-btn').click(function() {
+      $('.history-info').toggleClass('closed');
+  });
 
-//abrir e fechar side-menu
-$('.btn-profile').click(function() {
-    $('.side-menu').toggleClass('closed');
-    $('.btn-profile i').toggleClass('fa-flip-horizontal');
-});
+  $('.history-menu .slides li').click(function() {
+      if($('.history-info').hasClass('closed')){
+          $('.history-info').toggleClass('closed');
+      };
+  });
+
+  //abrir e fechar side-menu
+  $('.btn-profile').click(function() {
+      $('.side-menu').toggleClass('closed');
+      $('.btn-profile i').toggleClass('fa-flip-horizontal');
+  });

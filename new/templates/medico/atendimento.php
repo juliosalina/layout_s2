@@ -1,10 +1,10 @@
 <!-- step menu -->
 <ul class="step-menu-v">
-    <li class="step-item"><a href="#menu-1">Pré-Consulta</a></li>
-    <li class="step-item"><a href="#menu-2">Anamnese</a></li>
-    <li class="step-item"><a href="#menu-3">Ex. Físico</a></li>
-    <li class="step-item"><a href="#menu-4">Res. Exames</a></li>
-    <li class="step-item active"><a href="#menu-5">Diagnóstico</a></li>
+    <li class="step-item idle"><a href="#menu-1">Pré-Consulta</a></li>
+    <li class="step-item idle"><a href="#menu-2">Anamnese</a></li>
+    <li class="step-item idle"><a href="#menu-3">Ex. Físico</a></li>
+    <li class="step-item idle"><a href="#menu-4">Res. Exames</a></li>
+    <li class="step-item idle"><a href="#menu-5">Diagnóstico</a></li>
     <li class="step-item idle"><a href="#menu-6">Conduta</a></li>
     <li class="step-item idle"><a href="#menu-7">Procedimentos</a></li>
     <li class="step-item idle"><a href="#menu-8">Sol. Exames</a></li>
@@ -20,21 +20,19 @@
 
     <div class="col-md-10 pr-6">
 
-        <div class="pad-05 pr-0">
+        <div class="pad-05 pr-0 pl-0">
 
             <h7 class="blue-medium-bkg white-text p-05"><i class="fa fa-history pr-05-md"></i>Histórico</h7>
 
             <!-- historico slider -->
 
             <div class="flexslider history-menu white-text blue-dark-bkg">
-                <div class="history-info blue-light-bkg col-md-12">
+                <div class="history-info blue-light-bkg">
                     <div class="card card-block">
 
                         <h6 class="underline blue plr-05">Histórico - 10/11/2015 - Nathalia Nalbi Mosqueira - Cardiologia</h6>
-
                         <button type="button" class="btn btn-nav float-xs-right close-btn"><i class="fa fa-times"></i>Fechar</button>
-
-                        <h7 class="underline thin-block pb-05 mt-2 pl-0 font-weight-bold">Informações</h7>
+                        <h7 class="underline thin-block pb-05 mt-2 pl-0 mb-05 font-weight-bold">Informações</h7>
                         <ul class="row mt-1">
                             <li class="col-xs">
                                 <i class="fa fa-heartbeat fa-2x blue-medium-dark-text"></i>
@@ -87,85 +85,120 @@
                 </div>
                 <ul class="slides">
                     <li>
-                        <div><b>10 / 11 / 2015</b>
+                        <div class="ml-1">
+                            <b>10 / 11 / 2015</b>
                             <p>Nathalia Naibi Mosqueira</p>
                             <p>Cardiologia</p>
                         </div>
                     </li>
                     <li>
-                        <div><b>10 / 11 / 2015</b>
+                        <div class="ml-1">
+                            <b>10 / 11 / 2015</b>
                             <p>Nathalia Naibi Mosqueira</p>
                             <p>Cardiologia</p>
                         </div>
                     </li>
                     <li>
-                        <div><b>10 / 11 / 2015</b>
+                        <div class="ml-1">
+                            <b>10 / 11 / 2015</b>
                             <p>Nathalia Naibi Mosqueira</p>
                             <p>Cardiologia</p>
                         </div>
                     </li>
                     <li>
-                        <div><b>10 / 11 / 2015</b>
+                        <div class="ml-1">
+                            <b>10 / 11 / 2015</b>
                             <p>Nathalia Naibi Mosqueira</p>
                             <p>Cardiologia</p>
                         </div>
                     </li>
                     <li>
-                        <div><b>10 / 11 / 2015</b>
+                        <div class="ml-1">
+                            <b>10 / 11 / 2015</b>
                             <p>Nathalia Naibi Mosqueira</p>
                             <p>Cardiologia</p>
                         </div>
                     </li>
                     <li>
-                        <div><b>10 / 11 / 2015</b>
+                        <div class="ml-1">
+                            <b>10 / 11 / 2015</b>
                             <p>Nathalia Naibi Mosqueira</p>
                             <p>Cardiologia</p>
                         </div>
                     </li>
                     <li>
-                        <div><b>10 / 11 / 2015</b>
+                        <div class="ml-1">
+                            <b>10 / 11 / 2015</b>
                             <p>Nathalia Naibi Mosqueira</p>
                             <p>Cardiologia</p>
                         </div>
                     </li>
                     <li>
-                        <div><b>10 / 11 / 2015</b>
+                        <div class="ml-1">
+                            <b>10 / 11 / 2015</b>
                             <p>Nathalia Naibi Mosqueira</p>
                             <p>Cardiologia</p>
                         </div>
                     </li>
                     <li>
-                        <div><b>10 / 11 / 2015</b>
+                        <div class="ml-1">
+                            <b>10 / 11 / 2015</b>
                             <p>Nathalia Naibi Mosqueira</p>
                             <p>Cardiologia</p>
                         </div>
                     </li>
                     <li>
-                        <div><b>10 / 11 / 2015</b>
+                        <div class="ml-1">
+                            <b>10 / 11 / 2015</b>
                             <p>Nathalia Naibi Mosqueira</p>
                             <p>Cardiologia</p>
                         </div>
                     </li>
                     <li>
-                        <div><b>10 / 11 / 2015</b>
+                        <div class="ml-1">
+                            <b>10 / 11 / 2015</b>
                             <p>Nathalia Naibi Mosqueira</p>
                             <p>Cardiologia</p>
                         </div>
                     </li>
                     <li>
-                        <div><b>10 / 11 / 2015</b>
+                        <div class="ml-1">
+                            <b>10 / 11 / 2015</b>
                             <p>Nathalia Naibi Mosqueira</p>
                             <p>Cardiologia</p>
                         </div>
                     </li>
                     <li>
-                        <div><b>10 / 11 / 2015</b>
+                        <div class="ml-1">
+                            <b>10 / 11 / 2015</b>
                             <p>Nathalia Naibi Mosqueira</p>
                             <p>Cardiologia</p>
                         </div>
                     </li>
                     <li>
-                        <div><b>10 / 11 / 2015</b>
+                        <div class="ml-1">
+                            <b>10 / 11 / 2015</b>
+                            <p>Nathalia Naibi Mosqueira</p>
+                            <p>Cardiologia</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ml-1">
+                            <b>10 / 11 / 2015</b>
+                            <p>Nathalia Naibi Mosqueira</p>
+                            <p>Cardiologia</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ml-1">
+                            <b>10 / 11 / 2015</b>
+                            <p>Nathalia Naibi Mosqueira</p>
+                            <p>Cardiologia</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ml-1">
+                            <b>10 / 11 / 2015</b>
                             <p>Nathalia Naibi Mosqueira</p>
                             <p>Cardiologia</p>
                         </div>
@@ -219,7 +252,7 @@
             <div id="menu-3" class="card card-block">
                 <h6 class="card-title font-weight-bold">Exame Físico</h6>
                 <div class="row">
-                    <div class="col-md-8 pl-0"><textarea class="form-control mb-1" id="exampleTextarea" rows="9"></textarea></div>
+                    <div class="col-md-8 pr-3"><textarea class="form-control mb-1" id="exampleTextarea" rows="12"></textarea></div>
                     <div class="col-md-2 text-xs-center flex-items-xs-middle">Clique no corpo ao lado para acessar as marcações do paciente.</div>
                     <div class="col-md-2 text-xs-center"><img src="img/medico1.jpg"></div>
                 </div>
@@ -228,40 +261,79 @@
             <div id="menu-4" class="card card-block">
                 <h6 class="card-title font-weight-bold">Resultados de Exames</h6>
 
-                <table class="table col-md-12">
-                    <thead class="col-md-12">
-                        <tr class="col-md-12">
-                            <th class="col-md-1">#</th>
-                            <th class="col-md-7">First Name</th>
-                            <th class="col-md-2">Last Name</th>
-                            <th class="col-md-2">Username</th>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="head col-xs-1">#</th>
+                            <th class="head col-xs-1">Data</th>
+                            <th class="head col-xs-6">Informação</th>
+                            <th class="head col-xs-3">Usuário</th>
+                            <th class="head col-xs-1">Próx. Contato</th>
                         </tr>
                     </thead>
-                    <tbody class="col-md-12">
-                        <tr class="col-md-12">
-                            <th class="col-md-1">1</th>
-                            <td class="col-md-7">Mark</td>
-                            <td class="col-md-2">Otto</td>
-                            <td class="col-md-2">@mdo</td>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="col-xs-1">1</th>
+                            <th class="col-xs-1">16/11/2016 14:27</th>
+                            <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                            <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
+                            <th class="col-xs-1">19/11/2016</th>
                         </tr>
-                        <tr class="col-md-12">
-                            <th class="col-md-1">2</th>
-                            <td class="col-md-7">Mark</td>
-                            <td class="col-md-2">Otto</td>
-                            <td class="col-md-2">@mdo</td>
+                        <tr>
+                            <th scope="row" class="col-xs-1">2</th>
+                            <th class="col-xs-1">16/11/2016 14:27</th>
+                            <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                            <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
+                            <th class="col-xs-1">19/11/2016</th>
                         </tr>
-                        <tr class="col-md-12">
-                            <th class="col-md-1">3</th>
-                            <td class="col-md-7">Mark</td>
-                            <td class="col-md-2">Otto</td>
-                            <td class="col-md-2">@mdo</td>
+                        <tr>
+                            <th scope="row" class="col-xs-1">3</th>
+                            <th class="col-xs-1">16/11/2016 14:27</th>
+                            <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                            <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
+                            <th class="col-xs-1">19/11/2016</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="col-xs-1">4</th>
+                            <th class="col-xs-1">16/11/2016 14:27</th>
+                            <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                            <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
+                            <th class="col-xs-1">19/11/2016</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="col-xs-1">5</th>
+                            <th class="col-xs-1">16/11/2016 14:27</th>
+                            <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                            <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
+                            <th class="col-xs-1">19/11/2016</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="col-xs-1">6</th>
+                            <th class="col-xs-1">16/11/2016 14:27</th>
+                            <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                            <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
+                            <th class="col-xs-1">19/11/2016</th>
                         </tr>
                     </tbody>
-
                 </table>
             </div>
 
             <div id="menu-5" class="card card-block">
+                <h6 class="card-title font-weight-bold">Diagnóstico</h6>
+            </div>
+
+
+            <div id="menu-6" class="card card-block">
+                <h6 class="card-title font-weight-bold">Conduta</h6>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br> Lorem ipsum dolor sit amet, magna maecenas in a nostra, ante mauris morbi laoreet nisl odio. Leo gravida, nibh suspendisse cras in sed justo interdum, integer sed proin. Elit semper elit conubia nunc nulla per, quis vel nulla pede cursus. Consectetuer condimentum luctus ac est duis. Ullamcorper tellus orci nec, id vehicula suspendisse ultrices, dolor ut pede. Venenatis ligula turpis quis wisi, et pulvinar in in sit proin vitae. Erat aliquam, wisi ullamcorper dui in.
+            </div>
+
+            <div id="menu-7" class="card card-block">
+                <h6 class="card-title font-weight-bold">Procedimentos</h6>
+            </div>
+
+
+            <div id="menu-8" class="card card-block">
                 <h6 class="card-title font-weight-bold">Solicitação de Exames e Procedimentos</h6>
                 <div class="row">
 
@@ -391,25 +463,25 @@
 
                     </div>
 
-                    <div class="row pr-0 flex-items-xs-right">
+                    <div class="row flex-items-xs-right pt-1">
                         <div class="col-md-3 flex-items-xs-middle">
-                            <div class="pad-05">
+                            <div class="pad-05 text-xs-right">
                                 <label>3 selecionado(s)</label>
                             </div>
                         </div>
                         <div class="col-md-3">
-                        <div class="pad-05">
-                            <button type="button" class="btn btn-primary btn-block light-text">Incluir selecionados</button>
-                        </div>
+                            <div class="pad-05">
+                                <button type="button" class="btn btn-primary btn-block light-text">Incluir selecionados</button>
+                            </div>
                         </div>
                         <div class="col-md-3">
                             <div class="pad-05">
-                            <button type="button" class="btn btn-secondary btn-block light-text">Incluir selecionados</button>
-                        </div>
-                           
+                                <button type="button" class="btn btn-secondary btn-block light-text">Incluir selecionados</button>
+                            </div>
+
                         </div>
                         <div class="col-md-3">
-                            <div class=pad-05"">
+                            <div class=pad-05 "">
                                 <button type="button" class="btn btn-secondary btn-block light-text">Incluir selecionados</button>
                             </div>
                         </div>
@@ -417,48 +489,27 @@
                 </div>
             </div>
 
-
-            <div id="menu-6" class="card card-block">
-                <h6 class="card-title font-weight-bold">Card title6</h6>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br>
-                Lorem ipsum dolor sit amet, magna maecenas in a nostra, ante mauris morbi laoreet nisl odio. Leo gravida, nibh suspendisse cras in sed justo interdum, integer sed proin. Elit semper elit conubia nunc nulla per, quis vel nulla pede cursus. Consectetuer condimentum luctus ac est duis. Ullamcorper tellus orci nec, id vehicula suspendisse ultrices, dolor ut pede. Venenatis ligula turpis quis wisi, et pulvinar in in sit proin vitae. Erat aliquam, wisi ullamcorper dui in.
-            </div>
-
-            <div id="menu-7" class="card card-block">
-                <h6 class="card-title font-weight-bold">Card title7</h6>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                Lorem ipsum dolor sit amet, magna maecenas in a nostra, ante mauris morbi laoreet nisl odio. Leo gravida, nibh suspendisse cras in sed justo interdum, integer sed proin. Elit semper elit conubia nunc nulla per, quis vel nulla pede cursus. Consectetuer condimentum luctus ac est duis. Ullamcorper tellus orci nec, id vehicula suspendisse ultrices, dolor ut pede. Venenatis ligula turpis quis wisi, et pulvinar in in sit proin vitae. Erat aliquam, wisi ullamcorper dui in.
-            </div>
-
-
-            <div id="menu-8" class="card card-block">
-                <h6 class="card-title font-weight-bold">Card title8</h6>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                Lorem ipsum dolor sit amet, magna maecenas in a nostra, ante mauris morbi laoreet nisl odio. Leo gravida, nibh suspendisse cras in sed justo interdum, integer sed proin. Elit semper elit conubia nunc nulla per, quis vel nulla pede cursus. Consectetuer condimentum luctus ac est duis. Ullamcorper tellus orci nec, id vehicula suspendisse ultrices, dolor ut pede. Venenatis ligula turpis quis wisi, et pulvinar in in sit proin vitae. Erat aliquam, wisi ullamcorper dui in.
-            </div>
-
             <div id="menu-9" class="card card-block">
-                <h6 class="card-title font-weight-bold">Card title9</h6>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                Lorem ipsum dolor sit amet, magna maecenas in a nostra, ante mauris morbi laoreet nisl odio. Leo gravida, nibh suspendisse cras in sed justo interdum, integer sed proin. Elit semper elit conubia nunc nulla per, quis vel nulla pede cursus. Consectetuer condimentum luctus ac est duis. Ullamcorper tellus orci nec, id vehicula suspendisse ultrices, dolor ut pede. Venenatis ligula turpis quis wisi, et pulvinar in in sit proin vitae. Erat aliquam, wisi ullamcorper dui in.
+                <h6 class="card-title font-weight-bold">Prescrição</h6>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> Lorem ipsum dolor sit amet, magna maecenas in a nostra, ante mauris morbi laoreet nisl odio. Leo gravida, nibh suspendisse cras in sed justo interdum, integer sed proin. Elit semper elit conubia nunc nulla per, quis vel nulla pede cursus. Consectetuer condimentum luctus ac est duis. Ullamcorper tellus orci nec, id vehicula suspendisse ultrices, dolor ut pede. Venenatis ligula turpis quis wisi, et pulvinar in in sit proin vitae. Erat aliquam, wisi ullamcorper dui in.
             </div>
 
             <div id="menu-10" class="card card-block">
-                <h6 class="card-title font-weight-bold">Card title10</h6>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                Lorem ipsum dolor sit amet, magna maecenas in a nostra, ante mauris morbi laoreet nisl odio. Leo gravida, nibh suspendisse cras in sed justo interdum, integer sed proin. Elit semper elit conubia nunc nulla per, quis vel nulla pede cursus. Consectetuer condimentum luctus ac est duis. Ullamcorper tellus orci nec, id vehicula suspendisse ultrices, dolor ut pede. Venenatis ligula turpis quis wisi, et pulvinar in in sit proin vitae. Erat aliquam, wisi ullamcorper dui in.
+                <h6 class="card-title font-weight-bold">Atestado</h6>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> Lorem ipsum dolor sit amet, magna maecenas in a nostra, ante mauris morbi laoreet nisl odio. Leo gravida, nibh suspendisse cras in sed justo interdum, integer sed proin. Elit semper elit conubia nunc nulla per, quis vel nulla pede cursus. Consectetuer condimentum luctus ac est duis. Ullamcorper tellus orci nec, id vehicula suspendisse ultrices, dolor ut pede. Venenatis ligula turpis quis wisi, et pulvinar in in sit proin vitae. Erat aliquam, wisi ullamcorper dui in.
             </div>
 
             <div id="menu-11" class="card card-block">
-                <h6 class="card-title font-weight-bold">Card title11</h6>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                Lorem ipsum dolor sit amet, magna maecenas in a nostra, ante mauris morbi laoreet nisl odio. Leo gravida, nibh suspendisse cras in sed justo interdum, integer sed proin. Elit semper elit conubia nunc nulla per, quis vel nulla pede cursus. Consectetuer condimentum luctus ac est duis. Ullamcorper tellus orci nec, id vehicula suspendisse ultrices, dolor ut pede. Venenatis ligula turpis quis wisi, et pulvinar in in sit proin vitae. Erat aliquam, wisi ullamcorper dui in.
+                <h6 class="card-title font-weight-bold">Orientações</h6>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> Lorem ipsum dolor sit amet, magna maecenas in a nostra, ante mauris morbi laoreet nisl odio. Leo gravida, nibh suspendisse cras in sed justo interdum, integer sed proin. Elit semper elit conubia nunc nulla per, quis vel nulla pede cursus. Consectetuer condimentum luctus ac est duis. Ullamcorper tellus orci nec, id vehicula suspendisse ultrices, dolor ut pede. Venenatis ligula turpis quis wisi, et pulvinar in in sit proin vitae. Erat aliquam, wisi ullamcorper dui in.
             </div>
 
             <div id="menu-12" class="card card-block">
-                <h6 class="card-title font-weight-bold">Card title12</h6>
+                <h6 class="card-title font-weight-bold">Encaminhamento</h6>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                Lorem ipsum dolor sit amet, magna maecenas in a nostra, ante mauris morbi laoreet nisl odio. Leo gravida, nibh suspendisse cras in sed justo interdum, integer sed proin. Elit semper elit conubia nunc nulla per, quis vel nulla pede cursus. Consectetuer condimentum luctus ac est duis. Ullamcorper tellus orci nec, id vehicula suspendisse ultrices, dolor ut pede. Venenatis ligula turpis quis wisi, et pulvinar in in sit proin vitae. Erat aliquam, wisi ullamcorper dui in.
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> Lorem ipsum dolor sit amet, magna maecenas in a nostra, ante mauris morbi laoreet nisl odio. Leo gravida, nibh suspendisse cras in sed justo interdum, integer sed proin. Elit semper elit conubia nunc nulla per, quis vel nulla pede cursus. Consectetuer condimentum luctus ac est duis. Ullamcorper tellus orci nec, id vehicula suspendisse ultrices, dolor ut pede. Venenatis ligula turpis quis wisi, et pulvinar in in sit proin vitae. Erat aliquam, wisi ullamcorper dui in.
             </div>
         </div>
 

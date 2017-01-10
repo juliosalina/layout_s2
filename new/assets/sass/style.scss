@@ -174,6 +174,10 @@ border-top:.1rem solid #ccc;
      font-weight:bold;
      padding-left:1rem;
      padding-right:1rem;
+     background-color:$blue-light;
+     &::after{
+      border-top: 20px solid $blue-light;
+     }
   }
   &.idle{
      background-color:#DEDEDE;
@@ -226,7 +230,7 @@ border-top:.1rem solid #ccc;
     width: 23rem;
     z-index: 1;
     @include shadow(2px 2px 3px 3px rgba(0, 0, 0, .1));
-    @include transition (.5s);
+    @include transition ( .5s);
   h3{
     font-size:1.5rem;
     margin:0;
@@ -303,6 +307,7 @@ border-top:.1rem solid #ccc;
     line-height:.8rem;
     position:fixed;
     width:inherit;
+    @include shadow(2px 2px 3px 0px  rgba(0, 0, 0, .3));
     p{
     margin-bottom:0;
     font-size:.8rem;
@@ -310,7 +315,7 @@ border-top:.1rem solid #ccc;
    .slides li{
     height:3.5rem;
     cursor:pointer;
-    padding-top:.5rem;
+    padding-top:.6rem;
     &:hover{
       background-color:$blue-darker;
     }
@@ -321,9 +326,6 @@ border-top:.1rem solid #ccc;
       width:2px;
       height:3.5rem;
       background-color:$blue;
-    }
-    div{
-      margin-left:1rem;
     }
   }
     .flex-direction-nav li a{
@@ -337,20 +339,24 @@ border-top:.1rem solid #ccc;
     z-index:3;
     padding-top:1.3rem;
   }
-  .flex-direction-nav .flex-nav-next a{
-  //  @include shadow(-41px 5px 27px -9px rgba(14,80,115,0.71)) 
-  }
-  .flex-direction-nav .flex-nav-prev a{
-  //  @include shadow(43px 5px 27px -9px rgba(14,80,115,0.71)) 
-  }
+  // .flex-direction-nav .flex-nav-next a{
+  // //  @include shadow(-41px 5px 27px -9px rgba(14,80,115,0.71)) 
+  // }
+  // .flex-direction-nav .flex-nav-prev a{
+  // //  @include shadow(43px 5px 27px -9px rgba(14,80,115,0.71)) 
+  // }
   .history-info{
     position:absolute;
     margin-top:3.5rem;
     color:#000;
-    display:block;
-    @include shadow(2px 7px 2px 0 rgba(0, 0, 0, .1));
+    visibility:visible;
+    opacity:1;
+    width:100%;
+    @include shadow(2px 2px 3px 0px rgba(0, 0, 0, .3));
+    @include transition (.5s);
       &.closed{
-        display:none;
+        visibility:hidden;
+        opacity:0;
     }
     .card{
      @include shadow(none);
