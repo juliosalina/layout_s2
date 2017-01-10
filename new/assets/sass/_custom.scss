@@ -280,7 +280,7 @@ table {
                 &:hover {
                     background-color: #ffffff;
                 }
-                th {
+                th, td {
                     font-weight: normal;
                     padding: .65rem !important;
                 }
@@ -290,6 +290,7 @@ table {
     &:not(.normal) {
         thead,
         tbody,
+        tfoot,
         tr,
         td,
         th {
@@ -305,6 +306,9 @@ table {
         }
     }
     tbody th,
+    tbody td,
+    tfoot th,
+    tfoot td,
     thead th {
         float: left;
     }
@@ -312,10 +316,16 @@ table {
         th {
             border-top: none !important;
             padding: .65rem !important;
+            &.ellipsis {
+                white-space: nowrap;
+                overflow:hidden !important;
+                text-overflow: ellipsis;
+                width: 100%;
+            }
         }
     }
     tbody {
-        height: 8rem;
+        height: 13rem;
         overflow-y: auto;
         &.budget {
             height: 6rem;
@@ -324,9 +334,27 @@ table {
             &:hover {
                 background-color: #f5f5f5;
             }
-            th {
+            th, td {
                 font-weight: normal;
                 padding: .65rem !important;
+                &.ellipsis {
+                    white-space: nowrap;
+                    overflow:hidden !important;
+                    text-overflow: ellipsis;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    tfoot {
+        th, td {
+            font-weight: normal;
+            padding: .65rem !important;
+            &.ellipsis {
+                white-space: nowrap;
+                overflow:hidden !important;
+                text-overflow: ellipsis;
+                width: 100%;
             }
         }
     }

@@ -243,58 +243,86 @@
                 <div class="card-block brd-l">
                     <div class="tab-content">
                         <div class="tab-pane fade in active" id="historico" role="tabpanel">
-                            <table class="table">
+                            <table class="table table-responsive">
                                 <thead>
-                                    <tr>
+                                    <tr class="row">
                                         <th class="head col-xs-1">#</th>
-                                        <th class="head col-xs-1">Data</th>
-                                        <th class="head col-xs-6">Informação</th>
-                                        <th class="head col-xs-3">Usuário</th>
-                                        <th class="head col-xs-1">Próx. Contato</th>
+                                        <th class="head col-xs-2 ellipsis">Data</th>
+                                        <th class="head col-xs-6 ellipsis">Informação</th>
+                                        <th class="head col-xs-2 ellipsis">Usuário</th>
+                                        <th class="head col-xs-1 ellipsis">Próx. Contato</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <tr class="row">
                                         <th scope="row" class="col-xs-1">1</th>
-                                        <th class="col-xs-1">16/11/2016 14:27</th>
-                                        <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
-                                        <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
-                                        <th class="col-xs-1">19/11/2016</th>
+                                        <td class="col-xs-2 ellipsis">16/11/2016 14:27</td>
+                                        <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                                        <td class="col-xs-2 ellipsis">Gaston Augusto Perez Pouilleux</td>
+                                        <td class="col-xs-1">19/11/2016</td>
                                     </tr>
-                                    <tr>
+                                    <tr class="row">
                                         <th scope="row" class="col-xs-1">2</th>
-                                        <th class="col-xs-1">16/11/2016 14:27</th>
-                                        <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
-                                        <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
-                                        <th class="col-xs-1">19/11/2016</th>
+                                        <td class="col-xs-2 ellipsis">16/11/2016 14:27</td>
+                                        <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                                        <td class="col-xs-2 ellipsis">Gaston Augusto Perez Pouilleux</td>
+                                        <td class="col-xs-1">19/11/2016</td>
                                     </tr>
-                                    <tr>
+                                    <tr class="row">
                                         <th scope="row" class="col-xs-1">3</th>
-                                        <th class="col-xs-1">16/11/2016 14:27</th>
-                                        <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
-                                        <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
-                                        <th class="col-xs-1">19/11/2016</th>
+                                        <td class="col-xs-2 ellipsis">16/11/2016 14:27</td>
+                                        <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                                        <td class="col-xs-2 ellipsis">Gaston Augusto Perez Pouilleux</td>
+                                        <td class="col-xs-1">19/11/2016</td>
                                     </tr>
-                                    <tr>
+                                    <tr class="row">
                                         <th scope="row" class="col-xs-1">4</th>
-                                        <th class="col-xs-1">16/11/2016 14:27</th>
-                                        <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
-                                        <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
-                                        <th class="col-xs-1">19/11/2016</th>
+                                        <td class="col-xs-2 ellipsis">16/11/2016 14:27</td>
+                                        <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                                        <td class="col-xs-2 ellipsis">Gaston Augusto Perez Pouilleux</td>
+                                        <td class="col-xs-1">19/11/2016</td>
                                     </tr>
-                                    <tr>
+                                    <tr class="row">
                                         <th scope="row" class="col-xs-1">5</th>
-                                        <th class="col-xs-1">16/11/2016 14:27</th>
-                                        <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
-                                        <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
-                                        <th class="col-xs-1">19/11/2016</th>
+                                        <td class="col-xs-2 ellipsis">16/11/2016 14:27</td>
+                                        <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                                        <td class="col-xs-2 ellipsis">Gaston Augusto Perez Pouilleux</td>
+                                        <td class="col-xs-1">19/11/2016</td>
                                     </tr>
-                                    <tr>
+                                    <tr class="row">
                                         <th scope="row" class="col-xs-1">6</th>
-                                        <th class="col-xs-1">16/11/2016 14:27</th>
-                                        <th class="col-xs-6">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
-                                        <th class="col-xs-3">Gaston Augusto Perez Pouilleux</th>
-                                        <th class="col-xs-1">19/11/2016</th>
+                                        <td class="col-xs-2 ellipsis">16/11/2016 14:27</td>
+                                        <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                                        <td class="col-xs-2 ellipsis">Gaston Augusto Perez Pouilleux</td>
+                                        <td class="col-xs-1">19/11/2016</td>
+                                    </tr>
+                                    <tr class="row">
+                                        <th scope="row" class="col-xs-1">7</th>
+                                        <td class="col-xs-2 ellipsis">16/11/2016 14:27</td>
+                                        <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                                        <td class="col-xs-2 ellipsis">Gaston Augusto Perez Pouilleux</td>
+                                        <td class="col-xs-1">19/11/2016</td>
+                                    </tr>
+                                    <tr class="row">
+                                        <th scope="row" class="col-xs-1">8</th>
+                                        <td class="col-xs-2 ellipsis">16/11/2016 14:27</td>
+                                        <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                                        <td class="col-xs-2 ellipsis">Gaston Augusto Perez Pouilleux</td>
+                                        <td class="col-xs-1">19/11/2016</td>
+                                    </tr>
+                                    <tr class="row">
+                                        <th scope="row" class="col-xs-1">9</th>
+                                        <td class="col-xs-2 ellipsis">16/11/2016 14:27</td>
+                                        <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                                        <td class="col-xs-2 ellipsis">Gaston Augusto Perez Pouilleux</td>
+                                        <td class="col-xs-1">19/11/2016</td>
+                                    </tr>
+                                    <tr class="row">
+                                        <th scope="row" class="col-xs-1">10</th>
+                                        <td class="col-xs-2 ellipsis">16/11/2016 14:27</td>
+                                        <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</th>
+                                        <td class="col-xs-2 ellipsis">Gaston Augusto Perez Pouilleux</td>
+                                        <td class="col-xs-1">19/11/2016</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -341,47 +369,42 @@
                 <h7 class="card-title font-weight-bold">Orçamento - Preços DRC</h7>
                 <div class="tab-content">
                     <div class="tab-pane fade in active" id="historico" role="tabpanel">
-                        <table class="table">
+                        <table class="table table-responsive">
                             <thead>
-                                <tr>
-                                    <th class="head col-xs-1">#</th>
-                                    <th class="head col-xs-5">Produto</th>
-                                    <th class="head col-xs-2">Valor</th>
-                                    <th class="head col-xs-2">Descontos</th>
-                                    <th class="head col-xs-2">Valor Final</th>
+                                <tr class="row">
+                                    <th class="head col-xs-1 ellipsis">#</th>
+                                    <th class="head col-xs-5 ellipsis">Produto</th>
+                                    <th class="head col-xs-2 ellipsis">Valor</th>
+                                    <th class="head col-xs-2 ellipsis">Descontos</th>
+                                    <th class="head col-xs-2 ellipsis">Valor Final</th>
                                 </tr>
                             </thead>
                             <tbody class="budget">
+                                <tr class="row">
+                                    <th scope="row" class="col-xs-1 ellipsis">1</th>
+                                    <td class="col-xs-5 ellipsis">ADENOAMIGDALECTOMIA</td>
+                                    <td class="col-xs-2 ellipsis">R$ 1.835,00</td>
+                                    <td class="col-xs-2 ellipsis">100%</td>
+                                    <td class="col-xs-2 ellipsis">R$ 1.835,00</td>
+                                <tr class="row">
                                 <tr>
-                                    <th scope="row" class="col-xs-1">1</th>
-                                    <th class="col-xs-5">ADENOAMIGDALECTOMIA</th>
-                                    <th class="col-xs-2">R$ 1.835,00</th>
-                                    <th class="col-xs-2">100%</th>
-                                    <th class="col-xs-2">R$ 1.835,00</th>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="col-xs-1">2</th>
-                                    <th class="col-xs-5">ADENOAMIGDALECTOMIA</th>
-                                    <th class="col-xs-2">R$ 1.835,00</th>
-                                    <th class="col-xs-2">100%</th>
-                                    <th class="col-xs-2">R$ 1.835,00</th>
+                                    <th scope="row" class="col-xs-1 ellipsis">2</th>
+                                    <td class="col-xs-5 ellipsis">ADENOAMIGDALECTOMIA</td>
+                                    <td class="col-xs-2 ellipsis">R$ 1.835,00</td>
+                                    <td class="col-xs-2 ellipsis">100%</td>
+                                    <td class="col-xs-2 ellipsis">R$ 1.835,00</td>
                                 </tr>
                             </tbody>
+                            <tfoot>
+                                <tr class="row">
+                                    <th scope="row" class="col-xs-1">-</th>
+                                    <td class="col-xs-5 ellipsis font-weight-bold">Total DRC</td>
+                                    <td class="col-xs-2 ellipsis">R$ 4.031,00</td>
+                                    <td class="col-xs-2 ellipsis">R$ 551,00</td>
+                                    <td class="col-xs-2 ellipsis font-weight-bold">R$ 3.480,00</td>
+                                </tr>
+                            </tfoot>
                         </table>
-                        <div class="row total brd-t pt-05 pl-1">
-                            <div class="col-xs-6 flex-items-xs-stretch font-weight-bold">
-                                Total DRC
-                            </div>
-                            <div class="col-xs-2 flex-items-xs-stretch">
-                                R$ 4.031,00
-                            </div>
-                            <div class="col-xs-2 flex-items-xs-stretch">
-                                R$ 551,00
-                            </div>
-                            <div class="col-xs-2 flex-items-xs-stretch font-weight-bold">
-                                R$ 3.480,00
-                            </div>
-                        </div>
                     </div>
                     <div class="tab-pane fade" id="atendimentos" role="tabpanel">
                         <p>asdas</p>
@@ -460,61 +483,86 @@
                     <div class="card-block brd-l">
                         <div class="tab-content">
                             <div class="tab-pane fade in active" id="enfermaria" role="tabpanel">
-                                <table class="table">
+                                <table class="table table-responsive">
                                     <thead>
-                                        <tr>
-                                            <th class="head col-xs-1">#</th>
-                                            <th class="head col-xs-5">Produto</th>
-                                            <th class="head col-xs-2">Valor Acomodação</th>
-                                            <th class="head col-xs-1">Valor Anestesia</th>
-                                            <th class="head col-xs-1">Descontos</th>
-                                            <th class="head col-xs-2">Valor Final</th>
+                                        <tr class="row">
+                                            <th class="head col-xs-1 ellipsis">#</th>
+                                            <th class="head col-xs-5 ellipsis">Produto</th>
+                                            <th class="head col-xs-2 ellipsis">Valor Acomodação</th>
+                                            <th class="head col-xs-1 ellipsis">Valor Anestesia</th>
+                                            <th class="head col-xs-1 ellipsis">Descontos</th>
+                                            <th class="head col-xs-2 ellipsis">Valor Final</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <tr class="row">
                                             <th scope="row" class="col-xs-1">1</th>
-                                            <th class="col-xs-5">ADENOAMIGDALECTOMIA</th>
-                                            <th class="col-xs-2">R$ 1.835,00</th>
-                                            <th class="col-xs-1">R$ 0,00</th>
-                                            <th class="col-xs-1">20%</th>
-                                            <th class="col-xs-2">R$ 1.956,00</th>
+                                            <td class="col-xs-5 ellipsis">ADENOAMIGDALECTOMIA</td>
+                                            <td class="col-xs-2 ellipsis">R$ 1.835,00</td>
+                                            <td class="col-xs-1 ellipsis">R$ 0,00</td>
+                                            <td class="col-xs-1 ellipsis">20%</td>
+                                            <td class="col-xs-2 ellipsis">R$ 1.956,00</td>
                                         </tr>
-                                        <tr>
-                                            <th scope="row" class="col-xs-1">1</th>
-                                            <th class="col-xs-5">ADENOAMIGDALECTOMIA</th>
-                                            <th class="col-xs-2">R$ 1.835,00</th>
-                                            <th class="col-xs-1">R$ 0,00</th>
-                                            <th class="col-xs-1">20%</th>
-                                            <th class="col-xs-2">R$ 1.956,00</th>
+                                        <tr class="row">
+                                            <th scope="row" class="col-xs-1">2</th>
+                                            <td class="col-xs-5 ellipsis">ADENOAMIGDALECTOMIA</td>
+                                            <td class="col-xs-2 ellipsis">R$ 1.835,00</td>
+                                            <td class="col-xs-1 ellipsis">R$ 0,00</td>
+                                            <td class="col-xs-1 ellipsis">20%</td>
+                                            <td class="col-xs-2 ellipsis">R$ 1.956,00</td>
                                         </tr>
-                                        <tr>
-                                            <th scope="row" class="col-xs-1">1</th>
-                                            <th class="col-xs-5">ADENOAMIGDALECTOMIA</th>
-                                            <th class="col-xs-2">R$ 1.835,00</th>
-                                            <th class="col-xs-1">R$ 0,00</th>
-                                            <th class="col-xs-1">20%</th>
-                                            <th class="col-xs-2">R$ 1.956,00</th>
+                                        <tr class="row">
+                                            <th scope="row" class="col-xs-1">3</th>
+                                            <td class="col-xs-5 ellipsis">ADENOAMIGDALECTOMIA</td>
+                                            <td class="col-xs-2 ellipsis">R$ 1.835,00</td>
+                                            <td class="col-xs-1 ellipsis">R$ 0,00</td>
+                                            <td class="col-xs-1 ellipsis">20%</td>
+                                            <td class="col-xs-2 ellipsis">R$ 1.956,00</td>
+                                        </tr>
+                                        <tr class="row">
+                                            <th scope="row" class="col-xs-1">4</th>
+                                            <td class="col-xs-5 ellipsis">ADENOAMIGDALECTOMIA</td>
+                                            <td class="col-xs-2 ellipsis">R$ 1.835,00</td>
+                                            <td class="col-xs-1 ellipsis">R$ 0,00</td>
+                                            <td class="col-xs-1 ellipsis">20%</td>
+                                            <td class="col-xs-2 ellipsis">R$ 1.956,00</td>
+                                        </tr>
+                                        <tr class="row">
+                                            <th scope="row" class="col-xs-1">5</th>
+                                            <td class="col-xs-5 ellipsis">ADENOAMIGDALECTOMIA</td>
+                                            <td class="col-xs-2 ellipsis">R$ 1.835,00</td>
+                                            <td class="col-xs-1 ellipsis">R$ 0,00</td>
+                                            <td class="col-xs-1 ellipsis">20%</td>
+                                            <td class="col-xs-2 ellipsis">R$ 1.956,00</td>
+                                        </tr>
+                                        <tr class="row">
+                                            <th scope="row" class="col-xs-1">6</th>
+                                            <td class="col-xs-5 ellipsis">ADENOAMIGDALECTOMIA</td>
+                                            <td class="col-xs-2 ellipsis">R$ 1.835,00</td>
+                                            <td class="col-xs-1 ellipsis">R$ 0,00</td>
+                                            <td class="col-xs-1 ellipsis">20%</td>
+                                            <td class="col-xs-2 ellipsis">R$ 1.956,00</td>
+                                        </tr>
+                                        <tr class="row">
+                                            <th scope="row" class="col-xs-1">7</th>
+                                            <td class="col-xs-5 ellipsis">ADENOAMIGDALECTOMIA</td>
+                                            <td class="col-xs-2 ellipsis">R$ 1.835,00</td>
+                                            <td class="col-xs-1 ellipsis">R$ 0,00</td>
+                                            <td class="col-xs-1 ellipsis">20%</td>
+                                            <td class="col-xs-2 ellipsis">R$ 1.956,00</td>
                                         </tr>
                                     </tbody>
+                                    <tfoot>
+                                        <tr class="row">
+                                            <th scope="row" class="col-xs-1">-</th>
+                                            <td class="col-xs-5 ellipsis font-weight-bold">Total Hospital*</td>
+                                            <td class="col-xs-2 ellipsis">R$ 4.031,00</td>
+                                            <td class="col-xs-1 ellipsis">R$ 0,00</td>
+                                            <td class="col-xs-1 ellipsis font-weight-bold">R$ 220,00</td>
+                                            <td class="col-xs-2 ellipsis font-weight-bold">R$ 2.250,00</td>
+                                        </tr>
+                                    </tfoot>
                                 </table>
-                                <div class="row total brd-t pt-05 pl-1">
-                                    <div class="col-xs-6 flex-items-xs-stretch font-weight-bold">
-                                        Total Hospital*
-                                    </div>
-                                    <div class="col-xs-2 flex-items-xs-stretch">
-                                        R$ 4.031,00
-                                    </div>
-                                    <div class="col-xs-1 flex-items-xs-stretch">
-                                        R$ 0,00
-                                    </div>
-                                    <div class="col-xs-1 flex-items-xs-stretch font-weight-bold">
-                                        R$ 220,00
-                                    </div>
-                                    <div class="col-xs-2 flex-items-xs-stretch font-weight-bold">
-                                        R$ 2.250,00
-                                    </div>
-                                </div>
                             </div>
                             <div class="tab-pane fade" id="apartamento" role="tabpanel">
                                 <p>asdas</p>
