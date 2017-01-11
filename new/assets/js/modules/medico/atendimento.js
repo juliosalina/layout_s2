@@ -21,11 +21,12 @@ $('.history-menu').flexslider({
 
 
 $('.scrollitem').slimScroll({
-    height: '9.5rem',
+    height: '11rem',
     position: 'right',
     size: "7px",
     color: '#bbb',
-    wheelStep: 5
+    wheelStep: 5,
+    alwaysVisible: true
 });
 
 

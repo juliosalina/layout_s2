@@ -261,60 +261,69 @@
             <div id="menu-4" class="card card-block">
                 <h6 class="card-title font-weight-bold">Resultados de Exames</h6>
 
-                <table class="table light-text">
-                  <colgroup>
-                     <col class="col-md-1"/>
-                     <col class="col-md-2"/>
-                     <col class="col-md-1"/>
-                     <col class="col-md-7"/>
-                     <col class="col-md-1"/>
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>Data</th>
-                      <th>Unidade</th>
-                      <th>Exames</th>
-                      <th class="text-xs-center">Ações</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>1</th>
-                      <td>16/11/2016 14:27</td>
-                      <td>Teodoro</td>
-                      <td>HEMOGRAMA / CURVA GLICEMICA (100G DE DEXTROSOL) GESTANTE / CURVA GLICEMICA) GESTANTE</td>
-                      <td class="text-xs-center"><i class="fa fa-file-pdf-o"></i></td>
-                    </tr>
-                    <tr>
-                      <th>1</th>
-                      <td>16/11/2016 14:27</td>
-                      <td>Teodoro</td>
-                      <td>HEMOGRAMA / CURVA GLICEMICA (100G DE DEXTROSOL) GESTANTE / CURVA GLICEMICA) GESTANTE</td>
-                      <td class="text-xs-center"><i class="fa fa-file-pdf-o"></i></td>
-                    </tr>
-                    <tr>
-                      <th>1</th>
-                      <td>16/11/2016 14:27</td>
-                      <td>Teodoro</td>
-                      <td>HEMOGRAMA / CURVA GLICEMICA (100G DE DEXTROSOL) GESTANTE / CURVA GLICEMICA) GESTANTE</td>
-                      <td class="text-xs-center"><i class="fa fa-file-pdf-o"></i></td>
-                    </tr>
-                    <tr>
-                      <th>1</th>
-                      <td>16/11/2016 14:27</td>
-                      <td>Teodoro</td>
-                      <td>HEMOGRAMA / CURVA GLICEMICA (100G DE DEXTROSOL) GESTANTE / CURVA GLICEMICA) GESTANTE</td>
-                      <td class="text-xs-center"><i class="fa fa-file-pdf-o"></i></td>
-                    </tr>
-                    <tr>
-                      <th>1</th>
-                      <td>16/11/2016 14:27</td>
-                      <td>Teodoro</td>
-                      <td>HEMOGRAMA / CURVA GLICEMICA (100G DE DEXTROSOL) GESTANTE / CURVA GLICEMICA) GESTANTE</td>
-                      <td class="text-xs-center"><i class="fa fa-file-pdf-o"></i></td>
-                    </tr>
-                  </tbody>
+                <table class="table table-responsive light-text scrollitem">
+                    <colgroup>
+                       <col class="col-md-1"/>
+                       <col class="col-md-2"/>
+                       <col class="col-md-1"/>
+                       <col class="col-md-7"/>
+                       <col class="col-md-1"/>
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th data-th="#">#</th>
+                        <th data-th="Data">Data</th>
+                        <th data-th="Unidade">Unidade</th>
+                        <th data-th="Exames">Exames</th>
+                        <th data-th="Ações" class="text-xs-center">Ações</th>
+                      </tr>
+                    </thead>
+                    <tbody class="gray-light-bkg">
+                      <tr>
+                        <th>1</th>
+                        <td>16/11/2016 14:27</td>
+                        <td>Teodoro</td>
+                        <td>HEMOGRAMA / CURVA GLICEMICA (100G DE DEXTROSOL) GESTANTE / CURVA GLICEMICA) GESTANTE</td>
+                        <td class="text-xs-center"><i class="fa fa-file-pdf-o"></i></td>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <td>16/11/2016 14:27</td>
+                        <td>Teodoro</td>
+                        <td>HEMOGRAMA / CURVA GLICEMICA (100G DE DEXTROSOL) GESTANTE / CURVA GLICEMICA) GESTANTE</td>
+                        <td class="text-xs-center"><i class="fa fa-file-pdf-o"></i></td>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <td>16/11/2016 14:27</td>
+                        <td>Teodoro</td>
+                        <td>HEMOGRAMA / CURVA GLICEMICA (100G DE DEXTROSOL) GESTANTE / CURVA GLICEMICA) GESTANTE</td>
+                        <td class="text-xs-center"><i class="fa fa-file-pdf-o"></i></td>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <td>16/11/2016 14:27</td>
+                        <td>Teodoro</td>
+                        <td>HEMOGRAMA / CURVA GLICEMICA (100G DE DEXTROSOL) GESTANTE / CURVA GLICEMICA) GESTANTE</td>
+                        <td class="text-xs-center"><i class="fa fa-file-pdf-o"></i></td>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <td>16/11/2016 14:27</td>
+                        <td>Teodoro</td>
+                        <td>HEMOGRAMA / CURVA GLICEMICA (100G DE DEXTROSOL) GESTANTE / CURVA GLICEMICA) GESTANTE</td>
+                        <td class="text-xs-center"><i class="fa fa-file-pdf-o"></i></td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td data-th="#">#</td>
+                        <td data-th="Data">Data</td>
+                        <td data-th="Unidade">Unidade</td>
+                        <td data-th="Exames">Exames</td>
+                        <td data-th="Ações" class="text-xs-center">Ações</td>
+                      </tr>
+                    </tfoot>
                 </table>
 
             </div>
