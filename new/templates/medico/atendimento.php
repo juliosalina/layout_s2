@@ -233,12 +233,12 @@
                 <h6 class="card-title font-weight-bold">Anamnese</h6>
                 <label for="exampleSelect1">Example select</label>
                 <select class="form-control mb-1" id="exampleSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
 
                 <label>Queixa</label>
                 <textarea class="form-control mb-1" id="exampleTextarea" rows="3"></textarea>
@@ -261,75 +261,62 @@
             <div id="menu-4" class="card card-block">
                 <h6 class="card-title font-weight-bold">Resultados de Exames</h6>
 
-                <table class="table table-responsive">
-                    <thead>
-                        <tr class="row">
-                            <th class="head col-xs-1">#</th>
-                            <th class="head col-xs-1 ellipsis">Data</th>
-                            <th class="head col-xs-6 ellipsis">Unidade</th>
-                            <th class="head col-xs-3 ellipsis">Exames</th>
-                            <th class="head col-xs-1 ellipsis">Resultados</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="row">
-                            <th scope="row" class="col-xs-1">1</td>
-                            <td class="col-xs-1 ellipsis">16/11/2016 14:27</td>
-                            <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</td>
-                            <td class="col-xs-3 ellipsis">Gaston Augusto Perez Pouilleux</td>
-                            <td class="col-xs-1 ellipsis">19/11/2016</td>
-                        </tr>
-                        <tr class="row">
-                            <th scope="row" class="col-xs-1">1</td>
-                            <td class="col-xs-1 ellipsis">16/11/2016 14:27</td>
-                            <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</td>
-                            <td class="col-xs-3 ellipsis">Gaston Augusto Perez Pouilleux</td>
-                            <td class="col-xs-1 ellipsis">19/11/2016</td>
-                        </tr>
-                        <tr class="row">
-                            <th scope="row" class="col-xs-1">1</td>
-                            <td class="col-xs-1 ellipsis">16/11/2016 14:27</td>
-                            <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</td>
-                            <td class="col-xs-3 ellipsis">Gaston Augusto Perez Pouilleux</td>
-                            <td class="col-xs-1 ellipsis">19/11/2016</td>
-                        </tr>
-                        <tr class="row">
-                            <th scope="row" class="col-xs-1">1</td>
-                            <td class="col-xs-1 ellipsis">16/11/2016 14:27</td>
-                            <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</td>
-                            <td class="col-xs-3 ellipsis">Gaston Augusto Perez Pouilleux</td>
-                            <td class="col-xs-1 ellipsis">19/11/2016</td>
-                        </tr>
-                        <tr class="row">
-                            <th scope="row" class="col-xs-1">1</td>
-                            <td class="col-xs-1 ellipsis">16/11/2016 14:27</td>
-                            <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</td>
-                            <td class="col-xs-3 ellipsis">Gaston Augusto Perez Pouilleux</td>
-                            <td class="col-xs-1 ellipsis">19/11/2016</td>
-                        </tr>
-                        <tr class="row">
-                            <th scope="row" class="col-xs-1">1</td>
-                            <td class="col-xs-1 ellipsis">16/11/2016 14:27</td>
-                            <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</td>
-                            <td class="col-xs-3 ellipsis">Gaston Augusto Perez Pouilleux</td>
-                            <td class="col-xs-1 ellipsis">19/11/2016</td>
-                        </tr>
-                        <tr class="row">
-                            <th scope="row" class="col-xs-1">1</td>
-                            <td class="col-xs-1 ellipsis">16/11/2016 14:27</td>
-                            <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</td>
-                            <td class="col-xs-3 ellipsis">Gaston Augusto Perez Pouilleux</td>
-                            <td class="col-xs-1 ellipsis">19/11/2016</td>
-                        </tr>
-                        <tr class="row">
-                            <th scope="row" class="col-xs-1">1</td>
-                            <td class="col-xs-1 ellipsis">16/11/2016 14:27</td>
-                            <td class="col-xs-6 ellipsis">Alterado estado da cirurgia para "Pre-operatorio", fazer todos os exames e ficar de repouso por 36 horas.</td>
-                            <td class="col-xs-3 ellipsis">Gaston Augusto Perez Pouilleux</td>
-                            <td class="col-xs-1 ellipsis">19/11/2016</td>
-                        </tr>
-                    </tbody>
+                <table class="table light-text">
+                  <colgroup>
+                     <col class="col-md-1"/>
+                     <col class="col-md-2"/>
+                     <col class="col-md-1"/>
+                     <col class="col-md-7"/>
+                     <col class="col-md-1"/>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Data</th>
+                      <th>Unidade</th>
+                      <th>Exames</th>
+                      <th class="text-xs-center">Ações</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>1</th>
+                      <td>16/11/2016 14:27</td>
+                      <td>Teodoro</td>
+                      <td>HEMOGRAMA / CURVA GLICEMICA (100G DE DEXTROSOL) GESTANTE / CURVA GLICEMICA) GESTANTE</td>
+                      <td class="text-xs-center"><i class="fa fa-file-pdf-o"></i></td>
+                    </tr>
+                    <tr>
+                      <th>1</th>
+                      <td>16/11/2016 14:27</td>
+                      <td>Teodoro</td>
+                      <td>HEMOGRAMA / CURVA GLICEMICA (100G DE DEXTROSOL) GESTANTE / CURVA GLICEMICA) GESTANTE</td>
+                      <td class="text-xs-center"><i class="fa fa-file-pdf-o"></i></td>
+                    </tr>
+                    <tr>
+                      <th>1</th>
+                      <td>16/11/2016 14:27</td>
+                      <td>Teodoro</td>
+                      <td>HEMOGRAMA / CURVA GLICEMICA (100G DE DEXTROSOL) GESTANTE / CURVA GLICEMICA) GESTANTE</td>
+                      <td class="text-xs-center"><i class="fa fa-file-pdf-o"></i></td>
+                    </tr>
+                    <tr>
+                      <th>1</th>
+                      <td>16/11/2016 14:27</td>
+                      <td>Teodoro</td>
+                      <td>HEMOGRAMA / CURVA GLICEMICA (100G DE DEXTROSOL) GESTANTE / CURVA GLICEMICA) GESTANTE</td>
+                      <td class="text-xs-center"><i class="fa fa-file-pdf-o"></i></td>
+                    </tr>
+                    <tr>
+                      <th>1</th>
+                      <td>16/11/2016 14:27</td>
+                      <td>Teodoro</td>
+                      <td>HEMOGRAMA / CURVA GLICEMICA (100G DE DEXTROSOL) GESTANTE / CURVA GLICEMICA) GESTANTE</td>
+                      <td class="text-xs-center"><i class="fa fa-file-pdf-o"></i></td>
+                    </tr>
+                  </tbody>
                 </table>
+
             </div>
 
             <div id="menu-5" class="card card-block">
