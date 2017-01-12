@@ -19,3 +19,12 @@ $('a[data-toggle="tab"]').click(function (e) {
         $('.comment').show();
     }
 });
+
+$('.scrollitem').slimScroll({
+    height: '11rem',
+    position: 'right',
+    size: "7px",
+    color: '#bbb',
+    wheelStep: 5,
+    alwaysVisible: true
+});

@@ -243,7 +243,7 @@
                 <div class="card-block brd-l">
                     <div class="tab-content">
                         <div class="tab-pane fade in active" id="historico" role="tabpanel">
-                            <table class="table table-responsive">
+                            <table class="table table-responsive pos">
                                 <thead>
                                     <tr class="row">
                                         <th class="head col-xs-1">#</th>
@@ -373,7 +373,7 @@
                 <h7 class="card-title font-weight-bold">Orçamento - Preços DRC</h7>
                 <div class="tab-content">
                     <div class="tab-pane fade in active" id="historico" role="tabpanel">
-                        <table class="table table-responsive">
+                        <table class="table table-responsive pos">
                             <thead>
                                 <tr class="row">
                                     <th class="head col-xs-1 ellipsis">#</th>
@@ -487,7 +487,7 @@
                     <div class="card-block brd-l">
                         <div class="tab-content">
                             <div class="tab-pane fade in active" id="enfermaria" role="tabpanel">
-                                <table class="table table-responsive">
+                                <table class="table table-responsive pos">
                                     <thead>
                                         <tr class="row">
                                             <th class="head col-xs-1 ellipsis">#</th>
