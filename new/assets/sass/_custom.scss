@@ -263,7 +263,7 @@ h1,h2,h3,h4,h5,h6,h7 {
 }
 
 
-.table{
+.table:not(.pos) {
     thead{
         &::before{
             content:"";
@@ -296,99 +296,101 @@ h1,h2,h3,h4,h5,h6,h7 {
         }
     }
 }
-//table
-// .total {
-//     padding-right: 0.6rem;
-// }
-// table {
-//     width: 100%;
-//     &.normal {
-//         tbody {
-//             height: auto;
-//             overflow-y: hidden;
-//             tr {
-//                 &:hover {
-//                     background-color: #ffffff;
-//                 }
-//                 th, td {
-//                     font-weight: normal;
-//                     padding: .65rem !important;
-//                 }
-//             }
-//         }
-//     }
-//     &:not(.normal) {
-//         thead,
-//         tbody,
-//         tfoot,
-//         tr,
-//         td,
-//         th {
-//             display: block;
-//         }
-//         tr {
-//             &::after {
-//                 content: ' ';
-//                 display: block;
-//                 visibility: hidden;
-//                 clear: both;
-//             }
-//         }
-//     }
-//     tbody th,
-//     tbody td,
-//     tfoot th,
-//     tfoot td,
-//     thead th {
-//         float: left;
-//     }
-//     thead {
-//         th {
-//             border-top: none !important;
-//             padding: .65rem !important;
-//             &.ellipsis {
-//                 white-space: nowrap;
-//                 overflow:hidden !important;
-//                 text-overflow: ellipsis;
-//                 width: 100%;
-//             }
-//         }
-//     }
-//     tbody {
-//         height: 13rem;
-//         overflow-y: auto;
-//         &.budget {
-//             height: 6rem;
-//         }
-//         tr {
-//             &:hover {
-//                 background-color: #f5f5f5;
-//             }
-//             th, td {
-//                 font-weight: normal;
-//                 padding: .65rem !important;
-//                 &.ellipsis {
-//                     white-space: nowrap;
-//                     overflow:hidden !important;
-//                     text-overflow: ellipsis;
-//                     width: 100%;
-//                 }
-//             }
-//         }
-//     }
-//     tfoot {
-//         th, td {
-//             font-weight: normal;
-//             padding: .65rem !important;
-//             &.ellipsis {
-//                 white-space: nowrap;
-//                 overflow:hidden !important;
-//                 text-overflow: ellipsis;
-//                 width: 100%;
-//             }
-//         }
-//     }
-// }
+
+
+table.pos {
+    width: 100%;
+
+    .total {
+        padding-right: 0.6rem;
+    }
+
+    &.normal {
+        tbody {
+            height: auto;
+            overflow-y: hidden;
+            tr {
+                &:hover {
+                    background-color: #ffffff;
+                }
+                th, td {
+                    font-weight: normal;
+                    padding: .65rem !important;
+                }
+            }
+        }
+    }
+    &:not(.normal) {
+        thead,
+        tbody,
+        tfoot,
+        tr,
+        td,
+        th {
+            display: block;
+        }
+        tr {
+            &::after {
+                content: ' ';
+                display: block;
+                visibility: hidden;
+                clear: both;
+            }
+        }
+    }
+    tbody th,
+    tbody td,
+    tfoot th,
+    tfoot td,
+    thead th {
+        float: left;
+    }
+    thead {
+        th {
+            border-top: none !important;
+            padding: .65rem !important;
+            &.ellipsis {
+                white-space: nowrap;
+                overflow:hidden !important;
+                text-overflow: ellipsis;
+                width: 100%;
+            }
+        }
+    }
+    tbody {
+        height: 13rem;
+        overflow-y: auto;
+        &.budget {
+            height: 6rem;
+        }
+        tr {
+            &:hover {
+                background-color: #f5f5f5;
+            }
+            th, td {
+                font-weight: normal;
+                padding: .65rem !important;
+                &.ellipsis {
+                    white-space: nowrap;
+                    overflow:hidden !important;
+                    text-overflow: ellipsis;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    tfoot {
+        th, td {
+            padding: .65rem !important;
+            &.ellipsis {
+                white-space: nowrap;
+                overflow:hidden !important;
+                text-overflow: ellipsis;
+                width: 100%;
+            }
+        }
+    }
+}
 
 //form
 .form-control {
