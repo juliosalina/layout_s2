@@ -348,25 +348,21 @@
                 <div class="row">
 
                     <div class="col-md-4">
-
                         <div class="pad-05">
                             <h7 class="underline blue">Pacotes</h7>
                         </div>
-
                     </div>
 
                     <div class="col-md-8">
-
                         <div class="pad-05">
                             <h7 class="underline blue">Exames</h7>
                         </div>
-
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-4 mt-1">
-                        <div class="pad-05 scrollitem">
+                        <div class="pad-05 scrollitem light-text">
                             <ul class="text-xs-left">
                                 <li class="brd-b">Alergologia</li>
                                 <li class="brd-b">CAF ambulatorial</li>
