@@ -6,7 +6,13 @@
 @import 'content';
 @import 'dashboard';
 @import 'custom';
-@import 'mobile';
+
+/*mobile por ultimo vvvv
+
+todo criar element.scss para este
+*/
+
+
 
 body {
 	font-family: 'PT Sans Caption',sans-serif;
@@ -76,81 +82,6 @@ user-select: none;
 }
 
 
-/*step menu horizontal*/
-/*stepmenu */
-
-.step-menu-h{
-  padding:0;
-  border:.1rem solid #ccc 0;
- .step-item{
-  list-style-type:none;
-  padding-top:1rem;
-  padding-left:2rem;
-  text-align:center;
-  position:relative;
-  width:3rem;
-  float:left;
-  height:3rem;
-  font-size:.8rem;
-  background-color:#F0F0F0;
-    span{
-      display:none;
-    }
-  &.active{
-     font-weight:bold;
-     width:8rem;
-        span{
-          display:block;
-          float:right;
-        }
-  }
-  &.idle{
-     background-color:#DEDEDE;
-       &::after{
-        border-color:transparent #DEDEDE;
-      }
-      span{
-        display:none;
-      }
-  }
-   &::after{
-    content: '';
-    position: absolute;
-    width: 0;
-    top:0;
-    left:.2rem;
-    height: 0;
-    border-style: solid;
-    border-width: 1.5rem 0 1.5rem 1.5rem;
-    border-color: transparent transparent transparent #F0F0F0;
-    clear: both;
-    z-index:2;
-  }
-  &::before{
-    content: '';
-    position: absolute;
-    width: 0;
-    top:0;
-    left:.3rem;
-    height: 0;
-    border-style: solid;
-    border-width: 1.5rem 0 1.5rem 1.5rem;
-    border-color: transparent transparent transparent #ccc;
-    clear: both;
-    z-index:1;
-    }
-    &:first-child{
-      padding-left:1.6rem;
-      width: 2.5rem;
-      &::before{
-        border-width:0;
-      }
-    }
-    &:last-child{
-      width:4rem;
-    }
-  }
-}
 
 /*stepmenu */
 
@@ -158,7 +89,7 @@ user-select: none;
 position:fixed;
 width:10.5rem;
 padding:0;
-top:7.6rem;
+top:7.2rem;
 border-top:.1rem solid #ccc;
 @include transition (.5s);
  .step-item{
@@ -214,7 +145,15 @@ border-top:.1rem solid #ccc;
     a{
       text-decoration:none;
       color:#000;
+      span{
+        &:first-child{
+          display:none;
+        }
+      }
     }
+  }
+  &.scrolled{
+    top:5.4rem;
   }
 }
 
@@ -226,7 +165,7 @@ border-top:.1rem solid #ccc;
     width:23rem;
     position: fixed;
     right: 0;
-    top:8.4rem;
+    top:7.2rem;
     width: 23rem;
     z-index: 1;
     @include shadow(2px 2px 3px 3px rgba(0, 0, 0, .1));
@@ -291,6 +230,9 @@ border-top:.1rem solid #ccc;
       margin:0 0 0 -.5rem;
      }
   }
+  &.scrolled{
+    top:4.5rem;
+  }
 }
 
 .card-title {
@@ -307,6 +249,7 @@ border-top:.1rem solid #ccc;
     line-height:.8rem;
     position:fixed;
     width:inherit;
+    top:8.6rem;
     @include shadow(2px 2px 3px 0px  rgba(0, 0, 0, .3));
     p{
     margin-bottom:0;
@@ -339,12 +282,6 @@ border-top:.1rem solid #ccc;
     z-index:3;
     padding-top:1.3rem;
   }
-  // .flex-direction-nav .flex-nav-next a{
-  // //  @include shadow(-41px 5px 27px -9px rgba(14,80,115,0.71)) 
-  // }
-  // .flex-direction-nav .flex-nav-prev a{
-  // //  @include shadow(43px 5px 27px -9px rgba(14,80,115,0.71)) 
-  // }
   .history-info{
     position:absolute;
     margin-top:3.5rem;
@@ -376,6 +313,23 @@ border-top:.1rem solid #ccc;
         }
       }
     }
+  }
+  &.scrolled{
+    top:4rem;
+  }
+  &:before{
+    background-color:$blue-medium;
+    color: #fff;
+    content: "HISTÓRICO";
+    font-size: 0.7rem;
+    font-weight: bold;
+    height: 1.4rem;
+    padding-left: 0.3rem;
+    padding-top: 0.35rem;
+    position: absolute;
+    top: -1.4rem;
+    width: 100%;
+    @include shadow(2px 2px 3px 0px rgba(0, 0, 0, .3));
   }
 }
 
@@ -533,3 +487,6 @@ border-top:.1rem solid #ccc;
     stroke-dashoffset: 0;
   }
 }
+
+
+@import 'mobile';

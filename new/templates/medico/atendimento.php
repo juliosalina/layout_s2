@@ -1,28 +1,26 @@
 <!-- step menu -->
 <ul class="step-menu-v">
-    <li class="step-item idle"><a href="#menu-1">Pré-Consulta</a></li>
-    <li class="step-item idle"><a href="#menu-2">Anamnese</a></li>
-    <li class="step-item idle"><a href="#menu-3">Ex. Físico</a></li>
-    <li class="step-item idle"><a href="#menu-4">Res. Exames</a></li>
-    <li class="step-item idle"><a href="#menu-5">Diagnóstico</a></li>
-    <li class="step-item idle"><a href="#menu-6">Conduta</a></li>
-    <li class="step-item idle"><a href="#menu-7">Procedimentos</a></li>
-    <li class="step-item idle"><a href="#menu-8">Sol. Exames</a></li>
-    <li class="step-item idle"><a href="#menu-9">Prescrição</a></li>
-    <li class="step-item idle"><a href="#menu-10">Atestado</a></li>
-    <li class="step-item idle"><a href="#menu-11">Orientações</a></li>
-    <li class="step-item idle"><a href="#menu-12">Encaminhamento</a></li>
+    <li class="step-item active"><a href="#menu-1"><span>1</span><span>Pré-Consulta</span></a></li>
+    <li class="step-item idle"><a href="#menu-2"><span>2</span><span>Anamnese</span></a></li>
+    <li class="step-item idle"><a href="#menu-3"><span>3</span><span>Ex. Físico</span></a></li>
+    <li class="step-item idle"><a href="#menu-4"><span>4</span><span>Res. Exames</span></a></li>
+    <li class="step-item idle"><a href="#menu-5"><span>5</span><span>Diagnóstico</span></a></li>
+    <li class="step-item idle"><a href="#menu-6"><span>6</span><span>Conduta</span></a></li>
+    <li class="step-item idle"><a href="#menu-7"><span>7</span><span>Procedimentos</span></a></li>
+    <li class="step-item idle"><a href="#menu-8"><span>8</span><span>Sol. Exames</span></a></li>
+    <li class="step-item idle"><a href="#menu-9"><span>9</span><span>Prescrição</span></a></li>
+    <li class="step-item idle"><a href="#menu-10"><span>10</span><span>Atestado</span></a></li>
+    <li class="step-item idle"><a href="#menu-11"><span>11</span><span>Orientações</span></a></li>
+    <li class="step-item idle"><a href="#menu-12"><span>12</span><span>Encaminhamento</span></a></li>
 </ul>
 
 <div class="row flex-items-xs-right">
 
     <!-- wrapper direito -->
 
-    <div class="col-md-10 pr-6">
+    <div class="col-md-12 col-lg-10 col-xl-10 pr-6">
 
         <div class="pad-05 pr-0 pl-0">
-
-            <h7 class="blue-medium-bkg white-text p-05"><i class="fa fa-history pr-05-md"></i>Histórico</h7>
 
             <!-- historico slider -->
 
@@ -211,16 +209,16 @@
             <div id="menu-1" class="card card-block mt-5">
                 <h6 class="card-title font-weight-bold">Pré-Consulta</h6>
                 <ul class="row fa-ul pl-3">
-                    <li class="col-xs-12 col-lg-2 pl-0">
+                    <li class="col-xs-6 col-md-6 col-lg-2 pl-0">
                         <i class="fa-li fa fa-heartbeat fa-2x"></i><label class="bold-block">Sinais Vitais:</label>Nada Consta
                     </li>
-                    <li class="col-xs-12 col-lg-2 pl-0">
+                    <li class="col-xs-6 col-md-6 col-lg-2 pl-0">
                         <i class="fa-li fa fa-male fa-2x"></i><label class="bold-block">Medidas:</label>Nada Consta
                     </li>
-                    <li class="col-xs-12 col-lg-2 pl-0">
+                    <li class="col-xs-6 col-md-6 col-lg-2 pl-0">
                         <i class="fa-li fa fa-heartbeat fa-2x"></i><label class="bold-block">Alergias:</label>Nada Consta
                     </li>
-                    <li class="col-xs-12 col-lg-3 pl-0">
+                    <li class="col-xs-6 col-md-6 col-lg-3 pl-0">
                         <i class="fa-li fa fa-male fa-2x"></i><label class="bold-block">Medicamentos em uso:</label>Nada Consta
                     </li>
                 </ul>
@@ -366,8 +364,17 @@
 
                 <div class="row">
                     <div class="col-md-4 mt-1">
-                        <div class="pad-05 scrollitem">
+                        <div class="pad-05 scrollitem light-text">
                             <ul class="text-xs-left">
+                                <li class="brd-b">Alergologia</li>
+                                <li class="brd-b">CAF ambulatorial</li>
+                                <li class="brd-b">Cardiologia I</li>
+                                <li class="brd-b">Cardiologia II</li>
+                                <li class="brd-b">Clínica A</li>
+                                <li class="brd-b">Cĺinica B</li>
+                                <li class="brd-b">Dermato</li>
+                                <li class="brd-b">Endocrino 1</li>
+                                <li class="brd-b">Endocrino 2</li>
                                 <li class="brd-b">Alergologia</li>
                                 <li class="brd-b">CAF ambulatorial</li>
                                 <li class="brd-b">Cardiologia I</li>

@@ -56,7 +56,6 @@ var lastId,
 //função scroll
 $(window).scroll(function() {
 
-
     //highlight stepmenu
    // Get container scroll position
    var fromTop = $(this).scrollTop()+topMenuHeight;
@@ -77,18 +76,14 @@ $(window).scroll(function() {
        menuItems.parent().removeClass("active").end().filter("[href='#"+id+"']").parent().addClass("active").removeClass('idle').nextAll().addClass('idle');
    } 
 
-
-    //fixar slider historico no scroll TODO CRIAR CLASSE
+    //fixar itens no scroll / medico -> atendimento
 
     var scrollPosition = $(window).scrollTop();
     if (scrollPosition > 10) {
-        $('.step-menu-v,.side-menu').css('top', '4.5rem');
-        $('.history-menu').css('top','4rem');
+      $('.step-menu-v,.history-menu,.side-menu').addClass('scrolled');
     } else {
-        $('.step-menu-v,.side-menu').css('top', '7.6rem');
-        $('.history-menu').css('top','auto');
+      $('.step-menu-v,.history-menu,.side-menu').removeClass('scrolled');
     }
-
 
 });
 
