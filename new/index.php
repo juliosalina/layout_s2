@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
     <!-- Bootsrap With Flexbox Grid -->
-    <link href="assets/css/bootstrap-4-flex.css" rel="stylesheet">
+    <link href="assets/vendor/css/bootstrap-4-flex.css" rel="stylesheet">
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 
